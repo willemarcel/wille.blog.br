@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>wille.blog.br</title><link href="http://wille.blog.br/" rel="alternate"></link><link href="http://wille.blog.br/feeds/softwarelivre-tutoriais.atom.xml" rel="self"></link><id>http://wille.blog.br/</id><updated>2012-09-13T18:23:00-03:00</updated><entry><title>Como colaborar com o OpenStreetMap</title><link href="http://wille.blog.br/2012/09/como-colaborar-com-o-openstreetmap" rel="alternate"></link><updated>2012-09-13T18:23:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2012-09-13:2012/09/como-colaborar-com-o-openstreetmap</id><summary type="html">&lt;p&gt;&lt;a href="http://images.wille.blog.br/osm-tutorial-pt_br.jpg"&gt;&lt;img alt="Tutorial OSM em 5 minutos. Clique para carregar em um tamanho
+maior." src="http://images.wille.blog.br/osm-tutorial-pt_br-650px.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Clique para carregar em um tamanho maior.&lt;/p&gt;
+&lt;p&gt;Sempre senti falta de um tutorial que mostrasse de forma rápida e
+simples como começar a colaborar com o OpenStreetMap. Assim, resolvi
+fazer esse tutorial.&lt;/p&gt;
+&lt;p&gt;Coloquei o arquivo fonte SVG num repositório GIT, caso alguém queira
+fazer alguma modificação ou traduzir para outros idiomas:
+&lt;a href="https://gitorious.org/osmtutorial"&gt;https://gitorious.org/osmtutorial&lt;/a&gt;.&lt;/p&gt;</summary><category term="gráfico"></category><category term="inkscape"></category><category term="openstreetmap"></category><category term="osm"></category><category term="software livre"></category><category term="svg"></category><category term="tutoriais"></category></entry></feed>

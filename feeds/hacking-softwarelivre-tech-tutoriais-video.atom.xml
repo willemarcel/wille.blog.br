@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>wille.blog.br</title><link href="http://wille.blog.br/" rel="alternate"></link><link href="http://wille.blog.br/feeds/hacking-softwarelivre-tech-tutoriais-video.atom.xml" rel="self"></link><id>http://wille.blog.br/</id><updated>2011-12-21T20:07:00-02:00</updated><entry><title>Como copiar vídeos de qualquer site e em qualquer formato para o seu computador</title><link href="http://wille.blog.br/2011/12/como-salvar-videos-de-qualquer-site-e-em-qualquer-formato-para-o-seu-computador" rel="alternate"></link><updated>2011-12-21T20:07:00-02:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2011-12-21:2011/12/como-salvar-videos-de-qualquer-site-e-em-qualquer-formato-para-o-seu-computador</id><summary type="html">&lt;p&gt;Há muito tempo, postei &lt;a href="http://wille.blog.br/2008/05/a-forma-mais-facil-de-baixar-videos-do-you-tube/" title="a forma mais fácil de baixar vídeos do You Tube"&gt;aqui no
+blog&lt;/a&gt;
+uma forma bem fácil de copiar vídeos do youtube no GNU/Linux. Bastava
+esperar o vídeo carregar no navegador e ir lá no /tmp/ e copiar o
+arquivo pra outra pasta. Eu usava bastante isso. Porém com uma mudança
+no plugin do Adobe Flash e com o uso de
+&lt;a href="http://pt.wikipedia.org/wiki/HTML5"&gt;HTML5&lt;/a&gt; no &lt;a href="www.youtube.com/html5"&gt;You
+Tube&lt;/a&gt;, essa técnica passou a não funcionar mais.&lt;/p&gt;
+&lt;p&gt;Há uns meses, &lt;a href="http://blog.liquuid.net/2011/03/26/como-salvar-um-video-do-youtube-no-novo-flash-plugin/"&gt;Liquuid postou em seu
+blog&lt;/a&gt;
+como copiar vídeos carregados com o novo plugin Flash, porém descobri
+uma forma mais fácil e rápida e que funciona também com vídeos em sites
+que já estão utilizando HTML5.&lt;/p&gt;
+&lt;p&gt;Primeiro espere o vídeo ser carregado totalmente no
+&lt;a href="http://getfirefox.com/"&gt;Firefox&lt;/a&gt; (creio que essas instruções funcionam
+em outros navegadores também, desde que rodando no GNU/Linux). Quando
+finalizar o carregamento, execute o comando:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ps aux | grep firefox&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;O resultado será algo parecido com isso:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;wille     1366  9.7 17.9 1511896 547344 ?      Sl   17:42  13:17 firefox wille     1444  3.8  2.9 592744 90248 ?        Sl   17:42   5:16 /usr/lib/firefox/plugin-container /usr/lib/mozilla/plugins/libflashplayer.so -greomni /usr/lib/firefox/omni.jar 1366 plugin wille     2648  0.0  0.0   8576  1016 pts/0    S+   19:58   0:00 grep firefox&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Preste atenção nos números em negrito. São os números de processo do
+firefox e do plugin flashplayer, respectivamente.  Daí, basta abrir o
+diretório &lt;strong&gt;/proc/1366/fd/&lt;/strong&gt; ou o &lt;strong&gt;/proc/1444/fd/&lt;/strong&gt; no Gerenciador de
+Arquivos e, pelo ícone do arquivo, é possível identificar qual é o
+arquivo do vídeo que está carregado no Firefox. Uma dica: se o vídeo foi
+carregado com HTML5, geralmente ele está no diretório do processo do
+firefox, se foi carregado com flashplayer, tá no outro.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="nautilus abrindo o diretório citado
+acima" src="http://images.wille.blog.br/nautilus.jpg" title="observe o ícone diferente no nautilus" /&gt;&lt;/p&gt;
+&lt;p&gt;Porém, não dá pra usar o Nautilus para copiar, pois esse arquivo que
+aparece na tela é apenas um link para um outro arquivo que já foi
+deletado, assim utilize o terminal para fazer a cópia (quem não sabe
+copiar pelo terminal, estude o comando &lt;strong&gt;cp&lt;/strong&gt;).&lt;/p&gt;
+&lt;p&gt;É bom lembrar que esse tutorial é válido para qualquer site de vídeo,
+não apenas o You Tube.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;UPDATE:&lt;/strong&gt; Pra identificar o vídeo, é possível também usar o terminal.
+Basta executar o comando &lt;strong&gt;ls -lah&lt;/strong&gt; nos diretórios citados acima. No
+caso de sites que usem Flash, é só observar qual o link que aponta para
+&lt;strong&gt;/tmp/Flashxxxx&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;UPDATE 2:&lt;/strong&gt; Com o Flash 11, essa dica não funciona mais. A solução que
+encontrei foi usar um plugin no Firefox chamado &lt;a href="http://www.flashvideodownloader.org"&gt;Flash Video
+Downloader&lt;/a&gt;.&lt;/p&gt;</summary><category term="firefox"></category><category term="gnulinux"></category><category term="tutorial"></category><category term="vídeo"></category></entry></feed>

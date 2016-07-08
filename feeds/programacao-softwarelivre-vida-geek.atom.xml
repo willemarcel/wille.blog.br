@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>wille.blog.br</title><link href="http://wille.blog.br/" rel="alternate"></link><link href="http://wille.blog.br/feeds/programacao-softwarelivre-vida-geek.atom.xml" rel="self"></link><id>http://wille.blog.br/</id><updated>2012-02-14T23:12:00-02:00</updated><entry><title>VaiVem - Sistema de empréstimos</title><link href="http://wille.blog.br/2012/02/vaivem-sistema-de-emprestimos" rel="alternate"></link><updated>2012-02-14T23:12:00-02:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2012-02-14:2012/02/vaivem-sistema-de-emprestimos</id><summary type="html">&lt;p&gt;&lt;img alt="screenshot de uma das telas do
+vaivem" src="http://images.wille.blog.br/vaivem.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;Já faz um tempo que comecei a desenvolver o VaiVem um pequeno sistema de
+controle de empréstimos pra uso na universidade em que trabalho. Esse
+sistema é voltado para equipamentos de audiovisual, porém pode ser
+facilmente adaptado para outros tipos de objetos.&lt;/p&gt;
+&lt;p&gt;O VaiVem é desenvolvido em Django, um framework web escrito com Python.
+Esse é o primeiro sistema que eu desenvolvi, então não é nada muito
+complexo.&lt;/p&gt;
+&lt;p&gt;Os recursos que o Vaivem possui:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Geração de comprovantes de empréstimo;  &lt;/li&gt;
+&lt;li&gt;Busca de empréstimos por equipamento ou por usuário;  &lt;/li&gt;
+&lt;li&gt;Aplicação de penalidades em caso de atraso na devolução;  &lt;/li&gt;
+&lt;li&gt;Software Livre (Licença Affero GPLv3).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;O código está disponível no GitHub:
+&lt;a href="https://github.com/willemarcel/vaivem"&gt;https://github.com/willemarcel/vaivem&lt;/a&gt;&lt;/p&gt;</summary><category term="django"></category><category term="programação"></category><category term="python"></category><category term="sistema de empréstimo"></category><category term="software livre"></category><category term="vaivem"></category></entry></feed>

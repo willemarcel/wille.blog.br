@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>wille.blog.br</title><link href="http://wille.blog.br/" rel="alternate"></link><link href="http://wille.blog.br/feeds/fotografia-softwarelivre-tutoriais.atom.xml" rel="self"></link><id>http://wille.blog.br/</id><updated>2010-11-30T21:15:00-02:00</updated><entry><title>Um preto e branco diferente com o GIMP</title><link href="http://wille.blog.br/2010/11/um-preto-e-branco-diferente-com-o-gimp" rel="alternate"></link><updated>2010-11-30T21:15:00-02:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2010-11-30:2010/11/um-preto-e-branco-diferente-com-o-gimp</id><summary type="html">&lt;p&gt;O
+&lt;a href="http://www.ogimp.com.br/" title="Gimp é um software livre para edição de imagens"&gt;Gimp&lt;/a&gt;
+conta com uma biblioteca de processamento de imagens chamada GEGL, o
+qual possui um efeito de Preto e Branco bem interessante. Vou mostrar
+como utilizá-lo.&lt;/p&gt;
+&lt;p&gt;Abra uma imagem colorida no Gimp.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://images.wille.blog.br/tutorial-01.jpg" title="tutorial-01" /&gt;&lt;/p&gt;
+&lt;p&gt;Acesse o menu &lt;strong&gt;Ferramentas -&gt; Operação da GEGL&lt;/strong&gt;. Na janela de diálogo
+que vai se abrir, selecione a operação &lt;strong&gt;c2g&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://images.wille.blog.br/galeria1.png" title="galeria1" /&gt;&lt;/p&gt;
+&lt;p&gt;Eu geralmente uso a configuração padrão, mas você pode tentar parâmetros
+diferentes para a operação. Esse efeito exige bastante processamento da
+máquina, então demora alguns segundos para ser aplicado na imagem.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;O resultado:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://images.wille.blog.br/tutorial-c2g-final.jpg" title="tutorial-c2g-final" /&gt;&lt;/p&gt;
+&lt;p&gt;Compare com o preto e branco tradicional do Gimp:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://images.wille.blog.br/tutorial-pbnormal.jpg" title="tutorial-pbnormal" /&gt;&lt;/p&gt;</summary><category term="c2g"></category><category term="fotografia"></category><category term="gimp"></category><category term="software livre"></category><category term="tutorial"></category></entry></feed>

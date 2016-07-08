@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>wille.blog.br</title><link href="http://wille.blog.br/" rel="alternate"></link><link href="http://wille.blog.br/feeds/dicas-de-software-softwarelivre.atom.xml" rel="self"></link><id>http://wille.blog.br/</id><updated>2010-07-17T21:31:00-03:00</updated><entry><title>Pyroom</title><link href="http://wille.blog.br/2010/07/pyroom" rel="alternate"></link><updated>2010-07-17T21:31:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2010-07-17:2010/07/pyroom</id><summary type="html">&lt;p&gt;&lt;img alt="Tela software
+Pyroom" src="http://images.wille.blog.br/tela-pyroom.png" title="tela-pyroom" /&gt;&lt;/p&gt;
+&lt;p&gt;Hoje instalei o Pyroom, o objetivo dele é retirar os elementos da tela
+que nos distraem enquanto escrevemos. Aquele menuzinho (presente na
+imagem acima) aparece apenas se clicarmos com o botão direito do mouse.
+Além disso e do comando de ajuda (CTRL+H), o Pyroom não tem mais nenhum
+outro menu ou botão.&lt;/p&gt;
+&lt;p&gt;Escrevi o último post do blog (e também este) utilizando ele e me parece
+que cumpre bem o objetivo. Apesar de algumas notificações ainda
+aparecerem na tela, você não vai clicar toda hora no ícone do Instant
+Messenger, não vai alternar as janelas tanto quanto se estivesse num
+editor de texto comum e nem se preocupar com a formatação. Claro que não
+é garantia de concentração, no entanto pode ajudar.&lt;/p&gt;
+&lt;p&gt;Por enquanto, funciona apenas em GNU/Linux.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Site:&lt;/strong&gt; &lt;a href="http://pyroom.org"&gt;http://pyroom.org&lt;/a&gt;&lt;/p&gt;</summary><category term="dicas de software"></category><category term="escrita"></category><category term="pyroom"></category><category term="software livre"></category></entry></feed>

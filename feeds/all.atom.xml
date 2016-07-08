@@ -1,0 +1,1618 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>wille.blog.br</title><link href="http://wille.blog.br/" rel="alternate"></link><link href="http://wille.blog.br/feeds/all.atom.xml" rel="self"></link><id>http://wille.blog.br/</id><updated>2013-11-06T23:38:00-02:00</updated><entry><title>Criando um mapa com dados importados do OpenStreetMap</title><link href="http://wille.blog.br/2013/11/criando-um-mapa-com-dados-importados-do-openstreetmap" rel="alternate"></link><updated>2013-11-06T23:38:00-02:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2013-11-06:2013/11/criando-um-mapa-com-dados-importados-do-openstreetmap</id><summary type="html">&lt;p&gt;Eu mapeei todas as estações de compartilhamento de bicicletas do
+BikeSalvador e queria fazer um mapa que mostrasse essas estações. Quando
+havia apenas cinco estações, após mapear no OSM, eu criei um arquivo
+GeoJSON usando o &lt;a href="http://geojson.io"&gt;geojson.io&lt;/a&gt;. Porém agora já são 19
+estações. Seria um retrabalho enorme mapear as estações no OSM e depois
+criar o geojson manualmente.&lt;/p&gt;
+&lt;p&gt;Felizmente conheci o osmfilter, um software para filtrar os dados do
+&lt;a href="http://osm.org"&gt;OpenStreetMap&lt;/a&gt;. Combinando o osmfilter com o geojson.io
+é possível facilmente extrair alguns dados do OpenStreetMap e apresentar
+essa informação em um mapa personalizado. Então vamos às instruções de
+como fazer isso.&lt;/p&gt;
+&lt;p&gt;O primeiro passo é baixar os dados do OSM. Se você quiser trabalhar com
+a base de dados de todo o Brasil, você pode baixar dos servidores do
+&lt;a href="http://download.geofabrik.de"&gt;GeoFabrik&lt;/a&gt;. Como eu necessitava apenas
+dos dados de uma cidade, utilizei o editor
+&lt;a href="http://josm.openstreetmap.de/"&gt;JOSM&lt;/a&gt;, fiz o download dos dados e salvei
+em um arquivo .osm no meu computador.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Download dos dados no
+JOSM" src="http://images.wille.blog.br/josm.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;Agora nós precisamos utilizar o osmfilter. Veja as instruções de
+instalação na página &lt;a href="https://wiki.openstreetmap.org/wiki/Osmfilter"&gt;osmfilter no Wiki do
+OpenStreetMap&lt;/a&gt;. O comando
+que eu utilizei para filtrar as estações de compartilhamento de
+bicicletas de Salvador foi:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;./osmfilter salvador.osm --keep="amenity=bicycle_rental" &amp;gt; bikesalvador.osm&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Você pode combinar mais de um filtro em um único comando. Por exemplo,
+se você quiser filtrar todos os restaurantes italianos, você poderia
+utilizar &lt;code&gt;--keep="amenity=restaurant and cuisine=italian"&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Aqui entra o &lt;a href="http://geojson.io"&gt;geojson.io&lt;/a&gt;. Acesse o site, clique no
+botão Open e importe o arquivo gerado pelo osmfilter.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="geojson.io
+interface" src="http://images.wille.blog.br/geojson-open.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;Após isso, você vai ver todos os dados filtrados sobre o mapa, inclusive
+os metadados. Se parte dos metadados não te interessar, você pode
+remover uma ou mais colunas.&lt;/p&gt;
+&lt;p&gt;Você vai precisar de uma conta no &lt;a href="http://github.com"&gt;GitHub&lt;/a&gt; para
+salvar seu arquivo GeoJSON. Depois de salvar, o GitHub irá te fornecer
+uma &lt;a href="https://gist.github.com/willemarcel/37a8be9409baa07cf31e"&gt;página com o seu
+GeoJSON&lt;/a&gt; e
+também um código para que você possa incluir o mapa que você criou em
+uma página web. O mapa gerado pelo geojson.io é esse abaixo:&lt;/p&gt;
+&lt;p&gt;
+&lt;script src="https://gist.github.com/willemarcel/37a8be9409baa07cf31e.js"&gt;&lt;/script&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Quem quiser criar um mapa ainda melhor, recomendo ler esse &lt;a href="http://lyzidiamond.com/posts/osgeo-august-meeting/"&gt;tutorial de
+como adicionar uma camada GeoJSON ao
+Leaflet&lt;/a&gt;.&lt;/p&gt;</summary><category term="geojson"></category><category term="mapas"></category><category term="openstreetmap"></category><category term="tutoriais"></category></entry><entry><title>Avaliação do BikeSalvador</title><link href="http://wille.blog.br/2013/10/avaliacao-do-bikesalvador" rel="alternate"></link><updated>2013-10-31T23:03:00-02:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2013-10-31:2013/10/avaliacao-do-bikesalvador</id><summary type="html">&lt;p&gt;&lt;img alt="Uma das bicicletas do
+BikeSalvador" src="http://images.wille.blog.br/bikesalvador.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;Esse fim de semana usei pela primeira vez o sistema de bicicletas
+compartilhadas de Salvador, o &lt;a href="http://bikesalvador.com/"&gt;BikeSalvador&lt;/a&gt;.
+O sistema entrou em funcionamento no final do mês de Setembro e hoje
+conta com 19 estações em funcionamento. As estações estão espalhadas por
+boa parte da orla da cidade e pelo centro. No início do próximo ano, o
+número será de 40 estações.&lt;/p&gt;
+&lt;p&gt;No bairro da Barra vi muita gente utilizando o BikeSalvador. Em duas
+vezes que precisei das bicicletas, não havia nenhuma disponível na
+estação. Segundo um dos jornais locais, muita gente reclama que não há
+vaga para devolver a bicicleta em alguns horários e estações. Creio que
+com o aumento do número de estações esses problemas vão ser
+solucionados, visto que a distância entre as estações será menor e o
+número de bicicletas maior.&lt;/p&gt;
+&lt;p&gt;Achei o tempo de utilização gratuito do BikeSalvador longo demais. De
+segunda a sábado, as viagens de até 45 minutos são gratuitas. Aos
+domingos, o tempo é de 90 minutos. Acredito que esse tempo longo foi
+estabelecido para atrair pessoas que querem usar a bicicleta para lazer.
+Não chega a ser um grande problema, mas pode provocar dificuldade dos
+usuários encontrarem bicicletas disponíveis.&lt;/p&gt;
+&lt;p&gt;O cadastro no sistema foi bem fácil e rápido e a liberação da bicicleta
+também. O que eu acho chato é que precisa de um telefone para liberar a
+bicicleta (através de uma ligação ou com o aplicativo). &lt;a href="http://wille.blog.br/2013/08/ciclovias-e-cultura-de-uso-da-bicicleta/" title="Ciclovias e cultura de uso da bicicleta"&gt;Em
+Londres&lt;/a&gt;
+a liberação é feita na estação com um cartão de crédito.&lt;/p&gt;
+&lt;p&gt;As bicicletas são bastante leves e confortáveis. O retrovisor tem um
+tamanho bom, mas a haste é feita com um material muito flexível, o que
+faz com que ele balance muito. Outra modificação que eu faria seria
+aumentar a capacidade do cesto da bicicleta.&lt;/p&gt;
+&lt;p&gt;Acredito que o BikeSalvador está sendo muito importante para para dar
+mais visibilidade às bicicletas no trânsito da cidade e para difundir a
+bicicleta como meio de transporte. Há alguns meses ter um sistema desse
+na Bahia era um sonho improvável pra mim...&lt;/p&gt;
+&lt;p&gt;Abaixo o mapa do OpenStreetMap com a localização das estações.&lt;/p&gt;
+&lt;p&gt;
+&lt;script src="https://gist.github.com/willemarcel/37a8be9409baa07cf31e.js"&gt;&lt;/script&gt;
+&lt;/p&gt;</summary><category term="bahia"></category><category term="bicicleta"></category><category term="BikeSalvador"></category><category term="diários de bicicleta"></category><category term="openstreetmap"></category><category term="salvador"></category></entry><entry><title>Criando um aplicativo móvel HTML5 em menos de 24 horas</title><link href="http://wille.blog.br/2013/10/fazendo-um-aplicativo-movel-html5-em-menos-de-24-horas" rel="alternate"></link><updated>2013-10-22T23:32:00-02:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2013-10-22:2013/10/fazendo-um-aplicativo-movel-html5-em-menos-de-24-horas</id><summary type="html">&lt;p&gt;&lt;img alt="Screenshot do Fui pra
+Final!" src="http://images.wille.blog.br/fuiprafinal.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Tudo começou quando meu amigo e colega de trabalho &lt;a href="http://twitter.com/cesarvelame"&gt;César
+Velame&lt;/a&gt; me propôs fazer um aplicativo
+que calculasse a nota necessária na prova final para um aluno ser
+aprovado. Como a UFRB utiliza pesos diferentes entre a prova final e a
+média da disciplina, muita gente tem dificuldade em calcular a nota
+necessária para ser aprovado. O intuito do aplicativo foi facilitar a
+vida desses estudantes.&lt;/p&gt;
+&lt;p&gt;Começamos a fazer na manhã de segunda-feira. Utilizamos jQuery Mobile,
+que eu já tinha alguma experiência, pois utilizei no
+&lt;a href="http://clips.tk"&gt;Clips.tk&lt;/a&gt;. Acabei não me lembrando que na &lt;a href="http://jquerymobile.com/"&gt;homepage do
+jQuery Mobile&lt;/a&gt; há uma ferramenta que permite
+gerar a estrutura básica da página HTML. Isso teria nos poupado algum
+tempo, mas valeu o aprendizado. jQuery Mobile é fantástico e bem fácil
+de usar!&lt;/p&gt;
+&lt;p&gt;Aprendemos também um pouco de javascript para calcular a nota necessária
+na prova final e fazer isso ser exibido na página. No final do dia,
+disponibilizamos a primeira versão do aplicativo em
+&lt;a href="http://fuiprafinal.com.br"&gt;fuiprafinal.com.br&lt;/a&gt;. Na manhã seguinte,
+corrigimos alguns erros e fizemos um layout mais atraente. Eu também
+escrevi algumas frases engraçadinhas para o app mostrar de acordo com a
+situação do estudante!&lt;/p&gt;
+&lt;p&gt;Ainda estamos melhorando o Fui pra final! e em breve vamos
+disponibilizar no &lt;a href="https://marketplace.firefox.com/"&gt;Marketplace do Firefox
+OS&lt;/a&gt; e testar a geração de aplicativos
+nativos para Android e outras plataformas através do
+&lt;a href="http://www.phonegap.com/"&gt;PhoneGap&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Essa experiência foi muito interessante, pois foi uma maneira divertida
+e prática de aprender novas ferramentas. O fato de estar
+disponibilizando algo para as pessoas nos estimula a programar mais e
+com melhor qualidade. O código fonte do aplicativo está disponível no
+&lt;a href="https://github.com/willemarcel/fuiprafinal"&gt;GitHub&lt;/a&gt;.&lt;/p&gt;</summary><category term="jquery mobile"></category><category term="programação"></category><category term="web"></category></entry><entry><title>Ciclovias e cultura de uso da bicicleta</title><link href="http://wille.blog.br/2013/08/ciclovias-e-cultura-de-uso-da-bicicleta" rel="alternate"></link><updated>2013-08-30T23:04:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2013-08-30:2013/08/ciclovias-e-cultura-de-uso-da-bicicleta</id><summary type="html">&lt;p&gt;&lt;img alt="Casal da melhor idade pedalando em
+Londres" src="http://images.wille.blog.br/img_1456.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;Muita gente coloca a existência de ciclovias como um fator determinante
+para que as pessoas usem a bicicleta como meio de transporte em uma
+cidade. No entanto alguns exemplos provam que o uso da bicicleta é muito
+mais uma questão de cultura do que de infraestrutura urbana. Pedalar em
+Londres e Barcelona me deram argumentos para defender essa opinião.&lt;/p&gt;
+&lt;p&gt;Barcelona foi a primeira cidade do mundo a ter um sistema de empréstimo
+de bicicletas público. Em comparação com Londres, praticamente tudo em
+Barcelona é mais favorável ao uso da bicicleta. O clima é mais ameno, a
+cidade é menor e a quantidade de ciclovias é maior. Pedalei bastante na
+orla e na região central de Barcelona e praticamente não precisei
+dividir espaço com os carros na rua. Pedalei bem pouco fora de
+ciclovias. Já na região central de Londres há apenas algumas ciclofaixas
+e pouquíssimas ciclovias. Os ciclistas podem usar as faixas exclusivas
+para ônibus, porém os táxis também as utilizam e, no centro da cidade,
+há mais táxis circulando do que outros carros. Apesar de tudo isso,
+Londres tem muito mais pessoas pedalando. Já as ruas de Barcelona, mesmo
+com um sistema de transporte público barato e de excelente qualidade,
+estão cheias de carros e não há tantos ciclistas quanto a infraestrutura
+da cidade permite.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Ciclovia em uma das principais avenidas de
+Barcelona" src="http://images.wille.blog.br/img_1818.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;O que explicaria essas situações completamente opostas? Considero
+ciclovias e ciclofaixas importantes. É ótimo ter um espaço para pedalar
+com toda a segurança, porém incentivar a cultura da bicicleta é mais
+importante do que construir ciclovias. Quanto mais pessoas pedalam, mais
+pessoas vão querer pedalar. E com mais ciclistas nas ruas, teremos mais
+visibilidade e seremos mais respeitados pelos motoristas.&lt;/p&gt;
+&lt;p&gt;Outro fator que considero importante para o grande número de ciclistas
+em Londres é o pedágio urbano aplicado por lá. Para se usar o carro na
+zona 1 (a mais central) paga-se £10 por dia, além do valor do
+estacionamento.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Sistemas de compartilhamento de bicicletas&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Uma das estações do Barclays Hire Scheme, o sistema de aluguel de
+bicicletas de
+Londres" src="http://images.wille.blog.br/img_1480.jpg" /&gt;&lt;br /&gt;
+O serviço público de aluguel de bicicletas de Londres foi meu principal
+meio de transporte nas 4 semanas que passei lá. O serviço não é nada
+burocrático, basta colocar o cartão de crédito ou débito num dos totens,
+pagar a taxa semanal ou diária e usar as bicicletas. Não é necessário
+nenhum tipo de cadastro. Já em Barcelona não pude usar o serviço de
+compartilhamento de bicicletas da cidade, chamado de Bicing, pois este é
+retrito a quem reside na cidade. A solução então foi recorrer a uma das
+várias empresas que alugam bicicletas para turistas.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Estação do
+Bicing" src="http://images.wille.blog.br/img_1840.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;O que eu gostei do Bicing foi o design das bicicletas, elas parecem ser
+bem mais leves e confortáveis do que as bicicletas de Londres...&lt;/p&gt;</summary><category term="Barcelona"></category><category term="bicicleta"></category><category term="diários de bicicleta"></category><category term="fotografia"></category><category term="Londres"></category><category term="viagens"></category></entry><entry><title>Strawberry Fair 2013</title><link href="http://wille.blog.br/2013/08/strawberry-fair-2013" rel="alternate"></link><updated>2013-08-04T23:06:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2013-08-04:2013/08/strawberry-fair-2013</id><summary type="html">&lt;p&gt;&lt;img alt="Parada ciclística da Strawberry Fair
+2013" src="http://images.wille.blog.br/img_1558.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;Passei um fim de semana em Cambridge e tive a sorte de estar acontecendo
+a Strawberry Fair, um festival de arte organizado pelos próprios
+moradores da cidade. O tema do festival desse ano foi bicicletas, assim
+a abertura ocorreu com uma parada de bicicletas enfeitadas que circulou
+por toda a cidade acompanhada por uma banda de samba.&lt;/p&gt;
+&lt;p&gt;O festival aconteceu em um dos parques da cidade. Havia cerca de cinco
+palcos com artistas independentes de diversos estilos musicais. Além de
+música, houve também apresentações de circo, dança, exibição de filmes e
+feira de roupas, comida e artesanato. Não sei porque o festival leva o
+nome de "feira de morango", mas descobri na Wikipédia que ele é
+realizado desde 1974.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Bicicletas
+fantasiadas" src="http://images.wille.blog.br/img_1539.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Tenda acústica da Strawberry
+Fair" src="http://images.wille.blog.br/img_1571.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Uma das fantasias mais
+excêntricas" src="http://images.wille.blog.br/img_1537.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Um dos shows do
+festival" src="http://images.wille.blog.br/img_1573.jpg" /&gt;&lt;/p&gt;</summary><category term="cambridge"></category><category term="diário"></category><category term="festival"></category><category term="fotografia"></category><category term="inglaterra"></category><category term="strawberry fair 2013"></category><category term="viagens"></category></entry><entry><title>Novo trabalho</title><link href="http://wille.blog.br/2013/07/novo-trabalho" rel="alternate"></link><updated>2013-07-30T22:01:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2013-07-30:2013/07/novo-trabalho</id><summary type="html">&lt;p&gt;Hoje comecei a trabalhar na &lt;a href="http://ufrb.edu.br/ascom"&gt;Assessoria de Comunicação da
+UFRB&lt;/a&gt;. Vou ser responsável pelo
+desenvolvimento e administração dos sites da universidade. Com isso,
+passo a trabalhar no campus de Cruz das Almas. As principais tecnologias
+utilizadas nos sites da UFRB são Joomla e Wordpress, porém pretendo
+passar a utilizar Django em alguns sites e sistemas e testar também
+outros frameworks. Acredito que vou aprender bastante nessa nova função!&lt;/p&gt;</summary><category term="diário"></category><category term="trabalho"></category></entry><entry><title>De volta...</title><link href="http://wille.blog.br/2013/04/de-volta" rel="alternate"></link><updated>2013-04-20T23:51:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2013-04-20:2013/04/de-volta</id><summary type="html">&lt;p&gt;No início do ano, prometi a mim mesmo que postaria pelo menos duas vezes
+por mês. Não tô conseguindo cumprir, mas vou tentar melhorar. Por
+enquanto, algumas anotações de coisas que fiz esse ano.&lt;/p&gt;
+&lt;p&gt;Nos primeiros dias de janeiro foi lançada a &lt;a href="http://www.asduerj.org.br/images/advir/pdf_revista/Advir29online.pdf"&gt;Edição #29 da
+Advir&lt;/a&gt;,
+uma revista científica da Associação de Docentes da UERJ. Nesta revista,
+foi publicado um artigo que escrevi com meu amigo e colega de trabalho
+&lt;a href="http://cesarvelame.com/"&gt;César Velame&lt;/a&gt;. O título do nosso artigo é "O
+uso de Software Livre na Universidade Federal do Recôncavo da Bahia".&lt;/p&gt;
+&lt;p&gt;Semana passada conheci Brasília e participei da Reunião de Planejamento
+2013-2014 do &lt;a href="http://www.softwarelivre.gov.br"&gt;Comitê de Implementação de Software Livre do Governo
+Federal&lt;/a&gt;, representando a UFRB.
+Surgiram muitas boas propostas na reunião, espero que o governo Dilma
+tenha uma postura mais firme em defesa do Software Livre nessa segunda
+metade do mandato...&lt;/p&gt;
+&lt;p&gt;Tenho estudado &lt;a href="http://leafletjs.com/"&gt;Leaflet&lt;/a&gt;, uma biblioteca
+javascript para mapas interativos. Em breve vou publicar uns projetos
+utilizando essa biblioteca...&lt;/p&gt;
+&lt;p&gt;Volta e meia um pôr-do-sol me surpreende em Feira de Santana...&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Pôr-do-Sol em Abril em Feira de
+Santana" src="http://images.wille.blog.br/por-de-feira.jpg" /&gt;&lt;/p&gt;</summary><category term="diário"></category><category term="fotografia"></category><category term="software livre"></category></entry><entry><title>Morro de São Paulo</title><link href="http://wille.blog.br/2013/01/morro-de-sao-paulo" rel="alternate"></link><updated>2013-01-06T12:48:00-02:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2013-01-06:2013/01/morro-de-sao-paulo</id><summary type="html">&lt;p&gt;&lt;img alt="Vista para o
+atracadouro" src="http://images.wille.blog.br/atracadouro.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;Tive alguns dias de férias em dezembro e aproveitei para viajar pela
+Bahia. O primeiro destino foi Morro de São Paulo. Pra quem não conhece,
+Morro fica em uma ilha e só se pode chegar até lá por barco ou por
+avião. Lá não entram carros. Os únicos que existem na ilha são uns
+tratores para recolher lixo.&lt;/p&gt;
+&lt;p&gt;As praias de Morro de São Paulo estão entre as mais bonitas que eu já
+conheci. A água é transparente e bastante quente. Como quase não tem
+onda, é ótima para nadar.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Segunda Praia de Morro de São
+Paulo" src="http://images.wille.blog.br/img_0830.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;Uma das coisas mais fantásticas que já fiz na vida foi mergulhar num
+coral em Morro de São Paulo. Apesar de o mergulho ter sido apenas de
+superfície (só com um snorkel), foi melhor do que o mergulho com
+cilindro que fiz uma vez em Porto Seguro. Foi incrível ver tanta
+diversidade de peixes, nadar junto e observar o comportamento deles.
+Consegui ver um daqueles peixes que nadam no fundo do mar se camuflando.
+Vi também um peixinho aprendendo a se mover em segurança enquanto um
+maior da mesma espécie acompanhava atrás dele. Percebi que alguns
+peixinhos pretos eram bastante antissociais e afastavam todos os outros
+que chegavam perto dele. Também encontrei vários peixes com uma listra
+azul meio fluorescente.&lt;/p&gt;
+&lt;p&gt;Além disso, o Pôr do Sol é imperdível, principalmente se visto de algum
+dos mirantes.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Pôr do Sol na Toca do
+Morcego" src="http://images.wille.blog.br/img_0858.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Pôr do Sol em Morro de São
+Paulo" src="http://images.wille.blog.br/img_0869.jpg" /&gt;&lt;/p&gt;</summary><category term="bahia"></category><category term="diário"></category><category term="fotografia"></category><category term="mergulho"></category><category term="morro de são paulo"></category><category term="viagens"></category></entry><entry><title>BsAs - sonido y ruido</title><link href="http://wille.blog.br/2012/11/bsas-sonido-y-ruido" rel="alternate"></link><updated>2012-11-29T00:33:00-02:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2012-11-29:2012/11/bsas-sonido-y-ruido</id><summary type="html">&lt;iframe src="http://blip.tv/play/iIQxg4e%2BEgA.html?p=1" frameborder="0" width="650" height="365"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;object style="display: none;" width="320" height="240" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"&gt;&lt;param name="src" value="http://a.blip.tv/api.swf#iIQxg4e+EgA"&gt;&lt;/param&gt;&lt;embed style="display: none;" width="320" height="240" type="application/x-shockwave-flash" src="http://a.blip.tv/api.swf#iIQxg4e+EgA"&gt;&lt;/embed&gt;&lt;/object&gt;&lt;/p&gt;
+&lt;p&gt;Editei um vídeo com as imagens que filmei em junho em Buenos Aires. O
+vídeo mostra um pouco dos sons e ruídos da cidade e cenas que são comuns
+de se ver por lá.&lt;/p&gt;
+&lt;p&gt;Se quiser assistir em qualidade HD, utilize o player abaixo ou faça o
+&lt;a href="http://blip.tv/file/get/Wille-BsAsSonidoYRuido734.webm"&gt;download (formato WebM,
+42MB)&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;[video webm="http://blip.tv/file/get/Wille-BsAsSonidoYRuido734.webm"
+poster="http://a.images.blip.tv/Wille-BsAsSonidoYRuido734-968.jpg"
+width="650" height="365"]&lt;/p&gt;</summary><category term="argentina"></category><category term="buenos aires"></category><category term="diário"></category><category term="viagens"></category><category term="vídeo"></category></entry><entry><title>Feira de Santana de Bicicleta</title><link href="http://wille.blog.br/2012/09/feira-de-santana-de-bicicleta" rel="alternate"></link><updated>2012-09-20T23:53:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2012-09-20:2012/09/feira-de-santana-de-bicicleta</id><summary type="html">&lt;p&gt;Estou morando em Feira de Santana desde março de 2012 e aqui a bicicleta
+é meu principal meio de transporte. Inspirado nos relatos do blog
+&lt;a href="http://tracaoanimal.wordpress.com/"&gt;Tração Animal&lt;/a&gt; e na semana do &lt;a href="http://vadebike.org/dia-mundial-sem-carro/"&gt;Dia
+Mundial sem Carro&lt;/a&gt;, resolvi
+escrever minhas impressões sobre o trânsito e as condições para o uso da
+bicicleta na cidade.&lt;/p&gt;
+&lt;iframe style="border: 1px solid black;" src="http://www.openstreetmap.org/export/embed.html?bbox=-38.9957,-12.27,-38.9258,-12.2187&amp;amp;layer=cyclemap" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" width="650" height="350"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;small&gt;&lt;a href="http://www.openstreetmap.org/?lat=-12.24435&amp;amp;lon=-38.96075&amp;amp;zoom=13&amp;amp;layers=C"&gt;Ver Mapa
+Ampliado&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ciclovias&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Feira de Santana tem apenas duas ciclovias (são essas linhas azuis
+tracejadas no mapa acima). Uma delas está localizada no canteiro central
+da Av. Presidente Dutra, a principal avenida da cidade, vai desde a
+BR-324 até o centro da cidade e tem cerca de 3,5 km. Um dos problemas
+dela é que o canteiro central é dividido em ciclovia e pista de cooper e
+existe pouca sinalização informando qual o lado dos pedestres e qual dos
+ciclistas. Não chega a ser um grande problema, pois a via não é
+largamente utilizada e os ciclistas não costumam transitar em alta
+velocidade, mas seria bom que melhorassem a sinalização para evitar
+acidentes. Uso bastante essa ciclovia e nunca tive nenhum incidente. As
+travessias das ruas que cruzam a ciclovia são seguros, pois existem
+semáforos e momentos em que nenhum carro cruza a ciclovia. O outro
+problema é a pavimentação do canteiro que está muito irregular,
+principalmente no trecho mais próximo ao centro da cidade. Além disso,
+os camarotes da micareta deixaram vários buracos abertos… Pra completar,
+nesses dias de campanha política, há plaquetas de políticos dos mais
+diversos partidos sobre a ciclovia!&lt;/p&gt;
+&lt;p&gt;A outra ciclovia é na Av. Fraga Maia, uma área residencial e longe do
+centro. Esta na verdade não sei nem se já pode ser considerada ciclovia,
+pois assim como na Presidente Dutra há duas vias no canteiro central,
+porém um dos lados do canteiro ainda não foi pavimentado. E não há nada
+indicando se o lado já pavimentado é ciclovia ou pista de cooper…
+Pedalando com cuidado, não há nenhum problema. Só passei por lá num
+domingo de manhã que saí pra pedalar. Pela localização, acho que é mais
+utilizado por corredores que por ciclistas. A extensão é de apenas 1,5
+km.&lt;/p&gt;
+&lt;p&gt;A cidade é praticamente toda plana e a área mais central, contornada por
+um anel rodoviário que pode ser visto no mapa, tem cerca de 6 km de
+diâmetro. Com mais ciclovias e ciclofaixas, teríamos excelentes
+condições para que mais gente utilize a bicicleta como meio de
+transporte.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Meus deslocamentos&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Na verdade, tenho pouca necessidade de deslocamento, pois trabalho em
+outra cidade e vou de carro com mais 3 colegas de trabalho. O lugar onde
+os encontro fica a cerca de 300 metros da minha casa, assim, vou andando
+até lá e na volta faço o mesmo. Os principais trajetos que faço de
+bicicleta são ir para a academia de natação e para o shopping. A
+academia está a 1 km da minha casa e o trajeto é por uma rua bem
+tranquila. Atravesso a Av. Presidente Dutra, porém num ponto onde tem
+semáforo.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Minha Dahon na volta do
+supermercado" src="http://images.wille.blog.br/dahon-speed-d7.jpg" title="Minha Dahon na volta do supermercado" /&gt;&lt;/p&gt;
+&lt;p&gt;Já o shopping está a 3 km da minha casa e o trecho mais complicado é
+atravessar a Avenida Getúlio Vargas. Além de haver poucos semáforos,
+sempre tem um esperto atravessando no sinal vermelho… A Avenida João
+Durval, uma das quatro principais da cidade é bem tranquila para
+pedalar, em toda sua extensão. Lá no shopping há um bicicletário junto
+do estacionamento de motos. Apesar de não haver nenhum controle sobre
+quem entra e sai com bicicleta, creio que o segurança perceberia se
+alguém tentasse arrombar a trava da bicicleta. Prefiro ir ao
+supermercado lá do shopping por conta desse bicicletário. Sobre compras,
+uma dica: o Bompreço dá cerca de 0,8% de desconto pra quem faz compras
+com sacolas retornáveis! Vá de bicicleta e seja ainda mais ecológico!&lt;/p&gt;
+&lt;p&gt;As avenidas que, por segurança, eu evito andar de bicicleta são a
+Getúlio Vargas e a Maria Quitéria (principalmente no trecho que vai do
+cruzamento com a Getúlio Vargas até o encontro com a João Durval). Os
+ônibus não chegam a ser um problema, pois eles são raros em Feira de
+Santana...&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Outros ciclistas&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Vejo pouca gente utilizando a bicicleta como meio de transporte aqui,
+por outro lado à noite é comum ver grupos de ciclistas pedalando juntos,
+no entanto estes o fazem por esporte. Infelizmente, posso dizer que
+muita gente tem o péssimo hábito de pedalar na contramão, inclusive nas
+avenidas mais movimentadas. Um dia desses, quase colido com um… Na maior
+parte das vezes, não vejo nenhum motivo que justifique a contramão, é
+simplesmente preguiça de atravessar a avenida ou de pedalar alguns
+metros a mais…&lt;/p&gt;
+&lt;p&gt;Pedala em Feira de Santana? Deixe seu comentário! Gostaria muito de
+conhecer mais gente e organizar uma bicicletada aqui.&lt;/p&gt;</summary><category term="bahia"></category><category term="bicicleta"></category><category term="dia mundial sem carro"></category><category term="diários de bicicleta"></category><category term="feira de santana"></category><category term="mobilidade urbana"></category></entry><entry><title>BikeUba - a cidade das bicicletas</title><link href="http://wille.blog.br/2012/09/bikeuba-a-cidade-das-bicicletas" rel="alternate"></link><updated>2012-09-17T13:33:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2012-09-17:2012/09/bikeuba-a-cidade-das-bicicletas</id><summary type="html">&lt;iframe src="http://blip.tv/play/iIQxg4PXZgA.html?p=1" frameborder="0" width="650" height="365"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;object style="display: none;" width="320" height="240" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"&gt;&lt;param name="src" value="http://a.blip.tv/api.swf#iIQxg4PXZgA"&gt;&lt;/param&gt;&lt;embed style="display: none;" width="320" height="240" type="application/x-shockwave-flash" src="http://a.blip.tv/api.swf#iIQxg4PXZgA"&gt;&lt;/embed&gt;&lt;/object&gt;&lt;/p&gt;
+&lt;p&gt;Estive em Ubatuba em maio para participar do Encontrão da Rede
+&lt;a href="http://metareciclagem.org"&gt;MetaReciclagem&lt;/a&gt;. Eu nunca tinha ouvido falar
+sobre o ciclismo em Ubatuba, mas depois de poucos metros caminhados pela
+cidade, percebi que eu estava em um lugar especial. Não esperava
+encontrar tanta bicicleta em uma cidade brasileira!&lt;/p&gt;
+&lt;p&gt;Várias lojas, farmácias e praças tinham bicicletário. O do supermercado
+estava superlotado. No centro da cidade havia bicicletas estacionadas
+por todos os lados. Homens, mulheres, adultos, crianças, idosos, pais
+levando os filhos para a escola... todo mundo usa bicicleta em Ubatuba!
+E assim nos mostra que todas as desculpas para não usarmos a bicicleta
+em nossas cidades não passam de um grande bloqueio cultural.&lt;/p&gt;
+&lt;p&gt;Quem preferir, pode assistir utilizando um player em HTML5 abaixo ou
+pode &lt;a href="http://blip.tv/file/get/Wille-BikeUbaACidadeDasBicicletas533.webm"&gt;baixar o vídeo em resolução
+HD&lt;/a&gt;
+(formato WebM / 77MB). Editei o vídeo no
+&lt;a href="http://kdenlive.org"&gt;Kdenlive&lt;/a&gt;, que por sinal está funcionando muito
+bem! Escreverei mais sobre isso em outro post...&lt;/p&gt;
+&lt;p&gt;[video
+webm="http://blip.tv/file/get/Wille-BikeUbaACidadeDasBicicletas533.webm"
+poster="http://a.images.blip.tv/Wille-53352491.png" width="650"
+height="365"]&lt;/p&gt;</summary><category term="bicicleta"></category><category term="kdenlive"></category><category term="ubatuba"></category><category term="viagens"></category><category term="vídeo"></category></entry><entry><title>Como colaborar com o OpenStreetMap</title><link href="http://wille.blog.br/2012/09/como-colaborar-com-o-openstreetmap" rel="alternate"></link><updated>2012-09-13T18:23:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2012-09-13:2012/09/como-colaborar-com-o-openstreetmap</id><summary type="html">&lt;p&gt;&lt;a href="http://images.wille.blog.br/osm-tutorial-pt_br.jpg"&gt;&lt;img alt="Tutorial OSM em 5 minutos. Clique para carregar em um tamanho
+maior." src="http://images.wille.blog.br/osm-tutorial-pt_br-650px.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Clique para carregar em um tamanho maior.&lt;/p&gt;
+&lt;p&gt;Sempre senti falta de um tutorial que mostrasse de forma rápida e
+simples como começar a colaborar com o OpenStreetMap. Assim, resolvi
+fazer esse tutorial.&lt;/p&gt;
+&lt;p&gt;Coloquei o arquivo fonte SVG num repositório GIT, caso alguém queira
+fazer alguma modificação ou traduzir para outros idiomas:
+&lt;a href="https://gitorious.org/osmtutorial"&gt;https://gitorious.org/osmtutorial&lt;/a&gt;.&lt;/p&gt;</summary><category term="gráfico"></category><category term="inkscape"></category><category term="openstreetmap"></category><category term="osm"></category><category term="software livre"></category><category term="svg"></category><category term="tutoriais"></category></entry><entry><title>Montevideo</title><link href="http://wille.blog.br/2012/08/montevideo" rel="alternate"></link><updated>2012-08-17T15:57:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2012-08-17:2012/08/montevideo</id><summary type="html">&lt;p&gt;&lt;img alt="País del
+Fútbol" src="http://images.wille.blog.br/img_0239.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;En un país de tres millones de personas locas por fútbol, una placa
+especial.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="¿Inspirado en
+Banksy?" src="http://images.wille.blog.br/img_0169.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;No entré en el Museo, pero me recordé de
+&lt;a href="http://www.banksy.co.uk"&gt;Banksy&lt;/a&gt; cuando vi esta imagen.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Mensaje en la
+lluvia" src="http://images.wille.blog.br/moca-no-celular.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;Descubrí que Montevideo es una ciudad que gira a una velocidad más baja
+que a la que estamos acostumbrados. Hice esta fotografía en el centro de
+Montevideo, mientras almorzaba en un restaurante donde los platos eran
+servidos lentamente.&lt;/p&gt;</summary><category term="banksy"></category><category term="diário"></category><category term="español"></category><category term="fotografia"></category><category term="futebol"></category><category term="grafite"></category><category term="montevideo"></category><category term="uruguai"></category></entry><entry><title>Clips: a programação do FISL para dispositivos móveis</title><link href="http://wille.blog.br/2012/07/clips-a-programacao-do-fisl-para-dispositivos-moveis" rel="alternate"></link><updated>2012-07-24T21:11:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2012-07-24:2012/07/clips-a-programacao-do-fisl-para-dispositivos-moveis</id><summary type="html">&lt;p&gt;&lt;a href="http://clips.tk"&gt;&lt;img alt="" src="http://file3.status.net/i/identica/wille-20120724T212322-rry4j89.png" title="QR Code para o site do Clips" /&gt;&lt;/a&gt;Todo
+ano acontece em Porto Alegre o o &lt;a href="http://fisl.org.br"&gt;FISL&lt;/a&gt; (Fórum
+Internacional de Software Livre), maior evento de Software Livre da
+América Latina. Esse ano não vou participar, mas já estive lá em
+&lt;a href="http://wille.blog.br/2009/07/relato-fisl-10-e-porto-alegre/"&gt;2009&lt;/a&gt; e
+&lt;a href="http://wille.blog.br/2010/07/fisl-11-e-porto-alegre/"&gt;2010&lt;/a&gt;. A grade de
+programação do FISL é bastante extensa, pois o evento ocorre
+simultaneamente em mais de 20 espaços durante quase 10h diárias. Isso
+exige que durante o evento os participantes tenham sempre que consultar
+a programação para decidir o que vão assistir e saber  o local da
+atividade. A programação está disponível em duas maneiras principais:
+uma revista impressa, que é distribuída aos participantes, e o site do
+evento, porém a página da programação tem o inconveniente de não ser bem
+visualizada em telas pequenas como as de celulares.&lt;/p&gt;
+&lt;p&gt;Pensando em solucionar esse problema, eu e &lt;a href="http://twitter.com/davilima6"&gt;Davi
+Lima&lt;/a&gt; resolvemos desenvolver o
+&lt;a href="http://clips.tk"&gt;Clips&lt;/a&gt;, um site com a programação do FISL 13 adaptada
+para dispositivos móveis, como tablets e smartphones. Encontramos um
+&lt;a href="https://github.com/douglas/gradefisl"&gt;código no GitHub&lt;/a&gt; que era uma boa
+base para o que queríamos e trabalhamos em cima dele. Davi fez o layout
+base utilizando jQuery Mobile e eu trabalhei no código em Django.
+Colocamos o site online hoje e esperamos que seja bastante útil aos
+participantes do FISL. O código-fonte está disponível no
+&lt;a href="https://github.com/willemarcel/gradefisl"&gt;GitHub&lt;/a&gt;. Pretendemos
+continuar melhorando o Clips para usá-lo em outras edições do FISL e
+também em outros eventos.&lt;/p&gt;
+&lt;p&gt;Acesse o Clips por &lt;a href="http://clips.tk"&gt;http://clips.tk&lt;/a&gt; ou utilize o QR Code acima.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;PS:&lt;/strong&gt; Agradeço a
+&lt;a href="http://softwarelivre.org/profile/valessiobrito"&gt;Valessio&lt;/a&gt; pelas
+valiosas dicas e a todos que ajudaram a testar o Clips!&lt;/p&gt;</summary><category term="django"></category><category term="eventos"></category><category term="fisl"></category><category term="fisl13"></category><category term="jquery mobile"></category><category term="programação"></category><category term="software livre"></category></entry><entry><title>"La dulzura puede cambiar el mundo"</title><link href="http://wille.blog.br/2012/07/la-dulzura-puede-cambiar-el-mundo" rel="alternate"></link><updated>2012-07-02T23:49:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2012-07-02:2012/07/la-dulzura-puede-cambiar-el-mundo</id><summary type="html">&lt;p&gt;&lt;img alt="La dulzura puede cambiar el
+mundo" src="http://images.wille.blog.br/dulzura.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;"La dulzura puede cambiar el mundo". Leí esta frase en un café de
+Montevideo y me sorprendí con la belleza e inocencia de las palabras. En
+el café, había un televisor sintonizado en un partido de la segunda
+división del campeonato Uruguayo de fútbol. El juego era transmitido con
+apenas una cámara, la cual giraba para un lado y para otro del campo en
+busca de la pelota. ¿En qué otro lugar del mundo todavía se puede leer
+palabras como esas en un paquete de azúcar mientras se mira un partido
+de fútbol transmitido de manera casi amateur?&lt;/p&gt;</summary><category term="café"></category><category term="diário"></category><category term="español"></category><category term="fotografia"></category><category term="futebol"></category><category term="montevideo"></category><category term="uruguai"></category></entry><entry><title>Quero mais ciclovias!</title><link href="http://wille.blog.br/2012/06/quero-mais-ciclovias" rel="alternate"></link><updated>2012-06-10T00:49:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2012-06-10:2012/06/quero-mais-ciclovias</id><summary type="html">&lt;p&gt;&lt;a href="http://www.queromaisciclovias.com.br"&gt;&lt;img alt="banner Quero Mais
+Ciclovias" src="http://images.wille.blog.br/topo.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Foi lançada recentemente uma campanha por mais ciclovias no estado da
+Bahia. A campanha está coletando assinaturas que serão encaminhadas ao
+governo do Estado e à Prefeitura de Salvador. Acesse
+&lt;strong&gt;&lt;a href="http://www.queromaisciclovias.com.br/"&gt;http://www.queromaisciclovias.com.br/&lt;/a&gt;&lt;/strong&gt;, assine o  abaixo-assinado e
+ajude a divulgar esta iniciativa. Salvador tem apenas 17km de ciclovias
+(grande parte na orla) e é uma das capitais brasileiras com menor malha
+cicloviária. Feira de Santana, a segunda maior cidade da Bahia, pelo
+menos na região mais central (que é a parte que eu conheci até agora)
+tem apenas 3,5 km.&lt;/p&gt;
+&lt;p&gt;Recentemente visitei Ubatuba e tive a grata surpresa de conhecer uma
+cidade em que a bicicleta é meio de transporte principal de grande parte
+da população. Dizem que é a cidade brasileira com maior número de
+bicicletas per capita. Gravei algumas imagens e em breve vou editar um
+mini documentário sobre Ubatuba.&lt;/p&gt;</summary><category term="ativismo"></category><category term="bahia"></category><category term="bicicleta"></category><category term="campanha"></category><category term="feira de santana"></category></entry><entry><title>Mudança: Feira de Santana</title><link href="http://wille.blog.br/2012/04/mudanca-feira-de-santana" rel="alternate"></link><updated>2012-04-15T13:08:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2012-04-15:2012/04/mudanca-feira-de-santana</id><summary type="html">&lt;p&gt;&lt;img alt="Vista da janela do meu
+quarto" src="http://images.wille.blog.br/por-do-sol-feira.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;Faz um mês que mudei de casa e de cidade. Depois de três anos e meio em
+Cachoeira, resolvi experimentar Feira de Santana. O motivo para a
+mudança foram vários. Já estava cansado da monotonia de Cachoeira e de
+dividir casa. Além do custo do aluguel que lá é mais ou menos o mesmo
+que aqui.&lt;/p&gt;
+&lt;p&gt;De certa forma, é um retorno à vida que eu levava em Aracaju. Morar só
+num kitnet, ter uma varanda e uma ampla visão do céu. Falta ainda a
+praia perto...&lt;/p&gt;
+&lt;p&gt;Comecei a fazer natação e tenho descoberto as coisas que a cidade
+oferece. Pelo que vi, sempre tem peças de teatro e shows em barzinhos.
+Aqui perto de casa tem uma boa pastelaria. Há também um bar/café que
+parece ser interessante e uma pizzaria.&lt;/p&gt;
+&lt;p&gt;Como a cidade não é muito extensa e moro próximo ao centro, posso ir de
+bicicleta para quase todos os locais. O transporte público é bem ruim.
+Tenho tido dificuldade em localizar os pontos de ônibus, pois poucos
+estão sinalizados com placas. Outra coisa que dificulta é que os ônibus
+não tem aquela plaquinha na lateral indicando o roteiro. Felizmente, não
+dependo deles. Posso ir para a rodoviária pegar o ônibus para ir
+trabalhar em Cachoeira andando mesmo.&lt;/p&gt;</summary><category term="bahia"></category><category term="bicicleta"></category><category term="diário"></category><category term="feira de santana"></category><category term="mudanças"></category><category term="transporte público"></category></entry><entry><title>Mapas Livres e Humanitarismo</title><link href="http://wille.blog.br/2012/04/mapas-livres-e-humanitarismo" rel="alternate"></link><updated>2012-04-02T15:38:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2012-04-02:2012/04/mapas-livres-e-humanitarismo</id><summary type="html">&lt;p&gt;&lt;img alt="Cartaz do evento Mapas Livres e
+Humanitarismo" src="http://images.wille.blog.br/palestra-hot.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;Estou organizando um evento no dia 10 de abril na UFRB, em Cachoeira-BA.
+Contaremos com uma palestra de Séverin Menard, integrante francês do
+&lt;a href="http://hot.openstreetmap.org/"&gt;Time Humanitário do OpenStreetMap (HOT)&lt;/a&gt;
+e aproveitaremos para fazer o lançamento do site do projeto
+&lt;a href="http://ufrb.edu.br/maparec"&gt;MapaRec&lt;/a&gt; (Mapeamento Colaborativo do
+Recôncavo).&lt;/p&gt;
+&lt;p&gt;Séverin vem atuando no Haiti desde o terremoto acontecido no início de
+2010, realizando trabalhos de mapeamento do país e de capacitação da
+população local para produção e uso de mapas.&lt;/p&gt;</summary><category term="eventos"></category><category term="openstreetmap"></category><category term="ufrb"></category></entry><entry><title>Velejando</title><link href="http://wille.blog.br/2012/03/velejando" rel="alternate"></link><updated>2012-03-18T21:54:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2012-03-18:2012/03/velejando</id><summary type="html">&lt;p&gt;&lt;img alt="imag0934" src="http://images.wille.blog.br/imag0934.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;Acho que já escrevi aqui sobre minha paixão por barcos, em especial
+veleiros... Já li vários livros sobre aventuras de velejadores e o sonho
+de velejar acabou entrando na minha cabeça. Ontem, a convite de meu
+amigo Roberto Duarte, naveguei num veleiro pela primeira vez. O passeio
+foi pela Baía de Todos os Santos, saindo da Ribeira e indo até a área
+entre o Porto de Aratu e a Ilha de Maré. Foi uma ótima experiência ver o
+barco navegando silenciosamente apenas com a força do vento. Também
+ajudei no trabalho de ajustar os cabos, subir e descer as velas e até
+assumi o leme por alguns minutos!&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Navegando na Baía de Todos os
+Santos" src="http://images.wille.blog.br/imag0918.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="imag0922" src="http://images.wille.blog.br/imag0922.jpg" /&gt;&lt;/p&gt;</summary><category term="bahia"></category><category term="diário"></category><category term="fotografia"></category><category term="veleiro"></category><category term="viagens"></category></entry><entry><title>Ajude o Kdenlive, editor de vídeo livre!</title><link href="http://wille.blog.br/2012/03/ajude-o-kdenlive-editor-de-video-livre" rel="alternate"></link><updated>2012-03-15T21:43:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2012-03-15:2012/03/ajude-o-kdenlive-editor-de-video-livre</id><summary type="html">&lt;p&gt;&lt;a href="http://www.indiegogo.com/kdenlive-re"&gt;&lt;img alt="Interface do
+Kdenlive" src="http://kdenlive.org/sites/default/files/images/kdenlive-layout-colorcorrection.preview.png" title="Kdenlive" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Como vocês sabem, sentimos falta de um software livre para edição de
+vídeo que atenda que seja fácil, ágil e atenda todas as necessidades de
+um uso profissional. O &lt;strong&gt;&lt;a href="http://kdenlive.org"&gt;Kdenlive&lt;/a&gt;&lt;/strong&gt; é atualmente
+o editor de vídeo livre com a melhor interface gráfica, porém ainda é
+bastante instável. No entanto, isso pode estar perto de ser resolvido.&lt;/p&gt;
+&lt;p&gt;Um dos problemas dos softwares livres multimídia é que temos poucos
+desenvolvedores e estes não conseguem dedicar muito do seu tempo aos
+softwares, pois precisam trabalhar para se sustentar.&lt;/p&gt;
+&lt;p&gt;Então os desenvolvedores do Kdenlive lançaram uma campanha de
+financiamento colaborativo para que um dos desenvolvedores possa passar
+dois meses se dedicando exclusivamente à refatoração do código fonte do
+Kdenlive. Isso, além de melhorar a performance e corrigir bugs, vai
+facilitar a entrada de mais desenvolvedores no projeto e acelerar o
+crescimento do Kdenlive.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Para doar, acesse:
+&lt;a href="http://www.indiegogo.com/kdenlive-re"&gt;http://www.indiegogo.com/&lt;wbr&gt;kdenlive-re&lt;/wbr&gt;&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Colaborem!&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;PS. O valor mínimo é US\$ 5. Quem tiver alguma dificuldade em fazer a
+doação, me avise que posso fazer a intermediação.&lt;/em&gt;&lt;/p&gt;</summary><category term="campanha"></category><category term="crowdfunding"></category><category term="financiamento colaborativo"></category><category term="kdenlive"></category><category term="software livre"></category><category term="vídeo"></category></entry><entry><title>Lençóis - Mapa, Trilhas e Cachoeiras</title><link href="http://wille.blog.br/2012/03/lencois-mapa-trilhas-e-cachoeiras" rel="alternate"></link><updated>2012-03-02T23:46:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2012-03-02:2012/03/lencois-mapa-trilhas-e-cachoeiras</id><summary type="html">&lt;p&gt;Esse ano passei o carnaval em Lençóis, principal cidade da Chapada
+Diamantina. Já havia &lt;a href="http://wille.blog.br/2011/03/pouca-vogal-e-chapada-diamantina/" title="Pouca Vogal e Chapada Diamantina"&gt;ido lá no ano
+passado&lt;/a&gt;,
+mas como passei apenas dois dias, resolvi voltar para conhecer um pouco
+mais da Chapada. Dessa vez, aproveitei para fazer várias trilhas
+próximas da cidade que levam até quatro horas de caminhada. Tenho
+gostado muito de fazer trilhas e subir montanhas (inevitável cantar "&lt;a href="http://www2.uol.com.br/engenheirosdohawaii/discos/letras/montanha.htm"&gt;A
+montanha&lt;/a&gt;"
+quando se chega no topo).&lt;/p&gt;
+&lt;p&gt;Aproveitei a oportunidade pra mapear algumas trilhas que ainda não
+estavam no &lt;a href="http://osm.org"&gt;OpenStreetMap&lt;/a&gt;. É bom contar com um GPS em
+Lençóis, pois as trilhas não têm nenhuma sinalização e a única forma de
+orientação é perguntar às pessoas no caminho. Quem tiver celular
+Android, pode instalar o aplicativo &lt;a href="http://osmand.net/"&gt;OsmAnd&lt;/a&gt; pra
+poder usar o mapa mesmo sem rede. Também dei uma melhorada no mapa da
+cidade de Lençóis, mas falta muita coisa ainda... Veja abaixo o
+resultado e algumas fotos. Use o zoom pra ver o nome dos locais.&lt;/p&gt;
+&lt;iframe style="border: 1px solid black;" src="http://www.openstreetmap.org/export/embed.html?bbox=-41.40519,-12.57342,-41.38773,-12.5605&amp;amp;layer=mapnik" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" width="650" height="380"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;small&gt;&lt;a href="http://www.openstreetmap.org/?lat=-12.56696&amp;amp;lon=-41.39646&amp;amp;zoom=16&amp;amp;layers=M"&gt;Ver Mapa
+Maior&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Serrano" src="http://images.wille.blog.br/serrano.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;A foto acima é de um cachoeira conhecida como Serrano, é a mais próxima
+de Lençóis e bem fácil de chegar.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Cachoeirinha" src="http://images.wille.blog.br/cachoeirinha.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;Essa foto foi num lugar um pouco acima da Cachoeirinha, próximo da
+nascente de um dos braços de um riacho.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Mirante" src="http://images.wille.blog.br/mirante.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;Essa é a vista que se tem do Mirante, a cerca de 565 metros de altitude
+em relação ao nível do mar. A subida é bem tranquila, tem algumas partes
+com muitas pedras que exige um pouco dos joelhos, mas sem grandes
+riscos.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Cachoeira da
+Primavera" src="http://images.wille.blog.br/cachoeira-da-primavera.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;Entre as Cachoeiras, a da Primavera (foto acima) foi a que eu mais
+gostei. Também fui no Ribeirão do Meio, mas como cheguei lá praticamente
+no anoitecer, não tirei foto nem tomei banho. Outro local muito
+interessante é o Salão de Areias, um lugar onde se pode ver o momento em
+que as rochas se desmancham e viram areia.&lt;/p&gt;</summary><category term="bahia"></category><category term="chapada diamantina"></category><category term="fotografia"></category><category term="lençóis"></category><category term="mapa"></category><category term="openstreetmap"></category><category term="trilha"></category><category term="viagens"></category></entry><entry><title>VaiVem - Sistema de empréstimos</title><link href="http://wille.blog.br/2012/02/vaivem-sistema-de-emprestimos" rel="alternate"></link><updated>2012-02-14T23:12:00-02:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2012-02-14:2012/02/vaivem-sistema-de-emprestimos</id><summary type="html">&lt;p&gt;&lt;img alt="screenshot de uma das telas do
+vaivem" src="http://images.wille.blog.br/vaivem.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;Já faz um tempo que comecei a desenvolver o VaiVem um pequeno sistema de
+controle de empréstimos pra uso na universidade em que trabalho. Esse
+sistema é voltado para equipamentos de audiovisual, porém pode ser
+facilmente adaptado para outros tipos de objetos.&lt;/p&gt;
+&lt;p&gt;O VaiVem é desenvolvido em Django, um framework web escrito com Python.
+Esse é o primeiro sistema que eu desenvolvi, então não é nada muito
+complexo.&lt;/p&gt;
+&lt;p&gt;Os recursos que o Vaivem possui:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Geração de comprovantes de empréstimo;  &lt;/li&gt;
+&lt;li&gt;Busca de empréstimos por equipamento ou por usuário;  &lt;/li&gt;
+&lt;li&gt;Aplicação de penalidades em caso de atraso na devolução;  &lt;/li&gt;
+&lt;li&gt;Software Livre (Licença Affero GPLv3).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;O código está disponível no GitHub:
+&lt;a href="https://github.com/willemarcel/vaivem"&gt;https://github.com/willemarcel/vaivem&lt;/a&gt;&lt;/p&gt;</summary><category term="django"></category><category term="programação"></category><category term="python"></category><category term="sistema de empréstimo"></category><category term="software livre"></category><category term="vaivem"></category></entry><entry><title>OpenStreetMap na revista Tema</title><link href="http://wille.blog.br/2012/01/openstreetmap-na-revista-tema" rel="alternate"></link><updated>2012-01-06T01:14:00-02:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2012-01-06:2012/01/openstreetmap-na-revista-tema</id><summary type="html">&lt;p&gt;&lt;a href="http://images.wille.blog.br/osm-revista-tema.jpg"&gt;&lt;img alt="Matéria sobre OpenStreetMap na Revista
+Tema" src="http://images.wille.blog.br/osm-revista-tema-low550.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Em outubro, após a &lt;a href="http://wille.blog.br/2011/10/latinoware-2011/" title="Latinoware 2011"&gt;palestra na
+Latinoware&lt;/a&gt;,
+eu e Djavan Fagundes fomos entrevistados pela jornalista Loyanne Salles,
+a qual se interessou em fazer uma matéria sobre o
+&lt;a href="http://osm.org"&gt;OpenStreetMap&lt;/a&gt; para a revista Tema.&lt;/p&gt;
+&lt;p&gt;A matéria foi publicada na edição de dezembro/2011 e ficou muito
+interessante. &lt;a href="http://images.wille.blog.br/osm-revista-tema.jpg"&gt;Veja a
+matéria&lt;/a&gt;
+ou acesse a edição completa da
+&lt;a href="http://tema.serpro.gov.br/pub/serpro/"&gt;revista&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;A revista Tema é uma publicação do Serpro, a empresa de TI do governo
+federal.&lt;/p&gt;</summary><category term="matéria"></category><category term="openstreetmap"></category></entry><entry><title>2011-2012 - The Holstee Manifesto</title><link href="http://wille.blog.br/2012/01/2011-2012-the-holstee-manifesto" rel="alternate"></link><updated>2012-01-04T20:20:00-02:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2012-01-04:2012/01/2011-2012-the-holstee-manifesto</id><summary type="html">&lt;p&gt;Ano passado fiz um &lt;a href="http://wille.blog.br/2011/01/2010-2011-destinos/" title="2010-2011, destinos"&gt;post com metas para o ano de
+2011&lt;/a&gt;.
+Acabei de reler aquelas metas e creio que consegui cumprir quase tudo,
+exceto a principal meta: a de estudar bastante.&lt;/p&gt;
+&lt;p&gt;Meus estudos se concentraram no Inglês, mesmo assim ainda não estou no
+nível que eu gostaria. Aprendi pouco de programação, li poucos livros
+técnicos e, como o Espanhol não é muito presente no meu cotidiano,
+estudei pouco também... Esses são pontos a melhorar esse ano para que eu
+consiga fazer as mudanças que pretendo desde o ano passado.&lt;/p&gt;
+&lt;p&gt;Ainda estou descobrindo minhas metas para esse ano e acho que não vou
+publicá-las, no entanto hoje encontrei um vídeo que define muito bem o
+que querer não só para um ano, mas para toda a vida:&lt;/p&gt;
+&lt;iframe src="http://www.youtube.com/embed/QDmt_t6umoY" frameborder="0" width="560" height="315"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Quem quiser ver com legendas em português, acesse no &lt;a href="http://www.universalsubtitles.org/en/videos/SK804PhibQfV/pt/190924/"&gt;Universal
+Subtitles&lt;/a&gt;.&lt;/p&gt;</summary><category term="diário"></category><category term="estudos"></category><category term="holstee manifesto"></category><category term="tempo"></category><category term="vida"></category><category term="vídeo"></category></entry><entry><title>Como copiar vídeos de qualquer site e em qualquer formato para o seu computador</title><link href="http://wille.blog.br/2011/12/como-salvar-videos-de-qualquer-site-e-em-qualquer-formato-para-o-seu-computador" rel="alternate"></link><updated>2011-12-21T20:07:00-02:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2011-12-21:2011/12/como-salvar-videos-de-qualquer-site-e-em-qualquer-formato-para-o-seu-computador</id><summary type="html">&lt;p&gt;Há muito tempo, postei &lt;a href="http://wille.blog.br/2008/05/a-forma-mais-facil-de-baixar-videos-do-you-tube/" title="a forma mais fácil de baixar vídeos do You Tube"&gt;aqui no
+blog&lt;/a&gt;
+uma forma bem fácil de copiar vídeos do youtube no GNU/Linux. Bastava
+esperar o vídeo carregar no navegador e ir lá no /tmp/ e copiar o
+arquivo pra outra pasta. Eu usava bastante isso. Porém com uma mudança
+no plugin do Adobe Flash e com o uso de
+&lt;a href="http://pt.wikipedia.org/wiki/HTML5"&gt;HTML5&lt;/a&gt; no &lt;a href="www.youtube.com/html5"&gt;You
+Tube&lt;/a&gt;, essa técnica passou a não funcionar mais.&lt;/p&gt;
+&lt;p&gt;Há uns meses, &lt;a href="http://blog.liquuid.net/2011/03/26/como-salvar-um-video-do-youtube-no-novo-flash-plugin/"&gt;Liquuid postou em seu
+blog&lt;/a&gt;
+como copiar vídeos carregados com o novo plugin Flash, porém descobri
+uma forma mais fácil e rápida e que funciona também com vídeos em sites
+que já estão utilizando HTML5.&lt;/p&gt;
+&lt;p&gt;Primeiro espere o vídeo ser carregado totalmente no
+&lt;a href="http://getfirefox.com/"&gt;Firefox&lt;/a&gt; (creio que essas instruções funcionam
+em outros navegadores também, desde que rodando no GNU/Linux). Quando
+finalizar o carregamento, execute o comando:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ps aux | grep firefox&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;O resultado será algo parecido com isso:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;wille     1366  9.7 17.9 1511896 547344 ?      Sl   17:42  13:17 firefox wille     1444  3.8  2.9 592744 90248 ?        Sl   17:42   5:16 /usr/lib/firefox/plugin-container /usr/lib/mozilla/plugins/libflashplayer.so -greomni /usr/lib/firefox/omni.jar 1366 plugin wille     2648  0.0  0.0   8576  1016 pts/0    S+   19:58   0:00 grep firefox&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Preste atenção nos números em negrito. São os números de processo do
+firefox e do plugin flashplayer, respectivamente.  Daí, basta abrir o
+diretório &lt;strong&gt;/proc/1366/fd/&lt;/strong&gt; ou o &lt;strong&gt;/proc/1444/fd/&lt;/strong&gt; no Gerenciador de
+Arquivos e, pelo ícone do arquivo, é possível identificar qual é o
+arquivo do vídeo que está carregado no Firefox. Uma dica: se o vídeo foi
+carregado com HTML5, geralmente ele está no diretório do processo do
+firefox, se foi carregado com flashplayer, tá no outro.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="nautilus abrindo o diretório citado
+acima" src="http://images.wille.blog.br/nautilus.jpg" title="observe o ícone diferente no nautilus" /&gt;&lt;/p&gt;
+&lt;p&gt;Porém, não dá pra usar o Nautilus para copiar, pois esse arquivo que
+aparece na tela é apenas um link para um outro arquivo que já foi
+deletado, assim utilize o terminal para fazer a cópia (quem não sabe
+copiar pelo terminal, estude o comando &lt;strong&gt;cp&lt;/strong&gt;).&lt;/p&gt;
+&lt;p&gt;É bom lembrar que esse tutorial é válido para qualquer site de vídeo,
+não apenas o You Tube.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;UPDATE:&lt;/strong&gt; Pra identificar o vídeo, é possível também usar o terminal.
+Basta executar o comando &lt;strong&gt;ls -lah&lt;/strong&gt; nos diretórios citados acima. No
+caso de sites que usem Flash, é só observar qual o link que aponta para
+&lt;strong&gt;/tmp/Flashxxxx&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;UPDATE 2:&lt;/strong&gt; Com o Flash 11, essa dica não funciona mais. A solução que
+encontrei foi usar um plugin no Firefox chamado &lt;a href="http://www.flashvideodownloader.org"&gt;Flash Video
+Downloader&lt;/a&gt;.&lt;/p&gt;</summary><category term="firefox"></category><category term="gnulinux"></category><category term="tutorial"></category><category term="vídeo"></category></entry><entry><title>Cavan e o Fleadh Cheoil</title><link href="http://wille.blog.br/2011/11/cavan-e-o-fleadh-cheoil" rel="alternate"></link><updated>2011-11-07T22:47:00-02:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2011-11-07:2011/11/cavan-e-o-fleadh-cheoil</id><summary type="html">&lt;p&gt;&lt;img alt="Menina tocando
+acordeon" src="http://images.wille.blog.br/dscn0245_1.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;O que mais gostei na cultura irlandesa foi a música, principalmente a
+música tradicional e as canções folk tocadas pelos artistas de rua. A
+música tradicional usa uma grande variedade de instrumentos: gaita de
+fole, flauta irlandesa, violão, banjo, bandolim, acordeon, harpa,
+violino e outros.&lt;/p&gt;
+&lt;p&gt;Tive a oportunidade de ir ao Fleadh Cheoil, um festival de música
+tradicional realizado na cidadezinha de Cavan. O que faz o festival tão
+interessante não são grandes atrações, mas a forma de realização dele.
+Havia apresentações em teatros, auditórios, pubs, em palcos abertos
+localizados em praças, mas o principal mesmo eram os artistas que se
+apresentavam nas ruas. Na verdade, qualquer pessoa, poderia pegar seu
+instrumento e tocar em algum lugar nas ruas de Cavan. Havia músicos de
+todas as idades, inclusive muitas crianças. Algumas era perceptível que
+não sabiam mais do que uma ou duas músicas, mas mesmo assim estavam na
+rua participando da festa e mostrando o que sabiam tocar.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Rua principal de
+Cavan" src="http://images.wille.blog.br/dscn0227_1.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;O nome do festival é escrito em gaélico (também chamada de Irish), a
+língua tradicional da Irlanda. Todas as placas de trânsito e informações
+de órgãos governamentais são escritos em gaélico e em inglês. Além
+disso, o gaélico é ensinado na escola e exigido para assumir alguns
+cargos públicos.&lt;/p&gt;
+&lt;p&gt;Comprei uma flauta irlandesa, aprendi a tocar um solo simples, mas não
+tenho me dedicado muito...&lt;/p&gt;
+&lt;p&gt;[singlepic id=35 w=333 h=248 float=right] [singlepic id=37 w=333 h=248
+float=left]&lt;/p&gt;
+&lt;p&gt;[singlepic id=36 w=333 h=248 float=left]   [singlepic id=33 w=333 h=248
+float=left]&lt;/p&gt;</summary><category term="cavan"></category><category term="fotografia"></category><category term="irlanda"></category><category term="música"></category><category term="viagens"></category></entry><entry><title>Latinoware 2011</title><link href="http://wille.blog.br/2011/10/latinoware-2011" rel="alternate"></link><updated>2011-10-24T21:31:00-02:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2011-10-24:2011/10/latinoware-2011</id><summary type="html">&lt;p&gt;Na semana passada, participei pela primeira vez da
+&lt;a href="http://latinoware.org/"&gt;Latinoware&lt;/a&gt; (Conferência Latino-Americana de
+Software Livre), creio que o segundo maior evento de Software Livre do
+Brasil. Gostei muito da Latinoware, por vários motivos... Apesar de não
+ter uma programação tão grande quanto a do
+&lt;a href="http://www.fisl.org.br"&gt;FISL&lt;/a&gt;, por ser um evento menor, você consegue
+conversar com mais gente e se deslocar pelos espaços com mais calma. A
+programação foi bastante diversificada, com minicursos e palestras de
+diversas áreas. Também gostei da presença de participantes de vários
+países da América do Sul, como Bolívia, Colômbia, Peru, Paraguai e
+Argentina. Acho muito interessante que essa integração aconteça.&lt;/p&gt;
+&lt;p&gt;Além disso, apresentei uma palestra com &lt;a href="http://djavan.comum.org/blog/"&gt;Djavan
+Fagundes&lt;/a&gt; sobre o
+&lt;a href="http://OpenStreetMap.org"&gt;OpenStreetMap&lt;/a&gt;. Na apresentação, falamos da
+importância e potencial do OSM, de alguns projetos de mapeamento que
+temos e mostramos como começar a editar no OSM. Foram publicados dois
+posts sobre a palestra, um no&lt;a href="http://www.latinoware.org/pt-br/node/201"&gt;site do
+evento&lt;/a&gt; e outro em um &lt;a href="http://blogeventos.serpro.gov.br/post/11669831597/openstreetmap-a-alternativa-livre-do-google-maps"&gt;blog da
+Serpro&lt;/a&gt;.
+Também cedemos uma entrevista para a assessora de comunicação do
+&lt;a href="http://www.serpro.gov.br/"&gt;Serpro&lt;/a&gt; que deve render uma matéria em breve
+na &lt;a href="http://tema.serpro.gov.br/pub/serpro/"&gt;revista da empresa&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;A apresentação de slides está disponível em:
+&lt;a href="http://bayfiles.com/file/193B/cnTS31/mapeamento_OSM-1.2.pdf"&gt;http://bayfiles.com/file/193B/cnTS31/mapeamento_OSM-1.2.pdf&lt;/a&gt;&lt;/p&gt;</summary><category term="eventos"></category><category term="latinoware"></category><category term="latinoware2011"></category><category term="openstreetmap"></category><category term="software livre"></category></entry><entry><title>Literatura e direitos autorais</title><link href="http://wille.blog.br/2011/10/literatura-e-direitos-autorais" rel="alternate"></link><updated>2011-10-12T02:08:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2011-10-12:2011/10/literatura-e-direitos-autorais</id><summary type="html">&lt;p&gt;&lt;img alt="Da esq. para dir. Raquel Cozer, Miguel Sanches e Fernando
+Morais" src="http://images.wille.blog.br/flica-1.jpg" title="Mesa de abertura da Flica 2011" /&gt;&lt;/p&gt;
+&lt;p&gt;Há algumas semanas li um &lt;a href="http://leogermani.com.br/2011/08/31/do-que-vive-o-musico-afinal/"&gt;post no blog do Leo
+Germani&lt;/a&gt;
+sobre uma projeto de pesquisa a respeito de como os músicos se sustentam
+financeiramente. Os primeiros resultados da pesquisa, entre outros dados
+interessantes, mostram aquilo que todo mundo já sabe: direito autoral
+representa uma parcela pequena da renda dos músicos.&lt;/p&gt;
+&lt;p&gt;Na primeira mesa da &lt;a href="http://www.flica2011.com.br"&gt;Flica 2011&lt;/a&gt; (Festa
+Literária Internacional de Cachoeira), surgiu um debate interessante
+sobre direitos autorais. O mediador perguntou para os dois escritores
+(&lt;a href="http://www.fernandomorais.com.br/"&gt;Fernando Morais&lt;/a&gt; e &lt;a href="http://www.herdandoumabiblioteca.blogspot.com/"&gt;Miguel Sanches
+Neto&lt;/a&gt;) e para a
+jornalista (&lt;a href="http://abibliotecaderaquel.folha.blog.uol.com.br/"&gt;Raquel
+Cozer&lt;/a&gt;) o que eles
+achavam da "pirataria de livros". Até então eu não tinha conhecimento de
+como andava a área de literatura em relação a remuneração dos autores.
+Me surpreendi ao saber que a literatura e a música estão em situação
+bastante similar.&lt;/p&gt;
+&lt;p&gt;Miguel e Raquel falaram que pouquíssimos autores conseguem viver apenas
+do direito autoral no Brasil. As editoras repassam aos autores de 10 a
+12% do preço de capa do livro, assim os autores costumam sobreviver
+mesmo é de escrever para jornais e revistas e de cachês por participação
+em eventos como festas literárias. Os dois convidados concordaram que a
+distribuição gratuita dos livros na internet só é benéfica para os
+escritores mais famosos e com um público consolidado, o que eu discordo.
+Penso que quem não vive de direito autoral é quem menos tem a perder (e
+também quem mais precisa) com a divulgação de suas obras na internet.&lt;/p&gt;
+&lt;p&gt;Fernando Morais, integrante do seleto grupo que consegue se sustentar
+com os royalties dos livros, disse que para conseguir vender livro
+precisa viajar por todo o país participando de bienais, festas e feiras
+literárias, trabalho que ele considera bastante cansativo. Chico
+Buarque, segundo Morais, é um dos poucos que consegue vender bem sem
+precisar participar de eventos. Ele também afirmou que a adaptação das
+suas obras para áudio livros e para cinema tem sido bastante rentável.&lt;/p&gt;
+&lt;p&gt;Além disso, os dois escritores afirmaram que a "pirataria" (&lt;em&gt;não gosto
+desse termo, pirata é quem saqueia navios em alto mar!&lt;/em&gt;) que mais os
+incomoda é a praticada por editoras e por cursinhos pré-vestibular, os
+quais inserem textos em apostilas e livros didáticos sem pedir
+autorização e sem remunerar os autores. Miguel falou que não se incomoda
+de pessoas copiarem seus livros para estudo, caso não possam comprar.
+Fernando Morais disse que uma vez pesquisou os livros dele que estavam
+disponíveis na internet para download não autorizado e achou as cópias
+de qualidade muito ruim, com muitos erros devidos ao processo de
+“scanneamento”, não ameaçando assim a venda do livro de papel. Ele
+também disse que tem vontade de propor à editora fazer uma experiência
+de liberar para download alguns livros cujas vendas já estão
+estabilizadas e permitir que as pessoas paguem a quantia que desejarem.&lt;/p&gt;
+&lt;p&gt;Apesar da visão ainda conservadora dos convidados em relação aos
+direitos autorais, foi interessante conhecer alguns detalhes do mercado
+literário, bem como uma infração de direitos autorais que geralmente não
+é mostrada: a praticada pelas próprias editoras.&lt;/p&gt;</summary><category term="cultura livre"></category><category term="direitos autorais"></category><category term="eventos"></category><category term="flica"></category><category term="literatura"></category></entry><entry><title>Dublin - Mobilidade Urbana</title><link href="http://wille.blog.br/2011/09/dublin-mobilidade-urbana" rel="alternate"></link><updated>2011-09-26T09:07:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2011-09-26:2011/09/dublin-mobilidade-urbana</id><summary type="html">&lt;p&gt;&lt;img alt="Bicicletário no centro da
+cidade" src="http://images.wille.blog.br/imag0178.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;A mobilidade urbana em Dublin tem mais pontos positivos que negativos.
+Um ponto negativo é o custo alto do transporte público. O ônibus, o VLT
+(lá chamado de Luas) e o trem custam entre € 1,20 e € 3,60, dependendo
+da distância que você vai percorrer. Um trajeto do centro para um bairro
+afastado custa por volta de € 2,30. Sendo que a integração entre os
+sistemas de transporte público não é gratuita. Assim se precisar pegar
+um trêm e um ônibus, é necessário pagar duas passagens. Ouvi alguns
+colegas do curso reclamarem de atrasos dos ônibus também. O interessante
+é que há um desconto se você comprar o ticket de ida e volta. É possível
+comprar também tickets com desconto que dão direito a viagens ilimitadas
+durante uma certa quantidade de dias ou por um mês ou um ano inteiro.&lt;/p&gt;
+&lt;p&gt;Outro ponto negativo são os semáforos. O pedestre não tem prioridade na
+hora de atravessar a rua! O tempo de espera para abrir o sinal é muito
+grande e o semáforo só fica aberto pelo tempo suficiente para se
+atravessar a rua. Se você estiver a alguns metros de distância da
+esquina, quando o sinal abre, é provável que não consiga atravessar a
+tempo.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Estação das Dublin
+Bikes" src="http://images.wille.blog.br/imag0001.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;O principal ponto positivo, por outro lado, é o estímulo ao uso de
+bicicletas. Há uma boa quantidade de ciclofaixas, ciclovias,
+bicicletários e um sistema de aluguel de bikes chamado &lt;a href="http://www.dublinbikes.ie"&gt;Dublin
+Bikes&lt;/a&gt; (foto acima). Tentei alugar uma bike,
+mas não consegui, provavelmente porque eu não tinha limite suficiente no
+cartão de crédito para a taxa de garantia, que é cobrada quando a bike
+não é devolvida em 24h. O preço pelo uso das Dublin Bikes é muito bom.
+Você pode fazer um cartão que vale por um ano e custa €10. Quando você
+usa as bicicletas, a primeira meia hora é gratuita e depois há uma taxa
+de mais ou menos € 1,50 por hora. Assim, quem percorre pequenas
+distâncias não vai pagar quase nada, além de não ter que se preocupar
+com manutenção das bicicletas nem com a possibilidade de roubo. As
+estações das Dublin Bikes, por enquanto, estão mais presentes na parte
+central da cidade. Pelo que vi, o sistema é bastante utilizado. Perto do
+hostel em que eu fiquei, por exemplo, havia duas estações e no início da
+manhã era difícil encontrar bicicletas disponíveis.&lt;/p&gt;
+&lt;p&gt;Além das Dublin Bikes, existe uma outra iniciativa para estimular o uso
+de bicicletas chamado Cycle to Work. Não sei se entendi bem o
+funcionamento, mas é um programa que permite ao trabalhador comprar um
+bicicleta com abatimento de impostos e com o valor parcelado e
+descontado diretamente no salário.&lt;/p&gt;
+&lt;p&gt;O trânsito da cidade é seguro para se pedalar e há um número enorme de
+ciclistas pelas ruas. A
+&lt;a href="http://www.flickr.com/photos/aoifejohanna/"&gt;Aiofe&lt;/a&gt; me contou que há
+muito furto de bicicletas, por isso, é comum ver bicicletas com duas ou
+até três travas nos bicicletários.&lt;/p&gt;
+&lt;p&gt;[singlepic id=29 w=333 h=248 float=right] [singlepic id=30 w=333 h=248
+float=left]&lt;/p&gt;
+&lt;p&gt;Além disso, o uso de carro é desestimulado pelas taxas de estacionamento
+que são cobradas em toda a cidade. Mesmo em cidades pequenas, como em
+Cavan que só possui três mil habitantes na zona urbana, é necessário
+pagar para estacionar na rua. Considero essa política bastante justa e
+necessária! Não cheguei a ver nenhum congestionamento lá...&lt;/p&gt;
+&lt;p&gt;Usei ônibus e o VLT apenas uma vez em Dublin e peguei o trem três vezes
+para ir em bairros mais afastados. Como a escola, o hostel e a maioria
+dos locais que visitei eram no centro da cidade, pude fazer tudo
+caminhando mesmo ou com a bicicleta que comprei lá.&lt;/p&gt;</summary><category term="bicicleta"></category><category term="dublin"></category><category term="fotografia"></category><category term="irlanda"></category><category term="mobilidade urbana"></category><category term="transporte público"></category><category term="viagens"></category></entry><entry><title>Dublin</title><link href="http://wille.blog.br/2011/09/dublin" rel="alternate"></link><updated>2011-09-24T00:38:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2011-09-24:2011/09/dublin</id><summary type="html">&lt;p&gt;&lt;img alt="River
+Liffey" src="http://images.wille.blog.br/dscn0096.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;Cheguei em Dublin na tarde do dia 03 de agosto. Como é bem comum por lá,
+estava nublado... Fiquei com muito medo de ser barrado pela imigração,
+pois o oficial estava claramente desconfiado, fez muitas perguntas e
+pediu pra ver reserva do hotel, bilhete do voo de volta, enquanto que
+outras pessoas ele tinha liberado rapidamente... Fiquei bem nervoso ao
+responder às perguntas, mas fui liberado.&lt;/p&gt;
+&lt;p&gt;Lá no aeroporto, eu peguei um ônibus até a O'Connell Street, uma das
+principais ruas do centro de Dublin e então pedi informação até achar a
+estação do Luas (sistema de &lt;a href="http://pt.wikipedia.org/wiki/Vlt"&gt;Veículo Leve sobre
+Trilhos&lt;/a&gt;). O Luas me deixou a alguns
+metros do hostel.&lt;/p&gt;
+&lt;p&gt;FIquei hospedado no &lt;a href="http://www.generatorhostels.com/en/dublin/"&gt;Generator
+Hostel&lt;/a&gt;, uma rede de hostels
+presente em mais quatro ou cinco cidades da Europa. O Generator de
+Dublin começou a funcionar há pouco tempo, assim as diárias estavam em
+promoção e bem em conta: € 10 (quarto coletivo, sem direito a café da
+manhã). Esse foi o hostel com a melhor estrutura que já conheci. Além de
+camas, colchões e estrutura toda nova, ele é bem seguro, limpo, possui
+uma sala com projetor e poltronas pra assistir filme e jogar vídeo-game,
+computadores pra acesso gratuito e até um bar. A localização dele também
+é muito boa, em frente a um supermercado e perto do centro da cidade.&lt;/p&gt;
+&lt;p&gt;[singlepic id=24 w=333 h=250 float=left] [singlepic id=17 w=333 h=250
+float=right]&lt;br /&gt;
+Gastei muito tempo nos dois primeiros dias em Dublin pesquisando preços
+de celular e câmera fotográfica, pois perdi o celular em Istambul e eu
+tinha pretensões de comprar uma câmera melhor. Gastar tempo com compras
+é uma das piores coisas que se pode fazer numa viagem, além disso os
+preços lá nem estavam tão interessantes... Acabei não comprando a câmera
+e comprei um HTC Wildfire, que roda Android 2.2 e tem uma câmera de 5MP
+razoável. Esse tempo perdido acabou fazendo falta mais tarde...&lt;/p&gt;
+&lt;p&gt;Nos primeiros dias, meu inglês elementar não me permitiu conversar
+muito, apesar de eu ter tentado bastante. A partir do segundo dia de
+aula, foi que consegui levar umas conversas. Conheci muita gente, de
+diversos lugares do mundo e conversei bastante nessa viagem. O curso não
+foi tão produtivo quanto o de espanhol que fiz na Argentina no ano
+passado, mas consegui melhorar muito minha compreensão e minha fala.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="River Liffey num dia de
+Sol" src="http://images.wille.blog.br/imag0170.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;Em minha primeira semana lá, o tempo estava quase sempre nublado. Era
+raro o Sol aparecer. Um dia, enquanto eu andava na rua que margeia o Rio
+Liffey, o Sol saiu detrás das nuvens e fez tudo reluzir. É incrível como
+tudo muda com mais luz. A cidade parece ganhar mais vida. Sempre que
+isso acontecia, me lembrava de "&lt;em&gt;Here comes the sun&lt;/em&gt;", dos Beatles.
+Agosto é o mês mais chuvoso em Dublin, porém a chuva geralmente era bem
+fina e rápida e não chegou a atrapalhar meus planos. A temperatura
+estava bem agradável, só à noite que fazia um pouco mais de frio...&lt;/p&gt;
+&lt;p&gt;[singlepic id=18 w=333 h=250 float=left] [singlepic id=25 w=333 h=250
+float=right]&lt;br /&gt;
+Dublin não é uma grande metrópole e não oferece muita coisa pra
+fazer... Achei ruim que quase todos os museus e galerias fecham às 17h
+(mesmo anoitecendo às 22h em Agosto). Depois desse horário, não havia
+muita opção, além de ir para os pubs, que são muito legais,
+principalmente pela música ao vivo, presente em praticamente todos eles
+durante as tardes e noites. Os pubs mais frequentados da região de
+Temple Bar costumam ter música folk e rock. Os mais tradicionais, por
+sua vez, dão preferência pela música tradicional irlandesa. A decoração
+dos pubs mais tradicionais é bem interessante também. Outra coisa boa é
+que não é cobrado couvert artístico... inclusive se não quiser consumir
+nada, você pode ir lá só pra apreciar a música.&lt;/p&gt;
+&lt;p&gt;Gostei também dos parques de Dublin, da tranquilidade das ruas, do River
+Liffey (um rio limpo!) dividindo a cidade em norte e sul... Nos próximos
+posts, contarei um pouco mais sobre Dublin e a cultura irlandesa.&lt;/p&gt;
+&lt;p&gt;[singlepic id=22 w=333 h=250 float=right] [singlepic id=21 w=333 h=250
+float=left]&lt;/p&gt;</summary><category term="dublin"></category><category term="fotografia"></category><category term="irlanda"></category><category term="viagens"></category></entry><entry><title>Istambul</title><link href="http://wille.blog.br/2011/09/istambul" rel="alternate"></link><updated>2011-09-08T23:21:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2011-09-08:2011/09/istambul</id><summary type="html">&lt;p&gt;&lt;img alt="dscn0296" src="http://images.wille.blog.br/dscn0296.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;Embarquei para Istambul às 23h do dia 01/08 em São Paulo. Como comprei a
+passagem para Dublin por uma empresa aérea da Turquia, era necessário
+fazer uma conexão lá em Istambul. O voo foi muito tranquilo, acho que
+dormi cerca de 6h. Da janela do avião, consegui ver o deserto do Saara e
+também a cidade de Palermo, na ilha da Sicília!&lt;/p&gt;
+&lt;p&gt;A chegada em Istambul foi às 17h da tarde (no fuso de lá). Passei pelo
+controle de passaportes, que é bem tranquilo, pois não é necessário
+visto prévio e não te fazem nenhuma pergunta, nem exigem nada. Depois
+fui procurar o Hotel Desk da Turkish Airlines no aeroporto, pois eu
+tinha visto no site da empresa, que ela oferecia hospedagem gratuita
+para quem tivesse que ficar mais de 10h em Istambul aguardando a
+conexão. Lá no Hotel Desk conheci um brasileiro que também estava indo
+pra Dublin. Uns 30 minutos depois uma van da Turkish nos levou para o
+hotel e lá conhecemos mais uns brasileiros e resolvemos sair juntos pra
+conhecer o centro da cidade.&lt;/p&gt;
+&lt;p&gt;Como o hotel era bem afastado do centro da cidade, foi bom andar em
+grupo, pois pudemos dividir um táxi e conhecer vários locais. Primeiro
+fomos na Sultanahmet, uma praça onde estão algumas construções
+históricas de Istambul, como a Basílica de Santa Sofia e a Mesquita
+Azul. Como já era noite, não pude entrar em nenhum desses lugares. Pude
+ver algumas pessoas em frente a uma mesquita, tirando os calçados e
+fazendo a posição para rezar. Vi também muitas mulheres com véu na
+cabeça ou vestindo a burca. Mesmo considerando a burca uma opressão
+contra as mulheres, foi interessante ver de perto uma cultura tão
+diferente.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="imag0229" src="http://images.wille.blog.br/imag0229.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;Paramos para comer um ótimo kebab e comemos mais uma coisa que não
+lembro o nome, mas eram uns vegetais ralados e enrolados numa folha. Os
+turcos gostam muito de tomate e de pepino, os servem até no café da
+manhã! Azeitonas e frutas secas são bem populares por lá também. No café
+da manhã do hotel, conheci uns queijos, mortadelas e salsichas bem
+diferentes.&lt;/p&gt;
+&lt;p&gt;Depois de comer, caminhamos mais um pouco pelos arredores e, em seguida,
+pegamos um táxi para passar para a parte da cidade chamada de Gálata. Lá
+caminhamos pela avenida Istiklal, uma rua de pedestres como as que
+existem em qualquer grande cidade. A Istiklal parece interminável e,
+mesmo à noite, com poucas lojas abertas, havia muita gente circulando.&lt;/p&gt;
+&lt;p&gt;Depois de quase 30 minutos caminhando, pegamos um táxi pro hotel. O
+taxista era um maluco que em grande parte do trajeto andou a mais de 150
+km/h! Em alguns momentos, o ponteiro bateu nos 200 km/h! Nessa rodovia
+que a gente estava, o limite de velocidade era 120 km/h... Tentamos
+pedir pra reduzir, mas ele não levou a sério. Então, o único jeito foi
+curtir a experiência e respirar aliviado após cada curva e ultrapassagem
+que o maluco fazia. Pra completar, ele não conhecia a rua do hotel e
+teve que dar algumas voltas no bairro pra encontrar. Lá em Istambul me
+pareceu muito comum dirigir sem cinto de segurança.&lt;/p&gt;
+&lt;p&gt;Gostei muito do verão de Istambul. Início de noite com temperatura
+agradável, muita gente nas praças e nas ruas até tarde e muita
+diversidade de culturas.&lt;/p&gt;
+&lt;p&gt;Minha primeira passagem por Istambul terminou aí. No outro dia, só deu
+tempo de tomar café e ir para o aeroporto pegar o voo pra Dublin.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Volta&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Na viagem de volta para o Brasil, cheguei mais tarde em Istambul, por
+volta de 20h30. No controle de passaportes, o oficial era um cara jovem,
+mais ou menos da minha idade. O cara olhou a capa do passaporte e falou:
+"&lt;em&gt;Ohhh! Brazil!!! I like Brazil!&lt;/em&gt;". Daí carimbou o passaporte sem pensar
+duas vezes, me perguntou como se fala "&lt;em&gt;Hello!&lt;/em&gt;" em português e disse
+que gostava muito do futebol brasileiro. A recepção amistosa e a
+temperatura mais amena me lembraram que o frio irlandês tinha ficado pra
+trás.&lt;/p&gt;
+&lt;p&gt;Fui ao Hotel Desk solicitar a hospedagem e dessa vez tive mais sorte: me
+colocaram num hotel bem perto do centro da cidade! Quando cheguei no
+hotel já passava das 21h, então não me aventurei a sair pela cidade. Só
+procurei um lugar perto do hotel pra comprar algo pra comer e procurei
+saber se era seguro sair de manhã cedo pra conhecer alguns locais.&lt;/p&gt;
+&lt;p&gt;No quarto do hotel, fiquei assistindo a Al Jazeera em inglês até o sono
+chegar. O tema principal era a iminente queda de Kadafi na Líbia. Depois
+passou um documentário que achei interessante sobre a discriminação
+sofrida por muçulmanos nos Estados Unidos, principalmente após o 11 de
+setembro.&lt;/p&gt;
+&lt;p&gt;No dia seguinte, acordei às 5h30 da manhã, tomei banho e peguei um táxi
+para visitar novamente a Sultanahmet Square, mas agora com luz do sol.
+Depois andei por algumas ruas até a orla do belo Mar de Mármara. Muitas
+fotos depois, voltei para o hotel para tomar café e pegar a van para o
+aeroporto.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="imag0248" src="http://images.wille.blog.br/imag0248.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Alguns pontos sobre Istambul:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Pouca gente fala inglês em Istambul. Taxistas, garçons e vendedores
+    geralmente sabem pouca coisa além de dizer o preço dos produtos,
+    &lt;em&gt;hello&lt;/em&gt; e &lt;em&gt;thank you&lt;/em&gt;. Penso que é um lugar muito interessante pra
+    voltar e conhecer melhor, porém o ideal seria saber falar a língua
+    turca pra poder conversar com as pessoas e conhecer a fundo a
+    cultura do lugar.&lt;/li&gt;
+&lt;li&gt;Antes de viajar, eu assisti um documentário chamado "&lt;em&gt;Crossing the
+    bridge - The sound of Istanbul&lt;/em&gt;". É um bom documentário sobre a
+    música de lá.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Algumas fotos...&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;[nggallery id=2]&lt;/p&gt;
+&lt;p&gt;As fotos são quase todas da viagem de volta, pois a câmera que eu levei
+não funciona bem com pouca iluminação.&lt;/p&gt;</summary><category term="fotografia"></category><category term="istambul"></category><category term="turquia"></category><category term="viagens"></category></entry><entry><title>Gnome 3</title><link href="http://wille.blog.br/2011/07/gnome-3" rel="alternate"></link><updated>2011-07-13T21:58:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2011-07-13:2011/07/gnome-3</id><summary type="html">&lt;p&gt;Troquei o &lt;a href="http://kde.org"&gt;KDE&lt;/a&gt;, que eu usava no meus computadores há
+cerca de 4 anos pelo &lt;a href="http://www.gnome3.org/index.html.pt_BR"&gt;GNOME 3&lt;/a&gt;.
+Inicialmente eu só queria testar a nova versão do Gnome, que parecia
+bastante atraente, mas em pouco tempo, me fez abandonar o KDE.&lt;/p&gt;
+&lt;p&gt;O que eu vi de melhor no Gnome 3:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="gnome 3
+desktop" src="http://images.wille.blog.br/gnome3-blog-desktop.jpg" title="gnome 3 desktop" /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Design simples, eficiente e bonito&lt;/strong&gt;. Destaque para a fonte de texto
+padrão, que melhora muito o aspecto de todo o desktop e dos aplicativos.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt="" src="http://images.wille.blog.br/gnome3-blog.jpg" title="gnome3-blog" /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Distraction-Free&lt;/strong&gt;. O Gnome tem apenas uma barra de painel na parte
+de cima da tela (do jeito que eu sempre usava no KDE). Além disso, o
+Gnome eliminou a barra de tarefas (aquela barra que mostra todas as
+janelas abertas no momento) e escondeu a bandeja do sistema num canto
+inferior da tela. O resultado disso é que você tem um desktop ao mesmo
+tempo fácil de utilizar e com muitos recursos, porém limpo, sem ícones
+de programas tirando sua concentração. Uso um cliente de twitter e
+identi.ca e, quando utilizava KDE, a todo momento eu clicava no ícone
+dele na bandeja quando tinha algo novo ou mesmo sem ter novos posts. Com
+o Gnome, é comum eu passar bastante tempo sem nem lembrar do identi.ca e
+do twitter. A ausência da barra de tarefas também diminui a distração.&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="desktop"></category><category term="dicas de software"></category><category term="gnome"></category><category term="gnome3"></category><category term="software livre"></category></entry><entry><title>Atualizando...</title><link href="http://wille.blog.br/2011/07/atualizando" rel="alternate"></link><updated>2011-07-13T21:23:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2011-07-13:2011/07/atualizando</id><summary type="html">&lt;p&gt;Mais uma vez, deixei o blog bastante tempo abandonado... para compensar,
+vou tentar resumir alguns acontecimentos desse período.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;FISL&lt;/strong&gt;&lt;br /&gt;
+Esse ano não fui ao &lt;a href="http://softwarelivre.org/fisl12"&gt;FISL&lt;/a&gt;... apesar
+de ter conseguido assistir bastante coisa pela TV SL, fiquei arrependido
+de não ter ido. A programação tava muito interessante, com vários temas
+novos e debates importantes. Bateu também saudade de Porto Alegre!
+Pretendo ir na &lt;a href="http://latinoware.org/"&gt;Latinoware&lt;/a&gt; esse ano e talvez no
+&lt;a href="http://ensl.org.br/"&gt;Encontro Nordestino de Software Livre&lt;/a&gt;, em Maceió.
+No ano que vem, não quero faltar ao FISL.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;OpenStreetMap&lt;/strong&gt;&lt;br /&gt;
+Tô colaborando bastante com o &lt;a href="http://www.osm.org"&gt;OpenStreetMap&lt;/a&gt;, um
+projeto que tem o objetivo de produzir mapas colaborativamente na rede e
+com a mesma filosofia do software livre (usar e modificar livremente os
+mapas desde que mantenha essa mesma liberdade). Recebi um aparelho de
+GPS emprestado do OSM Brasil e consegui envolver mais alguns professores
+e alunos da UFRB em um projeto de mapeamento das cidades do Recôncavo.
+Além de produzir o mapa das cidades, vamos fazer um pequeno mapeamento
+cultural, disponibilizando informações em texto, foto, áudio e vídeo
+sobre os locais mais relevantes da cidade. Pedalei 14 km em Cachoeira
+com o GPS para fazer o mapeamento de grande parte da cidade. O resultado
+disso&lt;a href="http://www.openstreetmap.org/?lat=-12.60123&amp;amp;lon=-38.96428&amp;amp;zoom=17&amp;amp;layers=M"&gt;já tá no
+OSM&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Deixando o recôncavo de lado, também já tracei e identifiquei as ruas de
+vários bairros de
+&lt;a href="http://www.openstreetmap.org/?lat=-14.20421&amp;amp;lon=-41.67242&amp;amp;zoom=16&amp;amp;layers=M"&gt;Brumado&lt;/a&gt;,
+minha cidade natal, mas como lá tinha disponível imagens de satélite,
+não precisei percorrer as ruas com o GPS. Uma questão que tenho pensado
+a respeito, é como envolver mais gente nesse processo de modo que a
+atualização dos dados do mapa posteriormente não dependa apenas de mim.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Curso de GNU/Linux&lt;/strong&gt;&lt;br /&gt;
+Ministrei um curso de Introdução ao GNU/Linux para alunos de Ciências
+Exatas da &lt;a href="http://www.ufrb.edu.br"&gt;UFRB&lt;/a&gt;. Gostei do resultado, apesar de
+2/3 da turma que só estava lá por causa do certificado, tinha 1/3 com
+muito interesse em aprender... Algo que me agradou muito é que consegui
+ser bastante organizado, preparei bem as aulas e os slides. O ruim foram
+as dificuldades na infraestrutura do laboratório (computadores
+problemáticos e internet lenta). Utilizei o Ubuntu 10.10 no curso. No
+segundo semestre vou ministrar esse curso pelo menos pra mais uma turma.
+Tô a fim de organizar um grupo pra estudar Python e fazer uns &lt;a href="http://pet.inf.ufsc.br/dojo/o-que-eh-dojo/"&gt;coding
+dojos&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Estudos&lt;/strong&gt;&lt;br /&gt;
+Em relação aos estudos, desde abril me perdi na desorganização. A única
+coisa que tenho conseguido estudar é Inglês. Tenho utilizado os Podcasts
+do &lt;a href="http://www.eslpod.com/website/index_new.html"&gt;ESL Pod&lt;/a&gt;, algumas
+coisas da &lt;a href="http://www.bbc.co.uk/worldservice/learningenglish/"&gt;BBC Learning
+English&lt;/a&gt; e uma
+&lt;a href="http://www.cambridge.org/br/elt/catalogue/subject/project/item404538/Essential-Grammar-in-Use/?site_locale=pt_BR"&gt;gramática&lt;/a&gt;
+que comprei ano passado. Por falar nisso, vou pra Dublin (Irlanda) em
+agosto fazer um intensivo de inglês de duas semanas. Preferia viajar
+pela América do Sul, mas tenho sentindo muita necessidade de compreender
+e falar inglês minimamente bem. A viagem tem conexão em Istambul na ida
+e na volta e como o tempo de espera é bem longo, acho que vou conseguir
+dar uma volta pela cidade. Eu deveria ter me atentado dessa
+possibilidade e escolhido vôos com um intervalo ainda maior em
+Istambul.... Comecei a estudar um pouco da língua turca, só pra dizer
+bom dia, obrigado, etc e tal...&lt;/p&gt;</summary><category term="estudos"></category><category term="fisl"></category><category term="gnulinux"></category><category term="mapas"></category><category term="openstreetmap"></category><category term="software livre"></category></entry><entry><title>Como foi o Flisol 2011 em Cruz das Almas...</title><link href="http://wille.blog.br/2011/04/como-foi-o-flisol-2011-em-cruz-das-almas" rel="alternate"></link><updated>2011-04-10T23:54:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2011-04-10:2011/04/como-foi-o-flisol-2011-em-cruz-das-almas</id><summary type="html">&lt;p&gt;&lt;img alt="" src="http://images.wille.blog.br/palestra-multitoques.jpg" title="Luiz Paulo Colombiano e Everton apresentando palestra sobre Interfaces Multitoques" /&gt;&lt;/p&gt;
+&lt;p&gt;No sábado, realizamos o &lt;a href="http://ufrb.edu.br/flisol"&gt;Flisol em Cruz das
+Almas/BA&lt;/a&gt;. O evento foi organizado por mim e
+por meu colega de trabalho e amigo &lt;a href="http://www.cesarvelame.com"&gt;César
+Velame&lt;/a&gt;. A grande surpresa do evento foi o
+grande público. A sala ficou cheia durante todo o dia e as oficinas
+tiveram grande procura também. O público fez muitas perguntas e
+participou ativamente do evento. Além disso, tivemos uma grande
+participação de mulheres: 40% do público registrado, o que é uma
+proporção elevada em relação a outros eventos da área de tecnologia!&lt;/p&gt;
+&lt;p&gt;Creio que conseguimos montar uma programação bem balanceada entre
+palestras com conteúdo mais técnico e palestras sobre aspectos
+ideológicos do software livre e de nível iniciante. Instalamos GNU/Linux
+nos notebooks de algumas pessoas e distribuímos DVD's com Ubuntu 10.10,
+softwares livres para Window\$ e Mac O\$, manuais, livros e vídeos sobre
+cultura digital e software livre.  &lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://images.wille.blog.br/publico-flisol.jpg" title="público durante palestras do Flisol" /&gt;&lt;/p&gt;
+&lt;p&gt;Agradeço aos amigos palestrantes que vieram de Salvador e colaboraram
+para fazermos um excelente evento e também ao apoio da COTEC/UFRB.&lt;/p&gt;
+&lt;p&gt;Estou bem animado pra realizar outros eventos em Cruz das Almas, vou
+começar a planejar com César um evento maior para o segundo semestre.
+Também já temos mais algumas idéias em mente para difundir o software
+livre na UFRB. Esta semana vou começar a ministrar um curso de
+Introdução ao GNU/Linux para os alunos do Bacharelado em Ciências Exatas
+e Tecnológicas.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.ufrb.edu.br/flisol/galeria-de-fotos/"&gt;Mais fotos do Flisol Cruz das
+Almas&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://flisol.info/FLISOL2011/Fotos"&gt;Fotos do Flisol 2011 em toda a América
+Latina&lt;/a&gt;&lt;/p&gt;</summary><category term="bahia"></category><category term="cruz das almas"></category><category term="eventos"></category><category term="flisol"></category><category term="flisol2011"></category><category term="software livre"></category></entry><entry><title>Participe do Flisol 2011 - Cruz das Almas</title><link href="http://wille.blog.br/2011/03/participe-do-flisol-2011-cruz-das-almas" rel="alternate"></link><updated>2011-03-28T11:35:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2011-03-28:2011/03/participe-do-flisol-2011-cruz-das-almas</id><summary type="html">&lt;p&gt;&lt;img alt="" src="http://www.ufrb.edu.br/agencia/images/stories/cartaz-flisol.jpg" title="Cartaz Flisol 2011 Cruz das Almas" /&gt;&lt;/p&gt;
+&lt;p&gt;Estou na organização do &lt;strong&gt;Flisol 2011&lt;/strong&gt;, em Cruz das Almas/BA. O evento
+será realizado dia 09 de Abril a partir das 09h, no Pavilhão de Aulas 1
+do Campus da UFRB. Na programação, teremos algumas palestras, oficinas,
+instalação e distribuição de softwares livres.&lt;/p&gt;
+&lt;p&gt;As palestras já confirmadas são as seguintes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;O que é Software Livre e por que utilizar?&lt;/strong&gt; – Wille Marcel&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Desenvolvimento de Sites com CMS&lt;/strong&gt; – César Velame&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Interfaces multitoques em ambientes livres&lt;/strong&gt; – Luís Paulo
+    Colombiano&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ekaaty Linux&lt;/strong&gt; – Nadilson dos Santos de Santana&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Além disso, Aurélio Heckert e Valéssio Brito vão apresentar duas
+palestras sobre &lt;strong&gt;Arte com Softwares Livres&lt;/strong&gt;, participe da escolha dos
+temas, votando na enquete no site&lt;a href="http://www.ufrb.edu.br/flisol"&gt;http://www.ufrb.edu.br/flisol&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;O FLISOL (Festival Latinoamericano de Instalação de Software Livre) é o
+maior evento de divulgação de Software Livre da América Latina. Ele
+acontece desde 2005 e seu principal objetivo é promover o uso de
+software livre, apresentando sua filosofia, seu alcance, avanços e
+desenvolvimento ao público em geral. Além de Cruz das Almas, o evento
+será realizado, no mesmo dia, em centenas de cidades de toda a América
+Latina. Confira se haverá Flisol na sua cidade no &lt;a href="http://flisol.net"&gt;site
+oficial&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Baixe o &lt;a href="http://images.wille.blog.br/cartaz-flisol2.pdf"&gt;cartaz em
+PDF&lt;/a&gt;,
+imprima e ajude a divulgar o evento.&lt;/p&gt;</summary><category term="bahia"></category><category term="cruz das almas"></category><category term="eventos"></category><category term="flisol"></category><category term="software livre"></category></entry><entry><title>Pouca Vogal e Chapada Diamantina</title><link href="http://wille.blog.br/2011/03/pouca-vogal-e-chapada-diamantina" rel="alternate"></link><updated>2011-03-20T23:25:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2011-03-20:2011/03/pouca-vogal-e-chapada-diamantina</id><summary type="html">&lt;p&gt;Sempre escrevo posts e acabo demorando muito de postar, tanto que às
+vezes as notícias ficam velhas... No final de janeiro fui no show do
+&lt;a href="http://www.poucavogal.com.br"&gt;Pouca Vogal&lt;/a&gt;, em Irecê-BA, e fui pela
+primeira vez na Chapada Diamantina.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://images.wille.blog.br/poucavogal-irece.jpg"&gt;&lt;img alt="" src="http://images.wille.blog.br/poucavogal-irece.jpg" title="Pouca Vogal em Irecê" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Depois de muitos anos, consegui ver Gessinger tocar ao vivo! Sempre quis
+ver um show dos Engenheiros do Hawaii ou do Pouca Vogal, mas nunca havia
+tido uma oportunidade. Finalmente consegui! Gostei muito do show, mas
+gostaria de assisti-lo em um teatro, que é um ambiente mais adequado à
+sonoridade.&lt;/p&gt;
+&lt;p&gt;Como o show foi em Irecê, numa sexta-feira, aproveitei pra passar o fim
+de semana na Chapada Diamantina, em Lençóis.&lt;/p&gt;
+&lt;p&gt;Cheguei em Lençóis no sábado à tarde, fui recuperar uma parte do sono
+perdido das últimas duas noites e depois fui conhecer a cidade e
+procurar um passeio pra fazer no domingo. Me interessei por uma trilha
+de bike, mas pra fazer sozinho ficava muito caro, então acabei optando
+por um outro passeio que visitava algumas grutas, uma cachoeira e o
+Morro do Pai Inácio.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://images.wille.blog.br/kdk_1462.jpg"&gt;&lt;img alt="" src="http://images.wille.blog.br/kdk_1462.jpg" title="Pôr do Sol no Morro do Pai Inácio" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Gostei bastante de subir o Morro do Pai Inácio. Desde que li "&lt;a href="http://wille.blog.br/2010/02/novos-livros/"&gt;Na
+natureza selvagem&lt;/a&gt;", tenho
+me interessado por montanhismo. Tenho planos de subir o Pico das Almas,
+um dos pontos mais altos do nordeste, em Rio de Contas, perto de
+Brumado.&lt;/p&gt;
+&lt;p&gt;Infelizmente, o tempo que passei lá em Lençóis foi muito curto e não deu
+pra conhecer muitos locais. Tenho que voltar lá outra vez e, de
+preferência, com uma bicicleta pra fazer umas trilhas.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://images.wille.blog.br/kdk_1447.jpg"&gt;&lt;img alt="" src="http://images.wille.blog.br/kdk_1447.jpg" title="No morro do Pai Inácio" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://images.wille.blog.br/kdk_1450.jpg"&gt;&lt;img alt="" src="http://images.wille.blog.br/kdk_1450.jpg" title="BR-242 vista do alto do Morro" /&gt;&lt;/a&gt;&lt;/p&gt;</summary><category term="chapada diamantina"></category><category term="diário"></category><category term="fotografia"></category><category term="lençóis"></category><category term="montanha"></category><category term="pouca vogal"></category><category term="viagens"></category></entry><entry><title>Aprendizagens</title><link href="http://wille.blog.br/2011/02/aprendizagens" rel="alternate"></link><updated>2011-02-19T10:18:00-02:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2011-02-19:2011/02/aprendizagens</id><summary type="html">&lt;p&gt;Como falei no &lt;a href="http://wille.blog.br/2011/01/2010-2011-destinos/"&gt;primeiro post do
+ano&lt;/a&gt;, minha principal
+meta para 2011 é estudar mais. No entanto, a princípio não pretendo
+fazer cursos "formais". Então resolvi começar uma série de posts
+relatando o que tenho aprendido/estudado. Assim, além de me motivar,
+talvez posso motivar outras pessoas a estudar mais também.&lt;/p&gt;
+&lt;p&gt;Apesar de não querer fazer cursos formais, tenho um grande problema de
+auto-disciplina que me atrapalha bastante nos estudos. Em Janeiro,
+comecei bem o ano. Encontrei um livro sobre design &lt;em&gt;("Novos fundamentos
+do design")&lt;/em&gt; na biblioteca da universidade em que trabalho e li quase
+70% dele. Estudei também alguns assuntos de programação.&lt;/p&gt;
+&lt;p&gt;No final de janeiro, achei uns cursos com inscrições abertas na &lt;a href="http://www.p2pu.org"&gt;P2P
+University&lt;/a&gt;. A idéia da P2PU é ser uma plataforma
+web onde qualquer pessoa pode oferecer um curso sobre qualquer tema.
+Quem se interessar pelo curso, solicita a vaga e faz o curso. Além
+disso, todo o material é distribuído na rede de forma livre para que
+mesmo quem não se inscreveu tenha acesso ao conteúdo.&lt;/p&gt;
+&lt;p&gt;Consegui vaga nos cursos de &lt;a href="http://http://espanolparaextranjeros.pbworks.com/"&gt;Espanhol para
+estrangeiros&lt;/a&gt; e no de
+&lt;a href="http://p2pu.org/general/algority-estructuras-de-datos"&gt;Algoritmos e Estruturas de
+Dados&lt;/a&gt;, que
+também é ministrado em espanhol. Os cursos estão sendo muito produtivos,
+tive problemas para acompanhá-los no início de fevereiro por conta de
+algumas viagens que fiz e que desorganizaram minha rotina, mas agora já
+tá normalizado. Além disso, no curso de Algoritmos gasto muito tempo
+redigindo algumas respostas dos exercícios, pois ainda tenho dificuldade
+para escrever em Espanhol.&lt;/p&gt;
+&lt;p&gt;Estar inscrito num curso, mesmo que informal, é algo que me ajuda a ter
+mais disciplina. Outra coisa que já me ajudou bastante foi colocar na
+parede do quarto uma lista de tarefas a cumprir. Voltarei a escrever
+assim que tiver mais novidades em relação aos estudos.&lt;/p&gt;</summary><category term="estudos"></category><category term="p2pu"></category></entry><entry><title>Artigo publicado em ebook</title><link href="http://wille.blog.br/2011/01/artigo-publicado-em-ebook" rel="alternate"></link><updated>2011-01-25T23:37:00-02:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2011-01-25:2011/01/artigo-publicado-em-ebook</id><summary type="html">&lt;p&gt;Hoje descobri que um artigo que escrevi com &lt;a href="http://ufrb.edu.br/alenelins/"&gt;Alene
+Lins&lt;/a&gt; e &lt;a href="http://sulesampaio.blogspot.com/"&gt;Sule
+Sampaio&lt;/a&gt; foi publicado no ebook
+"&lt;a href="http://lantec.fae.unicamp.br/lantec/publicacoes/amaral,pretto-hackers.pdf"&gt;Ética, Hacker e a
+Educação&lt;/a&gt;",
+organizado pelos professores Sérgio Amaral (Unicamp) e &lt;a href="http://www.pretto.info"&gt;Nelson
+Pretto&lt;/a&gt;(UFBA). O artigo em que contribuí
+chama-se "&lt;strong&gt;Cultura Digital e Comunidades de Software Livre: uma Prática
+Colaborativa&lt;/strong&gt;".&lt;/p&gt;
+&lt;p&gt;O livro é resultado da produção da disciplina "Ética Hacker e Educação",
+que foi ministrada simultaneamente na UFBA e na UNICAMP. Cursei essa
+disciplina como aluno especial na UFBA no semestre 2009.2 e, na ocasião,
+inclusive organizamos &lt;a href="http://wille.blog.br/2009/10/apresentacao-no-evento-a-etica-hacker-e-a-sociedade-livre/"&gt;um
+seminário&lt;/a&gt;.
+O ebook está disponível para &lt;a href="http://lantec.fae.unicamp.br/lantec/publicacoes/amaral,pretto-hackers.pdf"&gt;download
+gratuito&lt;/a&gt;
+e, infelizmente, acho que esqueceram de colocar uma licença &lt;a href="http://creativecommons.org.br"&gt;Creative
+Commons&lt;/a&gt; nele...&lt;/p&gt;</summary><category term="cultura digital"></category><category term="ebook"></category><category term="estudos"></category><category term="software livre"></category></entry><entry><title>2010-2011, destinos</title><link href="http://wille.blog.br/2011/01/2010-2011-destinos" rel="alternate"></link><updated>2011-01-05T22:59:00-02:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2011-01-05:2011/01/2010-2011-destinos</id><summary type="html">&lt;p&gt;Inspirado num &lt;a href="http://vimeo.com/17792958"&gt;vídeo que vi no vimeo&lt;/a&gt;,
+resolvi fazer um semelhante com as melhores fotos que fiz em 2010, assim
+teria um registro do que foi o ano pra mim. Consegui organizar as fotos
+e montá-las no vídeo em ordem cronólogica. Nem todos os acontecimentos
+importantes do ano estão retratados e a quantidade de fotos de cada
+evento pode não estar proporcional à importância que tiveram. Não tenho
+fotos das visitas que fiz aos meus amigos em Aracaju, por exemplo. E
+essas visitas foram sempre muito importantes e prazerosas pra mim.
+Algumas fotos do final do vídeo foram feitas pelo meu irmão.&lt;/p&gt;
+&lt;p&gt;&lt;object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="640" height="510" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"&gt;&lt;param name="src" value="http://blip.tv/play/AYKZ2kUA"&gt;&lt;/param&gt;&lt;param name="allowfullscreen" value="true"&gt;&lt;/param&gt;&lt;embed type="application/x-shockwave-flash" width="640" height="510" src="http://blip.tv/play/AYKZ2kUA" allowfullscreen="true"&gt;&lt;/embed&gt;&lt;/object&gt;&lt;/p&gt;
+&lt;p&gt;Fazendo um balanço agora, vejo que 2010 foi um ano que estudei pouco. Em
+2008 eu concluí a graduação no primeiro trimestre do ano, comecei uma
+especialização à distância no final do ano, mas não gostei e abandonei
+no primeiro mês. Em 2009, eu cursei três disciplinas do Bacharelado em
+Ciências Exatas e Tecnológicas da UFRB (abandonei pelas dificuldades de
+locomoção até Cruz das Almas) e cursei uma disciplina como aluno
+especial no mestrado em educação da UFBA, o que foi muito produtivo. Em
+2010 minha idéia era estudar em casa, sozinho, de forma autodidata, no
+entanto não tive a disciplina suficiente pra isso. Meu objetivo
+principal em 2011 é estudar bastante. Não sei se vou fazer algum curso
+regular, mas vou organizar meu tempo e priorizar os estudos. Com o
+conhecimento que eu adquirir, vou poder realizar outros objetivos que
+almejo...&lt;/p&gt;
+&lt;p&gt;Além disso, em 2011, entre outras coisas, pretendo:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;viajar tanto ou mais que em 2010;&lt;/li&gt;
+&lt;li&gt;ler mais (acho que melhorei o número de leituras em 2010, mas
+    preciso dedicar mais tempo aos livros);&lt;/li&gt;
+&lt;li&gt;estudar inglês, o suficiente para me comunicar;&lt;/li&gt;
+&lt;li&gt;continuar melhorando o espanhol;&lt;/li&gt;
+&lt;li&gt;continuar praticando esportes com regularidade (desde final de
+    outubro estou nadando toda semana, além do futebol que jogo quase
+    todas as quartas).&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="2010"></category><category term="2011"></category><category term="diário"></category><category term="fotografia"></category><category term="meus vídeos"></category><category term="planos"></category><category term="vídeo"></category></entry><entry><title>Um preto e branco diferente com o GIMP</title><link href="http://wille.blog.br/2010/11/um-preto-e-branco-diferente-com-o-gimp" rel="alternate"></link><updated>2010-11-30T21:15:00-02:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2010-11-30:2010/11/um-preto-e-branco-diferente-com-o-gimp</id><summary type="html">&lt;p&gt;O
+&lt;a href="http://www.ogimp.com.br/" title="Gimp é um software livre para edição de imagens"&gt;Gimp&lt;/a&gt;
+conta com uma biblioteca de processamento de imagens chamada GEGL, o
+qual possui um efeito de Preto e Branco bem interessante. Vou mostrar
+como utilizá-lo.&lt;/p&gt;
+&lt;p&gt;Abra uma imagem colorida no Gimp.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://images.wille.blog.br/tutorial-01.jpg" title="tutorial-01" /&gt;&lt;/p&gt;
+&lt;p&gt;Acesse o menu &lt;strong&gt;Ferramentas -&gt; Operação da GEGL&lt;/strong&gt;. Na janela de diálogo
+que vai se abrir, selecione a operação &lt;strong&gt;c2g&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://images.wille.blog.br/galeria1.png" title="galeria1" /&gt;&lt;/p&gt;
+&lt;p&gt;Eu geralmente uso a configuração padrão, mas você pode tentar parâmetros
+diferentes para a operação. Esse efeito exige bastante processamento da
+máquina, então demora alguns segundos para ser aplicado na imagem.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;O resultado:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://images.wille.blog.br/tutorial-c2g-final.jpg" title="tutorial-c2g-final" /&gt;&lt;/p&gt;
+&lt;p&gt;Compare com o preto e branco tradicional do Gimp:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://images.wille.blog.br/tutorial-pbnormal.jpg" title="tutorial-pbnormal" /&gt;&lt;/p&gt;</summary><category term="c2g"></category><category term="fotografia"></category><category term="gimp"></category><category term="software livre"></category><category term="tutorial"></category></entry><entry><title>Encontro Mineiro de Software Livre - 2010</title><link href="http://wille.blog.br/2010/10/encontro-mineiro-de-software-livre-2010" rel="alternate"></link><updated>2010-10-24T12:35:00-02:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2010-10-24:2010/10/encontro-mineiro-de-software-livre-2010</id><summary type="html">&lt;p&gt;&lt;img alt="" src="http://images.wille.blog.br/emsl10-cracha.jpg" title="Crachá do EMSL" /&gt;&lt;/p&gt;
+&lt;p&gt;Semana passada participei pela primeira vez do &lt;a href="http://emsl.softwarelivre.org"&gt;Encontro Mineiro de
+Software Livre&lt;/a&gt;, realizado na
+Universidade Federal de Uberlândia. Apresentei um mini-curso de Inkscape
+e uma palestra sobre softwares livres para edição de vídeo.&lt;/p&gt;
+&lt;p&gt;O evento teve um público bem pequeno, no entanto foi bem produtivo em
+debates, conversas e contatos. Pude ver uma muito bem humorada palestra 
+sobre geometria computacional com &lt;a href="http://www.ime.ufg.br/docentes/olepeter/"&gt;Ole Peter
+Smith&lt;/a&gt;, dinamarquês e
+professor da Universidade Federal de Goiás. Outra palestra interessante
+foi a do &lt;a href="http://softwarelivre.org/wendellbg"&gt;Wendell Gonçalves&lt;/a&gt; sobre
+software livre e educação, a qual mostrou alguns pontos de vista sobre
+esse tema que eu ainda não tinha contato.&lt;/p&gt;
+&lt;p&gt;Além disso, aconteceram duas boas desconferências. Numa delas,
+discutimos sobre o conceito de Liberdade no Software Livre. Já no
+sábado, tivemos a presença de dois integrantes do Circuito Fora do Eixo,
+os quais afirmaram o interesse ideológico da FdE em migrar para software
+livre, e discutimos como o movimento software livre pode colaborar para
+isso. Pra quem não conhece, o &lt;a href="http://foradoeixo.org.br/"&gt;Circuito Fora do
+Eixo&lt;/a&gt; é uma rede de coletivos culturais de
+todo o país que trabalha com princípios como a economia solidária e o
+cooperativismo.&lt;/p&gt;
+&lt;p&gt;Outro bom momento foi a palestra do &lt;a href="http://nighto.net/"&gt;Nighto&lt;/a&gt; sobre
+&lt;a href="http://mapaslivres.org"&gt;Open Street Map&lt;/a&gt;. Quando voltei pra casa, me
+cadastrei e já fiz várias contribuições. Uma coisa divertida de
+colaborar com o OSM é relembrar os lugares em que estive em
+&lt;a href="http://www.openstreetmap.org/?lat=-18.9091&amp;amp;lon=-48.2654&amp;amp;zoom=14&amp;amp;layers=M"&gt;Uberlândia&lt;/a&gt;.
+Também já fiz algumas edições nos mapas de Aracaju e Salvador.&lt;/p&gt;
+&lt;p&gt;Gostei bastante do EMSL e agradeço a excelente recepção e atenção da
+turma que organizou o evento (tivemos até coffee break com pão de
+queijo!). Disponibilizo aqui os slides da palestra "Análise dos
+softwares livres para edição de vídeo". Faça o download dos &lt;a href="http://images.wille.blog.br/slide-analise-video.pdf"&gt;slides em
+PDF
+(585kb)&lt;/a&gt;
+ou em &lt;a href="http://images.wille.blog.br/slide-analise-video.odp"&gt;ODP
+(928kb)&lt;/a&gt;.&lt;/p&gt;</summary><category term="edição de vídeo"></category><category term="emsl"></category><category term="eventos"></category><category term="minas gerais"></category><category term="slide"></category><category term="software livre"></category><category term="uberlândia"></category></entry><entry><title>Futebol nos Pampas</title><link href="http://wille.blog.br/2010/10/futebol-nos-pampas-2" rel="alternate"></link><updated>2010-10-21T22:31:00-02:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2010-10-21:2010/10/futebol-nos-pampas-2</id><summary type="html">&lt;div class="mceTemp mceIEcenter" style="text-align: justify;"&gt;
+
+![](http://images.wille.blog.br/kdk_0975.jpg "futebol na rua")
+:   Meninos jogando bola na Ciudad Vieja, Montevideo
+
+&lt;/div&gt;
+
+&lt;p&gt;No táxi que peguei da rodoviária de Buenos Aires até o Hostel no dia em
+que cheguei, os principais assuntos foram política e futebol. O taxista,
+que fisicamente lembrava o Maradona, começou falando sobre o fim do
+mandato do Lula nesse ano. Afirmou que o Brasil está indo bem e
+questionou sobre quem provavelmente será o sucessor. Depois o tema mudou
+para futebol. Falou que nós nos demos mal na Copa e que a Argentina
+também, porém não queria a saída de Maradona.&lt;/p&gt;
+&lt;p&gt;Já no táxi que peguei quando fui embora de BsAs, o assunto foi
+principalmente futebol. Entretanto, o taxista me questionou também sobre
+as diferenças sociais e econômicas que eu consegui perceber entre Brasil
+e Argentina. Em seguida, começamos a falar de futebol. O taxista era
+torcedor fanático do Lanús, time da cidade de mesmo nome, localizada na
+região metropolitana de BsAs. Ele falou que toda a família torcia para o
+Lanús e que o pai, ele e os irmãos são sócios do clube. Falou que com o
+esforço dos sócios e da diretoria, conseguiram construir um estádio,
+contratar bons jogadores e isso já está refletindo na performance do
+time. Aí ele pegou o jornal pra me mostrar que o Lanús era o primeiro na
+média de pontos das últimas três temporadas do Campeonato Argentino.&lt;/p&gt;
+&lt;p&gt;A impressão que tive dos taxistas de BsAs foi muito boa. Todas as três
+vezes que peguei táxi, os táxistas puxaram assunto e conversaram comigo
+durante todo o percurso. Além disso, o preço é muito inferior ao do
+Brasil...&lt;/p&gt;
+&lt;div class="mceTemp mceIEcenter" style="text-align: justify;"&gt;
+
+![](http://images.wille.blog.br/kdk_0822.jpg "La Bombonera")
+:   La Bombonera (foto feita sem zoom!)
+
+&lt;/div&gt;
+
+&lt;p&gt;Outro contato com futebol que tive na viagem foram as visitas à La
+Bombonera, estádio do Boca Juniors, e ao Centenário, principal estádio
+do Uruguai. Gosto muito de estádios, apesar de ter ído pela primeira vez
+em um há apenas um ano (meus pais dizem que me levaram na Fonte Nova
+quando eu era criança, mas não me lembro de nada...).&lt;/p&gt;
+&lt;p&gt;[caption id="attachment_649" align="aligncenter" width="600"
+caption="La
+Bombonera"]&lt;img alt="" src="http://images.wille.blog.br/kdk_0827.jpg" title="La Bombonera 2" /&gt;[/caption]&lt;/p&gt;
+&lt;p&gt;O La Bombonera é muito interessante. Ele foi construído em uma área
+pequena demais para um estádio tradicional. Assim, os arquitetos tiveram
+que encontrar soluções para que ele coubesse na área e para que a
+capacidade fosse compatível com a grandeza da torcida do Boca. Com isso,
+as arquibancadas ficam muito próximas do gramado. Só tive acesso ao
+setor central das arquibancadas, mas, pelo que vi, deve ser uma
+experiência bem diferente assistir um jogo lá.&lt;/p&gt;
+&lt;div class="mceTemp mceIEcenter" style="text-align: justify;"&gt;
+
+![](http://images.wille.blog.br/kdk_0989.jpg "Estádio Centenário")
+:   Estádio Centenário
+
+&lt;/div&gt;
+
+&lt;p&gt;Já o estádio Centenário consegue ser exatamente o contrário do La
+Bomboneira. Gramado bem distante da arquibancada e bem mais extenso. Lá
+no Centenário existe um museu do futebol, porém no dia em que eu fui,
+estava fechado.&lt;/p&gt;
+&lt;p&gt;Gostaria de ter assistido um jogo em Buenos Aires, porém o Torneio
+Apertura começou exatamente no dia em que fui embora de lá...&lt;/p&gt;
+&lt;p&gt;[caption id="attachment_650" align="aligncenter" width="600"
+caption="Estádio
+Centenário"]&lt;img alt="" src="http://images.wille.blog.br/kdk_0992.jpg" title="Estádio Centenário" /&gt;[/caption]&lt;/p&gt;</summary><category term="argentina"></category><category term="diário"></category><category term="estádios"></category><category term="fotografia"></category><category term="futebol"></category><category term="la bombonera"></category><category term="uruguai"></category><category term="viagens"></category></entry><entry><title>Hostel, curso de espanhol e mobilidade em Buenos Aires</title><link href="http://wille.blog.br/2010/09/hostel-curso-de-espanhol-e-mobilidade-em-buenos-aires" rel="alternate"></link><updated>2010-09-03T19:52:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2010-09-03:2010/09/hostel-curso-de-espanhol-e-mobilidade-em-buenos-aires</id><summary type="html">&lt;p&gt;[caption id="attachment_627" align="alignnone" width="600"
+caption="Terraço do
+Hostel"]&lt;img alt="" src="http://images.wille.blog.br/kdk_0867.jpg" title="terraço do hostel" /&gt;[/caption]&lt;/p&gt;
+&lt;p&gt;Fiquei hospedado no &lt;a href="http://www.portaldelsurba.com.ar"&gt;Hostel Portal del
+Sur&lt;/a&gt; durante os 12 dias que fiquei em
+Buenos Aires. A localização dele é muito boa, no centro da cidade, perto
+da Casa Rosada e da Av. 9 de Julho, a uma quadra de duas estações de
+metrô e próximo de vários locais interessantes. Quanto à equipe do
+hostel, metade dela não é muito simpática, porém a outra metade é bem
+receptiva e ajuda bastante os hóspedes. Conheci muita gente lá e pude
+praticar o espanhol.&lt;/p&gt;
+&lt;p&gt;[caption id="attachment_628" align="alignnone" width="600"
+caption="Sorteio de prêmios na
+escola"]&lt;img alt="" src="http://images.wille.blog.br/kdk_0752.jpg" title="escola de Espanhol" /&gt;[/caption]&lt;/p&gt;
+&lt;p&gt;Fiz duas semanas de curso de espanhol numa &lt;a href="http://www.ibl.com.ar"&gt;escola chamada
+IBL&lt;/a&gt;. A escola está localizada no centro de BsAs,
+bem próximo do hostel. Gostei muito dos professores e do método de
+ensino, porém sugiro consultar o número de alunos na turma quando for
+reservar. Turmas com quatro alunos ou menos têm um rendimento bem
+melhor. O IBL também oferece cursos pela internet com recursos bem
+interessantes.&lt;/p&gt;
+&lt;p&gt;[caption id="attachment_629" align="alignnone" width="600"
+caption="Praça de Maio e Casa
+Rosada"]&lt;img alt="" src="http://images.wille.blog.br/kdk_0744.jpg" title="Praça de maio" /&gt;[/caption]&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Mobilidade&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Gostei muito do sistema de transporte coletivo de Buenos Aires. Apesar
+de o metrô estar lotado em vários períodos do dia, ele é bem abrangente,
+a integração de linhas é gratuita e a passagem é muito barata (cerca de
+55 centavos de real) e subsidiada pelo estado. Em São Paulo, uma
+passagem de metrô custa R\$ 2,55!&lt;/p&gt;
+&lt;p&gt;Os ônibus também são eficientes, bem conservados, funcionam 24h por dia
+e o preço é quase o mesmo do metrô e também é subsidiado. Só precisei
+pegar taxi três vezes nos 12 dias que passei lá. É bem fácil encontrar
+mapas gratuitos de Buenos Aires e estes sempre incluem as linhas de
+metrô e estações, o que ajuda bastante na locomoção por lá.&lt;/p&gt;
+&lt;p&gt;Os mapas me ajudaram também a caminhar bastante pela cidade. O trânsito
+é bem mais amigável com os pedestres que aqui no Brasil. Nos bairros
+mais centrais, as ruas têm muitas faixas de pedestre e semáforos. Os
+carros costumam parar quando o sinal ainda está amarelo e ,quase sempre,
+a travessia é bem segura.&lt;/p&gt;</summary><category term="argentina"></category><category term="buenos aires"></category><category term="curso de espanhol"></category><category term="fotografia"></category><category term="hostel"></category><category term="mobilidade"></category><category term="viagens"></category></entry><entry><title>Chegada a Buenos Aires</title><link href="http://wille.blog.br/2010/09/chegada-a-buenos-aires" rel="alternate"></link><updated>2010-09-02T23:38:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2010-09-02:2010/09/chegada-a-buenos-aires</id><summary type="html">&lt;p&gt;&lt;a href="http://wille.blog.br/2010/07/fisl-11-e-porto-alegre/"&gt;Após o FISL&lt;/a&gt;,
+peguei um ônibus em Porto Alegre no final da tarde do dia 24 de julho e
+parti para Buenos Aires. A viagem demorou mais ou menos 20 horas, porém
+ficamos parados cerca de 2h na aduana logo que entramos na Argentina.&lt;/p&gt;
+&lt;p&gt;A primeira impressão de Buenos Aires não foi boa. Dia chuvoso, uma névoa
+cobria a cidade, deixando-a completamente cinza. Eu também estava um
+pouco apreensivo por estar sozinho em outro país.&lt;/p&gt;
+&lt;p&gt;Cheguei por volta das duas da tarde e peguei um taxi na rodoviária até o
+hostel. Após tomar um banho e arrumar minhas mochilas no armário do
+hostel, fui procurar um lugar para almoçar. Acabei indo parar em um café
+da Avenida de Mayo. O lugar parecia estar na década de 60, tanto pelo
+ambiente quanto pela idade das pessoas que frequentavam. Pedi um filé de
+merluza com batatas fritas. Um ou dois minutos depois, a garçonete me
+traz um pirex com uns peixinhos parecidos com sardinha e umas azeitonas.
+Inicialmente cogitei que teria entendido errado o que estava escrito no
+cardápio, mas depois vi que é costume nos cafés argentinos servir algo
+como entrada até que o prato solicitado fique pronto.&lt;/p&gt;
+&lt;p&gt;Entretanto, o prato principal não me agradou. A merluza não tinha sabor
+algum e as batatas fritas estavam murchas e ensopadas de óleo! Por conta
+da chuva, passei o restante do dia no hostel. Estava tão assustado com a
+chegada na cidade que pensei em antecipar a volta ao Brasil.&lt;/p&gt;
+&lt;p&gt;No dia seguinte, porém tudo mudou. Céu azul e pouco frio. Pela manhã fui
+pra minha primeira aula de espanhol e gostei bastante. Na hora do
+almoço, descobri o "Cabildo de Buenos Aires", um café com ambiente
+legal, boa variedade de pratos e preço bom. Resolvi não arriscar e pedi
+um spaghetti com molho quatro queijos! A entrada dessa vez foi mais
+saborosa: um pastelzinho de carne e uma mini fatia de pizza! O spaghetti
+me agradou tanto que voltei a comer no "Cabildo" outras quatro ou cinco
+vezes.&lt;/p&gt;
+&lt;p&gt;[gallery link="file" columns="2" size="medium" orderby="ID"]&lt;/p&gt;</summary><category term="argentina"></category><category term="buenos aires"></category><category term="diário"></category><category term="fotografia"></category><category term="viagens"></category></entry><entry><title>FISL 11 e Porto Alegre</title><link href="http://wille.blog.br/2010/07/fisl-11-e-porto-alegre" rel="alternate"></link><updated>2010-07-26T23:12:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2010-07-26:2010/07/fisl-11-e-porto-alegre</id><summary type="html">&lt;p&gt;De 20 a 24 de julho, participei da 11ª edição do Fórum Internacional de
+Software Livre. O &lt;a href="http://www.fisl.org.br"&gt;FISL&lt;/a&gt; esse ano me agradou
+mais do que a edição anterior. Percebi uma diversidade maior de temas na
+programação e acho que consegui escolher melhor as palestras do que no
+ano passado.&lt;/p&gt;
+&lt;p&gt;Assisiti boas palestras sobre HTML5, ministradas pela equipe da Fundação
+Mozilla, os quais mostraram alguns recursos que o HTML5 + javascript
+proporciona para o vídeo na web. Por falar em javascript, acho que essa
+é uma linguagem que vale a pena estudar  atualmente, pois abre muitas
+possibilidades quando usada com o HTML5.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Encontro LGM
+Brasil" src="http://images.wille.blog.br/encontro-lgm-br.jpg" title="encontro-lgm-br" /&gt;&lt;/p&gt;
+&lt;p&gt;Um momento importante do FISL, foi o encontro &lt;a href="http://LGM.SoftwareLivre.org%20"&gt;LGM
+Brasil&lt;/a&gt;, que reuniu algumas pessoas que
+colaboram/trabalham com softwares gráficos livres. Um dos temas
+discutidos foi a possibilidade de realizar o encontro LGM Internacional
+no Brasil em 2012. Consideramos que, a menos que consigamos um forte
+apoio de algum orgão estatal, seria muito difícil realizar o encontro
+aqui, pois boa parte dos desenvolvedores vivem na Europa e América do
+Norte. Como o custo das passagens é bastante alto e seria prejudicial
+para o LGM se muitos desenvolvedores não conseguirem vir. Além do
+encontro, a programação contou com várias palestras sobre os softwares
+gráficos.&lt;/p&gt;
+&lt;p&gt;Além disso, vi uma excelente palestra sobre o &lt;a href="http://www.osm.org"&gt;Open Street
+Map&lt;/a&gt;, um projeto colaborativo para a criação de
+mapas sob licenças livres . O mapeamento pode ser feito por meio de um
+aparelho GPS ou pelo site do projeto, com base nas fotos de satélite que
+o Yahoo disponiblizou. Em cidades como Berlin e Londres, as informações
+do Open Street Map são mais completas do que as do Google Maps. O OSM
+foi a principal fonte de informação para as equipes humanitárias que
+atuaram no Haiti após o terremoto. Em apenas 48 horas, pessoas do mundo
+todo ajudaram a mapear grande parte da região atingida pelo terremoto.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Mesa - Licenciamento de Software
+Livre" src="http://images.wille.blog.br/mesa-licenciamento.jpg" title="mesa-licenciamento" /&gt;&lt;br /&gt;
+Foi muito boa também a palestra do JS sobre
+&lt;a href="http://www.fsfla.org/svnwiki/texto/drm-deliberdefect.pt"&gt;DRM&lt;/a&gt;, as mesas
+"Professor, um jeito hacker de ser", composta  por &lt;a href="http://pretto.info"&gt;Nelson
+Pretto&lt;/a&gt;, &lt;a href="http://www.trezentos.blog.br/?author=1"&gt;Sérgio
+Amadeu&lt;/a&gt; e &lt;a href="http://nossacibervida.blogspot.com/"&gt;Adriano
+Teixeira&lt;/a&gt;, e a de licenciamento de
+software livre, as lightning talks do pessoal da
+&lt;a href="http://horaextra.org/"&gt;#horaextra&lt;/a&gt;, entre outras...&lt;/p&gt;
+&lt;p&gt;Em Porto Alegre, não consegui visitar muitos lugares, pois a programação
+diária do FISL foi de 12h. Este ano, o clima estava menos frio do que no
+ano passado. O ruim foi que nos dois primeiros dias choveu bastante e o
+sol praticamente não apareceu. Como fiquei hospedado no centro da cidade
+caminhei bastante por lá e aproveitei para conhecer o mercado público
+(mas esqueci de fazer fotos). Quando eu retornar da Argentina e Uruguai,
+pretendo passar pelo menos um dia andando por PoA.&lt;/p&gt;</summary><category term="eventos"></category><category term="fisl"></category><category term="fisl11"></category><category term="porto alegre"></category><category term="software livre"></category></entry><entry><title>Pyroom</title><link href="http://wille.blog.br/2010/07/pyroom" rel="alternate"></link><updated>2010-07-17T21:31:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2010-07-17:2010/07/pyroom</id><summary type="html">&lt;p&gt;&lt;img alt="Tela software
+Pyroom" src="http://images.wille.blog.br/tela-pyroom.png" title="tela-pyroom" /&gt;&lt;/p&gt;
+&lt;p&gt;Hoje instalei o Pyroom, o objetivo dele é retirar os elementos da tela
+que nos distraem enquanto escrevemos. Aquele menuzinho (presente na
+imagem acima) aparece apenas se clicarmos com o botão direito do mouse.
+Além disso e do comando de ajuda (CTRL+H), o Pyroom não tem mais nenhum
+outro menu ou botão.&lt;/p&gt;
+&lt;p&gt;Escrevi o último post do blog (e também este) utilizando ele e me parece
+que cumpre bem o objetivo. Apesar de algumas notificações ainda
+aparecerem na tela, você não vai clicar toda hora no ícone do Instant
+Messenger, não vai alternar as janelas tanto quanto se estivesse num
+editor de texto comum e nem se preocupar com a formatação. Claro que não
+é garantia de concentração, no entanto pode ajudar.&lt;/p&gt;
+&lt;p&gt;Por enquanto, funciona apenas em GNU/Linux.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Site:&lt;/strong&gt; &lt;a href="http://pyroom.org"&gt;http://pyroom.org&lt;/a&gt;&lt;/p&gt;</summary><category term="dicas de software"></category><category term="escrita"></category><category term="pyroom"></category><category term="software livre"></category></entry><entry><title>Viagem pelos pampas - Preparativos</title><link href="http://wille.blog.br/2010/07/viagem-pelos-pampas-preparativos" rel="alternate"></link><updated>2010-07-17T20:49:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2010-07-17:2010/07/viagem-pelos-pampas-preparativos</id><summary type="html">&lt;p&gt;Nesta terça-feira embarco para uma viagem pelos pampas. Visito pela
+segunda vez o inverno Porto Alegrense e participo do &lt;a href="http://fisl.org.br/11/"&gt;FISL
+11&lt;/a&gt; (Fórum Internacional de Software Livre).
+Depois parto de ônibus para Buenos Aires, onde pretendo ficar por 12
+dias. Nesse período, farei um curso de espanhol em um turno do dia e
+conhecerei a cidade no restante do tempo. Na volta, pretendo atravessar
+o Rio da Prata de barco e conhecer Colônia do Sacramento e Montevidéu.
+Se der tempo, passo por mais algumas cidades do Uruguai ou do Rio Grande
+do Sul. Em Porto Alegre, pego um vôo para Uberlândia, onde visitarei uma
+grande amiga. Dia 16 de agosto retorno para a rotina.&lt;/p&gt;
+&lt;p&gt;Durante a viagem pretendo relatar as experiências aqui no blog e
+reanimar esse espaço que anda tão abandonado...&lt;/p&gt;</summary><category term="diário"></category><category term="viagens"></category></entry><entry><title>Violão</title><link href="http://wille.blog.br/2010/07/violao" rel="alternate"></link><updated>2010-07-07T20:30:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2010-07-07:2010/07/violao</id><summary type="html">&lt;p&gt;&lt;img alt="eu e o
+violão" src="http://images.wille.blog.br/violao-pb-wille.jpg" title="eu e o violão" /&gt;&lt;/p&gt;
+&lt;p&gt;Comprei um violão!&lt;/p&gt;</summary><category term="diário"></category><category term="música"></category><category term="violão"></category></entry><entry><title>Eventos sobre educação e tecnologia na UFRB</title><link href="http://wille.blog.br/2010/05/eventos-sobre-educacao-e-tecnologia-na-ufrb" rel="alternate"></link><updated>2010-05-18T20:40:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2010-05-18:2010/05/eventos-sobre-educacao-e-tecnologia-na-ufrb</id><summary type="html">&lt;p&gt;Este mês serão realizados dois eventos relacionados a educação e
+tecnologia no campus da
+&lt;a href="http://www.ufrb.edu.br" title="Universidade Federal do Recôncavo da Bahia"&gt;UFRB&lt;/a&gt;
+em Cachoeira. Na próxima sexta-feira (18/05), acontecerá o I Encontro de
+RPG e Educação do Recôncavo da Bahia, o qual vai tratar do uso de RPG em
+sala de aula. O evento é organizado pelo
+&lt;a href="http://www.ufrb.edu.br/lehrb/" title="Laboratório de Ensino de História do Recôncavo da Bahia"&gt;LEHRB&lt;/a&gt;.
+Veja a &lt;a href="http://www.ufrb.edu.br/lehrb/wp-content/uploads/2010/05/RpgEduca%C3%A7%C3%A3oCorPeq.jpg"&gt;programação
+completa&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://images.wille.blog.br/RpgEducaçãoCorPeq.jpg"&gt;&lt;img alt="I Encontro de RPG e
+Educação" src="http://images.wille.blog.br/RpgEducaçãoCorPeq-212x300.jpg" title="RpgEducaçãoCorPeq" /&gt;&lt;/a&gt;
+&lt;a href="http://images.wille.blog.br/evento-plug.png"&gt;&lt;img alt="Software Livre, Educação e Formação – A experiência do projeto Irecê
+(FACED-UFBA)" src="http://images.wille.blog.br/evento-plug-205x300.png" title="evento-plug" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Já na próxima terça-feira, será realizada uma mesa-redonda tratando do
+Projeto Irecê, o qual é desenvolvido pela Faculdade de Educação da UFBA
+e articula a formação de professores com o uso de novas tecnologias, em
+especial com Softwares Livres. Este evento tem a organização do
+&lt;a href="http://www.ufrb.edu.br/plug/"&gt;Plug!&lt;/a&gt;, projeto de extensão do qual eu
+participo. Veja a
+&lt;a href="http://www.ufrb.edu.br/plug/software-livre-educacao-e-formacao-a-experiencia-do-projeto-irece-faced-ufba/"&gt;programação&lt;/a&gt;.&lt;/p&gt;</summary><category term="educação"></category><category term="eventos"></category><category term="rpg"></category><category term="software livre"></category><category term="ufrb"></category></entry><entry><title>Civic Hacking, Dados Públicos e P2PU</title><link href="http://wille.blog.br/2010/05/civic-hacking-dados-publicos-e-p2pu" rel="alternate"></link><updated>2010-05-17T00:36:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2010-05-17:2010/05/civic-hacking-dados-publicos-e-p2pu</id><summary type="html">&lt;p&gt;Em março e abril foi realizado o curso de &lt;a href="http://p2pu.org/civic-hacking-mar-2010"&gt;Civic
+Hacking&lt;/a&gt; na Peer 2 Peer
+University. A &lt;a href="http://p2pu.org/"&gt;P2PU&lt;/a&gt; é uma iniciativa que incentiva a
+criação de grupos de estudos online e funciona assim: alguém propõe
+ministrar um curso, abre-se o período de inscrições para os estudantes
+interessados, é realizada a seleção e o curso é realizado com
+ferramentas online e &lt;a href="http://pt.wikipedia.org/wiki/Recursos_educacionais_abertos"&gt;recursos educacionais
+abertos&lt;/a&gt;. O
+curso de Civic Hacking, foi um dos três primeiros ministrados em
+português na P2PU.&lt;/p&gt;
+&lt;p&gt;Civic hacking é um termo que diz respeito às novas formas de ação na
+esfera pública interconectada, o que algumas vezes é denominado de
+ativismo online. São ações estabelecidas por meio da apropriação da
+tecnologia buscando provocar transformações sociais.&lt;/p&gt;
+&lt;p&gt;O curso teve duração de seis semanas e compreendeu tanto discussões
+teóricas a respeito do tema quanto atividades práticas, como a
+elaboração de uma &lt;a href="http://wiki.esfera.mobi/index.php?title=Lei_Azeredo"&gt;linha do tempo da Lei
+Azeredo&lt;/a&gt; (e
+principalmente dos protestos contra esta) e a criação de um mashup com
+dados públicos. Foi também produzido um &lt;a href="http://p2pu.org/civic-hacking-mar-2010/document/exemplo-de-extra%C3%A7%C3%A3o-de-tabelas-em-formato-pdf"&gt;tutorial de ferramentas de
+visualização de dados e de
+mashup&lt;/a&gt;
+e eu colaborei com uma
+&lt;a href="http://manyeyes.alphaworks.ibm.com/manyeyes/visualizations/comparativo-de-despesas-dos-estado"&gt;visualização&lt;/a&gt;
+comparando os gastos de alguns estados brasileiros em algumas pastas de
+governo.&lt;/p&gt;
+&lt;p&gt;Já a questão dos &lt;a href="http://www.pedrovalente.com/2009/03/24/oito-principios-dados-publicos/"&gt;dados
+públicos&lt;/a&gt;
+foi um dos temas que mais motivou os debates teóricos. Informações
+públicas disponibilizadas na internet devem ser consideradas como uma
+necessidade básica de qualquer democracia. Apesar de já existirem alguns
+portais de transparência pública com estes dados, são necessários muitos
+avanços, seja na quantidade de dados disponíveis como na forma de
+disponibilização.&lt;/p&gt;
+&lt;p&gt;Apesar de ter sido muito proveitoso participar do curso, percebi que
+preciso avançar muito em relação à auto-disciplina, pois esta é
+fundamental em um processo de aprendizagem informal, sem exigência de
+frequência, provas e notas.&lt;/p&gt;
+&lt;p&gt;Quem se interessou por Civic Hacking, pode acessar a &lt;a href="http://p2pu.org/civic-hacking-mar-2010"&gt;página do curso na
+P2PU&lt;/a&gt; e também os arquivos da
+&lt;a href="http://groups.google.com/group/civichacking/"&gt;lista de discussão&lt;/a&gt;. Em
+breve, novas turmas devem ser abertas na P2PU.&lt;/p&gt;</summary><category term="ciberativismo"></category><category term="civic hacking"></category><category term="dados públicos"></category><category term="p2pu"></category></entry><entry><title>Site do Curta-Se 10</title><link href="http://wille.blog.br/2010/05/site-do-curta-se-10" rel="alternate"></link><updated>2010-05-02T23:57:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2010-05-02:2010/05/site-do-curta-se-10</id><summary type="html">&lt;p&gt;Desde o início de março estou trabalhando no site do &lt;a href="http://curtase.org.br/"&gt;Curta-Se
+10&lt;/a&gt; - Festival Iberoamericano de Cinema de
+Sergipe. Sou responsável pelo desenvolvimento e administração do site. A
+parte gráfica fica por conta de Luiz Garcia Jr. Utilizamos o CMS
+&lt;a href="http://wordpress.org"&gt;Wordpress&lt;/a&gt; e em breve será lançado um layout
+especial em comemoração aos 10 anos do Curta-Se.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://images.wille.blog.br/tela-curta-se.png" /&gt;&lt;/p&gt;
+&lt;p&gt;O festival será realizado em setembro e as inscrições de curtas e longas
+se encerram no dia 07 de maio.&lt;/p&gt;</summary><category term="curta-se"></category><category term="desenvolvimento web"></category><category term="festival"></category><category term="trabalho"></category></entry><entry><title>Configurando Xerox Phaser 3428 no GNU/Linux</title><link href="http://wille.blog.br/2010/03/configurando-xerox-phaser-3428-no-gnulinux" rel="alternate"></link><updated>2010-03-24T10:54:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2010-03-24:2010/03/configurando-xerox-phaser-3428-no-gnulinux</id><summary type="html">&lt;p&gt;Essa semana tive problemas para configurar a impressora de rede Xerox
+Phaser 3428 na minha máquina do trabalho. A impressora era reconhecida,
+mas não aceitava os trabalhos enviados. Pesquisei um pouco e encontrei a
+solução: adicione a impressora normalmente, porém escolha o driver Xerox
+Phaser 3450, ao invés do 3420 ou 3425, como mostrado na imagem abaixo.
+Testado no Ubuntu 9.10.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Configuração da Xerox Phaser
+3428" src="http://images.wille.blog.br/phaser-3428-3450.png" title="phaser-3428-3450" /&gt;&lt;/p&gt;</summary><category term="gnulinux"></category><category term="impressora"></category><category term="tutorial"></category></entry><entry><title>Trocando Livros</title><link href="http://wille.blog.br/2010/02/trocando-livros" rel="alternate"></link><updated>2010-02-08T19:45:00-02:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2010-02-08:2010/02/trocando-livros</id><summary type="html">&lt;p&gt;&lt;em&gt;"O&lt;/em&gt; &lt;em&gt;&lt;a href="http://www.trocandolivros.com.br"&gt;Trocando Livros&lt;/a&gt; é um site que
+tem como objetivo facilitar a troca de livros entre pessoas de todo o
+Brasil.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Com certeza sua estante possui diversos livros que já foram lidos ou
+que você não tem mais interesse. Provavelmente, neste imenso país,
+existem pessoas interessadas neles. E se eu pudesse enviar esses livros
+para as pessoas que precisam e receber de outras os títulos que quero?&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Para resolver este impasse, foi criado o&lt;/em&gt; &lt;em&gt;Trocando Livros."&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;O site funciona assim: você adiciona os livros que você tem em casa e
+quer trocar. Se alguém se interessar por ele, você recebe os dados da
+pessoa e faz o envio do livro. Quando a pessoa receber o livro, você
+recebe 1 crédito, com o qual pode solicitar qualquer outro livro do
+site.&lt;/p&gt;
+&lt;p&gt;Quem não tem nenhum livro pra trocar, pode comprar 1 crédito por R\$
+14,90 e solicitar o livro que deseja. O envio pode ser feito pela
+modalidade Impresso com Registro Módico nos correios e custa menos que
+R\$5,00&lt;/p&gt;
+&lt;p&gt;Os livros que estou disponibilizando para troca são os seguintes (todos
+em ótimo estado de conservação):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.trocandolivros.com.br/livros/70270-brasil-brasis-identidades-cultura-e-midia"&gt;Brasil, Brasis - Identidades, Cultura e
+Mídia&lt;/a&gt; -
+Alexandre Bargalho (Org.)  &lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.trocandolivros.com.br/livros/31293-a-escravidao-na-roma-antiga-politica-economia-e-cultura"&gt;A Escravidão na Roma Antiga - Política, Economia e
+Cultura&lt;/a&gt; -
+Fabio Duarte Joly  &lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.trocandolivros.com.br/livros/24335-arquitetos-de-sonhos"&gt;Arquitetos de
+Sonhos&lt;/a&gt; -
+Ademar Bogo (conta como funciona o MST)  &lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.trocandolivros.com.br/livros/24332-midia-e-violencia"&gt;Mídia e
+Violência&lt;/a&gt; -
+Silvia Ramos e Anabela Paiva  &lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.trocandolivros.com.br/livros/24330-raca-novas-perspectivas-antropologicas-2%C2%AA-edicao"&gt;RAÇA NOVAS PERSPECTIVAS ANTROPOLÓGICAS - 2ª
+EDIÇÃO&lt;/a&gt; -
+ORLANDO ARAÚJO PINHO E LIVIO SANSONE  &lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.trocandolivros.com.br/livros/24329-lolita"&gt;Lolita&lt;/a&gt; -
+Vladimir Nabokov  &lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.trocandolivros.com.br/livros/70274-a-utopia"&gt;A Utopia&lt;/a&gt; -
+Thomas Morus&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="literatura"></category><category term="livros"></category><category term="trocando livros"></category></entry><entry><title>Novos livros</title><link href="http://wille.blog.br/2010/02/novos-livros" rel="alternate"></link><updated>2010-02-07T17:12:00-02:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2010-02-07:2010/02/novos-livros</id><summary type="html">&lt;p&gt;&lt;a href="http://images.wille.blog.br/kdk_0392.jpg"&gt;&lt;img alt="" src="http://images.wille.blog.br/kdk_0392.jpg" title="Pra ser sincero - Livro de humberto Gessinger" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;“Pra ser sincero”, de Humberto Gessinger, um dos artistas que eu mais
+admiro. É um livro sobre a trajetória deste com os &lt;a href="http://www.engenheirosdohawaii.com.br"&gt;Engenheiros do
+Hawaii&lt;/a&gt; e agora com o &lt;a href="http://www.poucavogal.com.br"&gt;Pouca
+Vogal&lt;/a&gt;. Contém comentários sobre cada ano
+de carreira e cada um dos discos e sobre algumas das 123 músicas cujas
+letras estão no livro. Comprei na promoção de pré-venda e recebi o livro
+autografado por Gessinger e ainda uma camiseta comemorativa.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://images.wille.blog.br/kdk_0373.jpg"&gt;&lt;img alt="" src="http://images.wille.blog.br/kdk_0373.jpg" title="mar sem fim + na natureza selvagem" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Em janeiro, também comprei o “Na natureza selvagem” e o “Mar sem fim”. O
+primeiro, mesmo não sendo como eu esperava, gostei muito! Conta a
+história de Chris McCandless, um cara que abandona carro, carreira e
+família e começa a viver viajando de carona pelos EUA, até que decide ir
+passar um verão isolado no Alaska.&lt;/p&gt;
+&lt;p&gt;Eu já havia visto o filme há mais de um ano e esperava que o livro
+tivesse uma linguagem literária, no entanto, ele tende pra algo mais
+documental, próximo de uma grande reportagem. Mesmo assim, vale muito a
+pena ler, ver o filme e baixar a trilha sonora, composta e gravada pelo
+Eddie Vedder.&lt;/p&gt;
+&lt;p&gt;Já o “Mar sem fim”, eu vou começar nas próximas semanas. Este é o único
+livro do &lt;a href="http://amyrklink.com.br/"&gt;Amyr Klink&lt;/a&gt;que eu ainda não li. O
+tema deste é a volta ao mundo realizada por Klink, navegando em
+solitário num veleiro abaixo da convergência antártica.&lt;/p&gt;
+&lt;p&gt;Tenho me interessado por livros sobre viajantes aventureiros. O próximo
+que quero ler é o diário da viagem de Che Guevara pela América do Sul.&lt;/p&gt;</summary><category term="enghaw"></category><category term="livros"></category><category term="viagens"></category></entry><entry><title>Ciclos</title><link href="http://wille.blog.br/2010/02/ciclos" rel="alternate"></link><updated>2010-02-04T00:18:00-02:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2010-02-04:2010/02/ciclos</id><summary type="html">&lt;p&gt;Datas pra mim não fazem muito sentido. Não valorizo muito aniversários e
+viradas de ano. Às vezes, nosso calendário interno tá bem diferente do
+calendário do mundo. Esse início de ano foi assim. Mudou o ano, mas eu
+não tinha nada de novo para me propor, apenas alguns planos já meio
+antigos que preciso me organizar para pôr em prática.&lt;/p&gt;
+&lt;p&gt;Uma coisa que percebi é que minha forma de viver é mais cíclica que
+linear e essa parece ser uma forma bem mais interessante de observar o
+tempo.  Os ciclos deixam mais claro que tudo está em mutação permanente.
+Como as estações do ano e as fases da lua que vão se alternando e se
+repetindo, mas sempre avançando no tempo.&lt;/p&gt;
+&lt;p&gt;Eu costumo alternar entre ciclos de preguiça e de hiperatividade, de
+cuidado e de descuido, de gostar muito de uma coisa e depois de outra.
+Gosto de deixar o cabelo crescer bastante e depois cortar bem baixo. De
+deixar a barba crescer e depois tirá-la por completo Assim vou
+alternando entre os vários eus...&lt;/p&gt;</summary><category term="diário"></category><category term="tempo"></category></entry><entry><title>Itacaré</title><link href="http://wille.blog.br/2009/12/itacare" rel="alternate"></link><updated>2009-12-28T11:01:00-02:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2009-12-28:2009/12/itacare</id><summary type="html">&lt;p&gt;Dois dias em Itacaré recarregando as energias com praia, água de coco,
+cochilos na rede e música.&lt;/p&gt;
+&lt;p&gt;Apesar de um pouco longa, a viagem de ônibus foi um das mais relax que
+eu já fiz. O segredo? Um cartão de memória de 4 GB no celular com muita
+música (inclusive o disco novo do &lt;a href="http://www.poucavogal.com.br"&gt;Pouca
+Vogal&lt;/a&gt;), um livro e nenhuma preocupação
+com horários, trabalho, estudos e qualquer outro compromisso.&lt;/p&gt;
+&lt;p&gt;[gallery link="file" size="medium" columns="2"]&lt;/p&gt;</summary><category term="bahia"></category><category term="diário"></category><category term="fotografia"></category><category term="itacaré"></category><category term="praia"></category><category term="viagens"></category></entry><entry><title>Fórum da culturadigital.br, hackitectura e São Paulo</title><link href="http://wille.blog.br/2009/12/forum-da-culturadigital-br-e-sao-paulo" rel="alternate"></link><updated>2009-12-06T20:47:00-02:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2009-12-06:2009/12/forum-da-culturadigital-br-e-sao-paulo</id><summary type="html">&lt;p&gt;Em meados de novembro estive em São Paulo para participar do &lt;a href="http://www.culturadigital.br"&gt;Fórum da
+Cultura Digital Brasileira&lt;/a&gt;, um evento com
+o objetivo de discutir as políticas públicas de cultura digital do
+Ministério da Cultura. Gostei bastante do resultado do evento: boas
+apresentações, os/as participantes fizeram boas intervenções e à noite
+rolaram uns shows legais de alguns artistas que liberam as músicas na
+internet.&lt;/p&gt;
+&lt;p&gt;Lá no fórum conheci Pablo de Soto,
+do&lt;a href="http://hackitectura.net"&gt;Hackitectura&lt;/a&gt;, um coletivo espanhol composto
+por hackers e arquitetos e que trabalham com a interseção de
+arquitetura, cartografia, tecnologia, redes sociais e ativismo. Assisti
+uma palestra de Pablo no espaço &lt;a href="http://ay-carmela.birosca.org/"&gt;Ay
+Carmela&lt;/a&gt; sobre cartografia como ativismo
+político, na qual ele mostrou um pouco da produção do Hackitectura. Eles
+têm produzido uma série de mapas a respeito da repressão aos imigrantes
+no estreito de Gibraltar e também mapas abordando a ocupação palestina.
+Fiquei de cara quando soube que eles usam &lt;a href="http://puredata.info/"&gt;Pure
+Data&lt;/a&gt; pra produzir os mapas! Quem se interessar
+em saber mais sobre o assunto, pode &lt;a href="http://www.fadaiat.net/"&gt;baixar o
+livro&lt;/a&gt; que eles publicaram.&lt;/p&gt;
+&lt;p&gt;Também reencontrei muita gente lá em São Paulo: vários companheiros/as
+do &lt;a href="http://estudiolivre.org"&gt;Estúdio Livre&lt;/a&gt; e da
+&lt;a href="http://metareciclagem.org"&gt;MetaReciclagem&lt;/a&gt; e alguns amigos/as lá de
+Aracaju.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Clique nas fotos pra ver em tamanho grande.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;[gallery link="file" size="medium" columns="2"]&lt;/p&gt;</summary><category term="cartografia"></category><category term="culturadigital.br"></category><category term="eventos"></category><category term="fotografia"></category><category term="hackitectura"></category><category term="são paulo"></category><category term="viagens"></category></entry></feed>
