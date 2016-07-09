@@ -48,4 +48,4 @@ DEFAULT_PAGINATION = 5
 #RELATIVE_URLS = True
 
 THEME = 'theme'
-HEADER_COVER = SITEURL + '/images/pucon2.jpg'
+HEADER_COVER = 'images/pucon2.jpg'
