@@ -18,7 +18,8 @@ CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
 
 DELETE_OUTPUT_DIRECTORY = True
 
-# Following items are often useful when publishing
+STATIC_PATHS = ['images', 'extra/CNAME']
+EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
 
 DISQUS_SITENAME = 'willeblogbr'
 GOOGLE_ANALYTICS = 'UA-80115304-1'
