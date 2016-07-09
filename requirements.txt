@@ -1,3 +1,0 @@
-pelican=3.6.3
-Markdown==2.6.5
-ghp-import==0.4.2

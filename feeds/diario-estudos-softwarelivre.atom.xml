@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>wille.blog.br</title><link href="http://wille.blog.br/" rel="alternate"></link><link href="http://wille.blog.br/feeds/diario-estudos-softwarelivre.atom.xml" rel="self"></link><id>http://wille.blog.br/</id><updated>2011-07-13T21:23:00-03:00</updated><entry><title>Atualizando...</title><link href="http://wille.blog.br/2011/07/atualizando" rel="alternate"></link><updated>2011-07-13T21:23:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2011-07-13:2011/07/atualizando</id><summary type="html">&lt;p&gt;Mais uma vez, deixei o blog bastante tempo abandonado... para compensar,
+vou tentar resumir alguns acontecimentos desse período.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;FISL&lt;/strong&gt;&lt;br /&gt;
+Esse ano não fui ao &lt;a href="http://softwarelivre.org/fisl12"&gt;FISL&lt;/a&gt;... apesar
+de ter conseguido assistir bastante coisa pela TV SL, fiquei arrependido
+de não ter ido. A programação tava muito interessante, com vários temas
+novos e debates importantes. Bateu também saudade de Porto Alegre!
+Pretendo ir na &lt;a href="http://latinoware.org/"&gt;Latinoware&lt;/a&gt; esse ano e talvez no
+&lt;a href="http://ensl.org.br/"&gt;Encontro Nordestino de Software Livre&lt;/a&gt;, em Maceió.
+No ano que vem, não quero faltar ao FISL.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;OpenStreetMap&lt;/strong&gt;&lt;br /&gt;
+Tô colaborando bastante com o &lt;a href="http://www.osm.org"&gt;OpenStreetMap&lt;/a&gt;, um
+projeto que tem o objetivo de produzir mapas colaborativamente na rede e
+com a mesma filosofia do software livre (usar e modificar livremente os
+mapas desde que mantenha essa mesma liberdade). Recebi um aparelho de
+GPS emprestado do OSM Brasil e consegui envolver mais alguns professores
+e alunos da UFRB em um projeto de mapeamento das cidades do Recôncavo.
+Além de produzir o mapa das cidades, vamos fazer um pequeno mapeamento
+cultural, disponibilizando informações em texto, foto, áudio e vídeo
+sobre os locais mais relevantes da cidade. Pedalei 14 km em Cachoeira
+com o GPS para fazer o mapeamento de grande parte da cidade. O resultado
+disso&lt;a href="http://www.openstreetmap.org/?lat=-12.60123&amp;amp;lon=-38.96428&amp;amp;zoom=17&amp;amp;layers=M"&gt;já tá no
+OSM&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Deixando o recôncavo de lado, também já tracei e identifiquei as ruas de
+vários bairros de
+&lt;a href="http://www.openstreetmap.org/?lat=-14.20421&amp;amp;lon=-41.67242&amp;amp;zoom=16&amp;amp;layers=M"&gt;Brumado&lt;/a&gt;,
+minha cidade natal, mas como lá tinha disponível imagens de satélite,
+não precisei percorrer as ruas com o GPS. Uma questão que tenho pensado
+a respeito, é como envolver mais gente nesse processo de modo que a
+atualização dos dados do mapa posteriormente não dependa apenas de mim.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Curso de GNU/Linux&lt;/strong&gt;&lt;br /&gt;
+Ministrei um curso de Introdução ao GNU/Linux para alunos de Ciências
+Exatas da &lt;a href="http://www.ufrb.edu.br"&gt;UFRB&lt;/a&gt;. Gostei do resultado, apesar de
+2/3 da turma que só estava lá por causa do certificado, tinha 1/3 com
+muito interesse em aprender... Algo que me agradou muito é que consegui
+ser bastante organizado, preparei bem as aulas e os slides. O ruim foram
+as dificuldades na infraestrutura do laboratório (computadores
+problemáticos e internet lenta). Utilizei o Ubuntu 10.10 no curso. No
+segundo semestre vou ministrar esse curso pelo menos pra mais uma turma.
+Tô a fim de organizar um grupo pra estudar Python e fazer uns &lt;a href="http://pet.inf.ufsc.br/dojo/o-que-eh-dojo/"&gt;coding
+dojos&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Estudos&lt;/strong&gt;&lt;br /&gt;
+Em relação aos estudos, desde abril me perdi na desorganização. A única
+coisa que tenho conseguido estudar é Inglês. Tenho utilizado os Podcasts
+do &lt;a href="http://www.eslpod.com/website/index_new.html"&gt;ESL Pod&lt;/a&gt;, algumas
+coisas da &lt;a href="http://www.bbc.co.uk/worldservice/learningenglish/"&gt;BBC Learning
+English&lt;/a&gt; e uma
+&lt;a href="http://www.cambridge.org/br/elt/catalogue/subject/project/item404538/Essential-Grammar-in-Use/?site_locale=pt_BR"&gt;gramática&lt;/a&gt;
+que comprei ano passado. Por falar nisso, vou pra Dublin (Irlanda) em
+agosto fazer um intensivo de inglês de duas semanas. Preferia viajar
+pela América do Sul, mas tenho sentindo muita necessidade de compreender
+e falar inglês minimamente bem. A viagem tem conexão em Istambul na ida
+e na volta e como o tempo de espera é bem longo, acho que vou conseguir
+dar uma volta pela cidade. Eu deveria ter me atentado dessa
+possibilidade e escolhido vôos com um intervalo ainda maior em
+Istambul.... Comecei a estudar um pouco da língua turca, só pra dizer
+bom dia, obrigado, etc e tal...&lt;/p&gt;</summary><category term="estudos"></category><category term="fisl"></category><category term="gnulinux"></category><category term="mapas"></category><category term="openstreetmap"></category><category term="software livre"></category></entry></feed>

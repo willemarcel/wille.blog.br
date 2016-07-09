@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>wille.blog.br</title><link href="http://wille.blog.br/" rel="alternate"></link><link href="http://wille.blog.br/feeds/eventos-softwarelivre.atom.xml" rel="self"></link><id>http://wille.blog.br/</id><updated>2012-04-02T15:38:00-03:00</updated><entry><title>Mapas Livres e Humanitarismo</title><link href="http://wille.blog.br/2012/04/mapas-livres-e-humanitarismo" rel="alternate"></link><updated>2012-04-02T15:38:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2012-04-02:2012/04/mapas-livres-e-humanitarismo</id><summary type="html">&lt;p&gt;&lt;img alt="Cartaz do evento Mapas Livres e
+Humanitarismo" src="http://images.wille.blog.br/palestra-hot.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;Estou organizando um evento no dia 10 de abril na UFRB, em Cachoeira-BA.
+Contaremos com uma palestra de Séverin Menard, integrante francês do
+&lt;a href="http://hot.openstreetmap.org/"&gt;Time Humanitário do OpenStreetMap (HOT)&lt;/a&gt;
+e aproveitaremos para fazer o lançamento do site do projeto
+&lt;a href="http://ufrb.edu.br/maparec"&gt;MapaRec&lt;/a&gt; (Mapeamento Colaborativo do
+Recôncavo).&lt;/p&gt;
+&lt;p&gt;Séverin vem atuando no Haiti desde o terremoto acontecido no início de
+2010, realizando trabalhos de mapeamento do país e de capacitação da
+população local para produção e uso de mapas.&lt;/p&gt;</summary><category term="eventos"></category><category term="openstreetmap"></category><category term="ufrb"></category></entry><entry><title>Latinoware 2011</title><link href="http://wille.blog.br/2011/10/latinoware-2011" rel="alternate"></link><updated>2011-10-24T21:31:00-02:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2011-10-24:2011/10/latinoware-2011</id><summary type="html">&lt;p&gt;Na semana passada, participei pela primeira vez da
+&lt;a href="http://latinoware.org/"&gt;Latinoware&lt;/a&gt; (Conferência Latino-Americana de
+Software Livre), creio que o segundo maior evento de Software Livre do
+Brasil. Gostei muito da Latinoware, por vários motivos... Apesar de não
+ter uma programação tão grande quanto a do
+&lt;a href="http://www.fisl.org.br"&gt;FISL&lt;/a&gt;, por ser um evento menor, você consegue
+conversar com mais gente e se deslocar pelos espaços com mais calma. A
+programação foi bastante diversificada, com minicursos e palestras de
+diversas áreas. Também gostei da presença de participantes de vários
+países da América do Sul, como Bolívia, Colômbia, Peru, Paraguai e
+Argentina. Acho muito interessante que essa integração aconteça.&lt;/p&gt;
+&lt;p&gt;Além disso, apresentei uma palestra com &lt;a href="http://djavan.comum.org/blog/"&gt;Djavan
+Fagundes&lt;/a&gt; sobre o
+&lt;a href="http://OpenStreetMap.org"&gt;OpenStreetMap&lt;/a&gt;. Na apresentação, falamos da
+importância e potencial do OSM, de alguns projetos de mapeamento que
+temos e mostramos como começar a editar no OSM. Foram publicados dois
+posts sobre a palestra, um no&lt;a href="http://www.latinoware.org/pt-br/node/201"&gt;site do
+evento&lt;/a&gt; e outro em um &lt;a href="http://blogeventos.serpro.gov.br/post/11669831597/openstreetmap-a-alternativa-livre-do-google-maps"&gt;blog da
+Serpro&lt;/a&gt;.
+Também cedemos uma entrevista para a assessora de comunicação do
+&lt;a href="http://www.serpro.gov.br/"&gt;Serpro&lt;/a&gt; que deve render uma matéria em breve
+na &lt;a href="http://tema.serpro.gov.br/pub/serpro/"&gt;revista da empresa&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;A apresentação de slides está disponível em:
+&lt;a href="http://bayfiles.com/file/193B/cnTS31/mapeamento_OSM-1.2.pdf"&gt;http://bayfiles.com/file/193B/cnTS31/mapeamento_OSM-1.2.pdf&lt;/a&gt;&lt;/p&gt;</summary><category term="eventos"></category><category term="latinoware"></category><category term="latinoware2011"></category><category term="openstreetmap"></category><category term="software livre"></category></entry><entry><title>Participe do Flisol 2011 - Cruz das Almas</title><link href="http://wille.blog.br/2011/03/participe-do-flisol-2011-cruz-das-almas" rel="alternate"></link><updated>2011-03-28T11:35:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2011-03-28:2011/03/participe-do-flisol-2011-cruz-das-almas</id><summary type="html">&lt;p&gt;&lt;img alt="" src="http://www.ufrb.edu.br/agencia/images/stories/cartaz-flisol.jpg" title="Cartaz Flisol 2011 Cruz das Almas" /&gt;&lt;/p&gt;
+&lt;p&gt;Estou na organização do &lt;strong&gt;Flisol 2011&lt;/strong&gt;, em Cruz das Almas/BA. O evento
+será realizado dia 09 de Abril a partir das 09h, no Pavilhão de Aulas 1
+do Campus da UFRB. Na programação, teremos algumas palestras, oficinas,
+instalação e distribuição de softwares livres.&lt;/p&gt;
+&lt;p&gt;As palestras já confirmadas são as seguintes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;O que é Software Livre e por que utilizar?&lt;/strong&gt; – Wille Marcel&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Desenvolvimento de Sites com CMS&lt;/strong&gt; – César Velame&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Interfaces multitoques em ambientes livres&lt;/strong&gt; – Luís Paulo
+    Colombiano&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ekaaty Linux&lt;/strong&gt; – Nadilson dos Santos de Santana&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Além disso, Aurélio Heckert e Valéssio Brito vão apresentar duas
+palestras sobre &lt;strong&gt;Arte com Softwares Livres&lt;/strong&gt;, participe da escolha dos
+temas, votando na enquete no site&lt;a href="http://www.ufrb.edu.br/flisol"&gt;http://www.ufrb.edu.br/flisol&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;O FLISOL (Festival Latinoamericano de Instalação de Software Livre) é o
+maior evento de divulgação de Software Livre da América Latina. Ele
+acontece desde 2005 e seu principal objetivo é promover o uso de
+software livre, apresentando sua filosofia, seu alcance, avanços e
+desenvolvimento ao público em geral. Além de Cruz das Almas, o evento
+será realizado, no mesmo dia, em centenas de cidades de toda a América
+Latina. Confira se haverá Flisol na sua cidade no &lt;a href="http://flisol.net"&gt;site
+oficial&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Baixe o &lt;a href="http://images.wille.blog.br/cartaz-flisol2.pdf"&gt;cartaz em
+PDF&lt;/a&gt;,
+imprima e ajude a divulgar o evento.&lt;/p&gt;</summary><category term="bahia"></category><category term="cruz das almas"></category><category term="eventos"></category><category term="flisol"></category><category term="software livre"></category></entry><entry><title>Eventos sobre educação e tecnologia na UFRB</title><link href="http://wille.blog.br/2010/05/eventos-sobre-educacao-e-tecnologia-na-ufrb" rel="alternate"></link><updated>2010-05-18T20:40:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2010-05-18:2010/05/eventos-sobre-educacao-e-tecnologia-na-ufrb</id><summary type="html">&lt;p&gt;Este mês serão realizados dois eventos relacionados a educação e
+tecnologia no campus da
+&lt;a href="http://www.ufrb.edu.br" title="Universidade Federal do Recôncavo da Bahia"&gt;UFRB&lt;/a&gt;
+em Cachoeira. Na próxima sexta-feira (18/05), acontecerá o I Encontro de
+RPG e Educação do Recôncavo da Bahia, o qual vai tratar do uso de RPG em
+sala de aula. O evento é organizado pelo
+&lt;a href="http://www.ufrb.edu.br/lehrb/" title="Laboratório de Ensino de História do Recôncavo da Bahia"&gt;LEHRB&lt;/a&gt;.
+Veja a &lt;a href="http://www.ufrb.edu.br/lehrb/wp-content/uploads/2010/05/RpgEduca%C3%A7%C3%A3oCorPeq.jpg"&gt;programação
+completa&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://images.wille.blog.br/RpgEducaçãoCorPeq.jpg"&gt;&lt;img alt="I Encontro de RPG e
+Educação" src="http://images.wille.blog.br/RpgEducaçãoCorPeq-212x300.jpg" title="RpgEducaçãoCorPeq" /&gt;&lt;/a&gt;
+&lt;a href="http://images.wille.blog.br/evento-plug.png"&gt;&lt;img alt="Software Livre, Educação e Formação – A experiência do projeto Irecê
+(FACED-UFBA)" src="http://images.wille.blog.br/evento-plug-205x300.png" title="evento-plug" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Já na próxima terça-feira, será realizada uma mesa-redonda tratando do
+Projeto Irecê, o qual é desenvolvido pela Faculdade de Educação da UFBA
+e articula a formação de professores com o uso de novas tecnologias, em
+especial com Softwares Livres. Este evento tem a organização do
+&lt;a href="http://www.ufrb.edu.br/plug/"&gt;Plug!&lt;/a&gt;, projeto de extensão do qual eu
+participo. Veja a
+&lt;a href="http://www.ufrb.edu.br/plug/software-livre-educacao-e-formacao-a-experiencia-do-projeto-irece-faced-ufba/"&gt;programação&lt;/a&gt;.&lt;/p&gt;</summary><category term="educação"></category><category term="eventos"></category><category term="rpg"></category><category term="software livre"></category><category term="ufrb"></category></entry></feed>

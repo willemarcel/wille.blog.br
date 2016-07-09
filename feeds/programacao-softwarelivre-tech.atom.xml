@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>wille.blog.br</title><link href="http://wille.blog.br/" rel="alternate"></link><link href="http://wille.blog.br/feeds/programacao-softwarelivre-tech.atom.xml" rel="self"></link><id>http://wille.blog.br/</id><updated>2013-10-22T23:32:00-02:00</updated><entry><title>Criando um aplicativo móvel HTML5 em menos de 24 horas</title><link href="http://wille.blog.br/2013/10/fazendo-um-aplicativo-movel-html5-em-menos-de-24-horas" rel="alternate"></link><updated>2013-10-22T23:32:00-02:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2013-10-22:2013/10/fazendo-um-aplicativo-movel-html5-em-menos-de-24-horas</id><summary type="html">&lt;p&gt;&lt;img alt="Screenshot do Fui pra
+Final!" src="http://images.wille.blog.br/fuiprafinal.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Tudo começou quando meu amigo e colega de trabalho &lt;a href="http://twitter.com/cesarvelame"&gt;César
+Velame&lt;/a&gt; me propôs fazer um aplicativo
+que calculasse a nota necessária na prova final para um aluno ser
+aprovado. Como a UFRB utiliza pesos diferentes entre a prova final e a
+média da disciplina, muita gente tem dificuldade em calcular a nota
+necessária para ser aprovado. O intuito do aplicativo foi facilitar a
+vida desses estudantes.&lt;/p&gt;
+&lt;p&gt;Começamos a fazer na manhã de segunda-feira. Utilizamos jQuery Mobile,
+que eu já tinha alguma experiência, pois utilizei no
+&lt;a href="http://clips.tk"&gt;Clips.tk&lt;/a&gt;. Acabei não me lembrando que na &lt;a href="http://jquerymobile.com/"&gt;homepage do
+jQuery Mobile&lt;/a&gt; há uma ferramenta que permite
+gerar a estrutura básica da página HTML. Isso teria nos poupado algum
+tempo, mas valeu o aprendizado. jQuery Mobile é fantástico e bem fácil
+de usar!&lt;/p&gt;
+&lt;p&gt;Aprendemos também um pouco de javascript para calcular a nota necessária
+na prova final e fazer isso ser exibido na página. No final do dia,
+disponibilizamos a primeira versão do aplicativo em
+&lt;a href="http://fuiprafinal.com.br"&gt;fuiprafinal.com.br&lt;/a&gt;. Na manhã seguinte,
+corrigimos alguns erros e fizemos um layout mais atraente. Eu também
+escrevi algumas frases engraçadinhas para o app mostrar de acordo com a
+situação do estudante!&lt;/p&gt;
+&lt;p&gt;Ainda estamos melhorando o Fui pra final! e em breve vamos
+disponibilizar no &lt;a href="https://marketplace.firefox.com/"&gt;Marketplace do Firefox
+OS&lt;/a&gt; e testar a geração de aplicativos
+nativos para Android e outras plataformas através do
+&lt;a href="http://www.phonegap.com/"&gt;PhoneGap&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Essa experiência foi muito interessante, pois foi uma maneira divertida
+e prática de aprender novas ferramentas. O fato de estar
+disponibilizando algo para as pessoas nos estimula a programar mais e
+com melhor qualidade. O código fonte do aplicativo está disponível no
+&lt;a href="https://github.com/willemarcel/fuiprafinal"&gt;GitHub&lt;/a&gt;.&lt;/p&gt;</summary><category term="jquery mobile"></category><category term="programação"></category><category term="web"></category></entry></feed>
