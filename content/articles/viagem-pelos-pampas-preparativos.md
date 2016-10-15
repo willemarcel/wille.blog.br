@@ -1,6 +1,6 @@
 Title: Viagem pelos pampas - Preparativos
 Date: 2010-07-17 20:49
-Author: admin
+Author: wille
 Category: diário, viagens, vida geek
 Tags: diário, viagens
 Slug: viagem-pelos-pampas-preparativos

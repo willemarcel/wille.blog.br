@@ -1,6 +1,6 @@
 Title: Aprendizagens
 Date: 2011-02-19 10:18
-Author: admin
+Author: wille
 Category: diário, estudos
 Tags: estudos, p2pu
 Slug: aprendizagens

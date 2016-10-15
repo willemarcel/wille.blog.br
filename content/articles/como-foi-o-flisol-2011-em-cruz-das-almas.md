@@ -1,6 +1,6 @@
 Title: Como foi o Flisol 2011 em Cruz das Almas...
 Date: 2011-04-10 23:54
-Author: admin
+Author: wille
 Category: eventos, software.livre, vida geek
 Tags: bahia, cruz das almas, eventos, flisol, flisol2011, software livre
 Slug: como-foi-o-flisol-2011-em-cruz-das-almas

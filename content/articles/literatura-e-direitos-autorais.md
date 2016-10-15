@@ -1,6 +1,6 @@
 Title: Literatura e direitos autorais
 Date: 2011-10-12 02:08
-Author: admin
+Author: wille
 Category: cibercultura, eventos, música
 Tags: cultura livre, direitos autorais, eventos, flica, literatura
 Slug: literatura-e-direitos-autorais

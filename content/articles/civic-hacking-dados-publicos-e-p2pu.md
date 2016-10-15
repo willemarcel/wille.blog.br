@@ -1,6 +1,6 @@
 Title: Civic Hacking, Dados Públicos e P2PU
 Date: 2010-05-17 00:36
-Author: admin
+Author: wille
 Category: ativismo, cibercultura, estudos, hacking
 Tags: ciberativismo, civic hacking, dados públicos, p2pu
 Slug: civic-hacking-dados-publicos-e-p2pu

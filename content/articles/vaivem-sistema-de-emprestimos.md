@@ -1,6 +1,6 @@
 Title: VaiVem - Sistema de empréstimos
 Date: 2012-02-14 23:12
-Author: admin
+Author: wille
 Category: programação, software.livre, vida geek
 Tags: django, programação, python, sistema de empréstimo, software livre, vaivem
 Slug: vaivem-sistema-de-emprestimos

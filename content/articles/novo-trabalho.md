@@ -1,6 +1,6 @@
 Title: Novo trabalho
 Date: 2013-07-30 22:01
-Author: admin
+Author: wille
 Category: diário, tech
 Tags: diário, trabalho
 Slug: novo-trabalho

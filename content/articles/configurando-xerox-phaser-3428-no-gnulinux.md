@@ -1,6 +1,6 @@
 Title: Configurando Xerox Phaser 3428 no GNU/Linux
 Date: 2010-03-24 10:54
-Author: admin
+Author: wille
 Category: software.livre, tech
 Tags: gnulinux, impressora, tutorial
 Slug: configurando-xerox-phaser-3428-no-gnulinux

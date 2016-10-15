@@ -1,6 +1,6 @@
 Title: Latinoware 2011
 Date: 2011-10-24 21:31
-Author: admin
+Author: wille
 Category: eventos, software.livre
 Tags: eventos, latinoware, latinoware2011, openstreetmap, software livre
 Slug: latinoware-2011

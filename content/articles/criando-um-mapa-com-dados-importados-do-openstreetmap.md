@@ -1,6 +1,6 @@
 Title: Criando um mapa com dados importados do OpenStreetMap
 Date: 2013-11-06 23:38
-Author: admin
+Author: wille
 Category: software.livre, tech, tutoriais
 Tags: geojson, mapas, openstreetmap, tutoriais
 Slug: criando-um-mapa-com-dados-importados-do-openstreetmap

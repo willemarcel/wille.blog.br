@@ -1,6 +1,6 @@
 Title: Encontro Mineiro de Software Livre - 2010
 Date: 2010-10-24 12:35
-Author: admin
+Author: wille
 Category: eventos, software.livre, viagens
 Tags: edição de vídeo, emsl, eventos, minas gerais, slide, software livre, uberlândia
 Slug: encontro-mineiro-de-software-livre-2010

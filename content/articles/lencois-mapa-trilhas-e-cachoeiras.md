@@ -1,6 +1,6 @@
 Title: Lençóis - Mapa, Trilhas e Cachoeiras
 Date: 2012-03-02 23:46
-Author: admin
+Author: wille
 Category: fotografia, viagens
 Tags: bahia, chapada diamantina, fotografia, lençóis, mapa, openstreetmap, trilha, viagens
 Slug: lencois-mapa-trilhas-e-cachoeiras

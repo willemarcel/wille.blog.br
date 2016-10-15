@@ -1,6 +1,6 @@
 Title: BsAs - sonido y ruido
 Date: 2012-11-29 00:33
-Author: admin
+Author: wille
 Category: diário, viagens, vídeo
 Tags: argentina, buenos aires, diário, viagens, vídeo
 Slug: bsas-sonido-y-ruido

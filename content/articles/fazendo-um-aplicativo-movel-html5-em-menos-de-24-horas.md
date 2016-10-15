@@ -1,6 +1,6 @@
 Title: Criando um aplicativo móvel HTML5 em menos de 24 horas
 Date: 2013-10-22 23:32
-Author: admin
+Author: wille
 Category: programação, software.livre, tech
 Tags: jquery mobile, programação, web
 Slug: fazendo-um-aplicativo-movel-html5-em-menos-de-24-horas

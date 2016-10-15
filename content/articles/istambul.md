@@ -1,6 +1,6 @@
 Title: Istambul
 Date: 2011-09-08 23:21
-Author: admin
+Author: wille
 Category: diário, fotografia, viagens
 Tags: fotografia, istambul, turquia, viagens
 Slug: istambul

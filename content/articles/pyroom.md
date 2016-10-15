@@ -1,6 +1,6 @@
 Title: Pyroom
 Date: 2010-07-17 21:31
-Author: admin
+Author: wille
 Category: dicas de software, software.livre
 Tags: dicas de software, escrita, pyroom, software livre
 Slug: pyroom

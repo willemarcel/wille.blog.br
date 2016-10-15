@@ -1,6 +1,6 @@
 Title: Mapas Livres e Humanitarismo
 Date: 2012-04-02 15:38
-Author: admin
+Author: wille
 Category: eventos, software.livre
 Tags: eventos, openstreetmap, ufrb
 Slug: mapas-livres-e-humanitarismo

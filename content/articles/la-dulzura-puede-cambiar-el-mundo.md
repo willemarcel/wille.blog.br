@@ -1,6 +1,6 @@
 Title: "La dulzura puede cambiar el mundo"
 Date: 2012-07-02 23:49
-Author: admin
+Author: wille
 Category: diário, español, fotografia, viagens
 Tags: café, diário, español, fotografia, futebol, montevideo, uruguai
 Slug: la-dulzura-puede-cambiar-el-mundo

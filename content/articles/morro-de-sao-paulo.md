@@ -1,6 +1,6 @@
 Title: Morro de São Paulo
 Date: 2013-01-06 12:48
-Author: admin
+Author: wille
 Category: diário, fotografia, viagens
 Tags: bahia, diário, fotografia, mergulho, morro de são paulo, viagens
 Slug: morro-de-sao-paulo

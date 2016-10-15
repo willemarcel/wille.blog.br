@@ -1,6 +1,6 @@
 Title: Ciclovias e cultura de uso da bicicleta
 Date: 2013-08-30 23:04
-Author: admin
+Author: wille
 Category: bicicleta, diário, fotografia, viagens
 Tags: Barcelona, bicicleta, diários de bicicleta, fotografia, Londres, viagens
 Slug: ciclovias-e-cultura-de-uso-da-bicicleta

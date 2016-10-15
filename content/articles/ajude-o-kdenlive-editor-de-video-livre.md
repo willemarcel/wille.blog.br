@@ -1,6 +1,6 @@
 Title: Ajude o Kdenlive, editor de vídeo livre!
 Date: 2012-03-15 21:43
-Author: admin
+Author: wille
 Category: software.livre, vídeo
 Tags: campanha, crowdfunding, financiamento colaborativo, kdenlive, software livre, vídeo
 Slug: ajude-o-kdenlive-editor-de-video-livre

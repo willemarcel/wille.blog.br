@@ -1,6 +1,6 @@
 Title: Como colaborar com o OpenStreetMap
 Date: 2012-09-13 18:23
-Author: admin
+Author: wille
 Category: software.livre, tutoriais
 Tags: gráfico, inkscape, openstreetmap, osm, software livre, svg, tutoriais
 Slug: como-colaborar-com-o-openstreetmap

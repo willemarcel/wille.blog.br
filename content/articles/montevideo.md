@@ -1,6 +1,6 @@
 Title: Montevideo
 Date: 2012-08-17 15:57
-Author: admin
+Author: wille
 Category: diário, español, fotografia, viagens
 Tags: banksy, diário, español, fotografia, futebol, grafite, montevideo, uruguai
 Slug: montevideo

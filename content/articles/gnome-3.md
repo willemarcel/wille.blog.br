@@ -1,6 +1,6 @@
 Title: Gnome 3
 Date: 2011-07-13 21:58
-Author: admin
+Author: wille
 Category: dicas de software, software.livre, vida geek
 Tags: desktop, dicas de software, gnome, gnome3, software livre
 Slug: gnome-3

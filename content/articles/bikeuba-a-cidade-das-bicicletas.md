@@ -1,6 +1,6 @@
 Title: BikeUba - a cidade das bicicletas
 Date: 2012-09-17 13:33
-Author: admin
+Author: wille
 Category: bicicleta, viagens, vídeo
 Tags: bicicleta, kdenlive, ubatuba, viagens, vídeo
 Slug: bikeuba-a-cidade-das-bicicletas

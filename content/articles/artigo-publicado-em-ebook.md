@@ -1,6 +1,6 @@
 Title: Artigo publicado em ebook
 Date: 2011-01-25 23:37
-Author: admin
+Author: wille
 Category: diário, estudos
 Tags: cultura digital, ebook, estudos, software livre
 Slug: artigo-publicado-em-ebook

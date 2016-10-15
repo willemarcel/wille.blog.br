@@ -1,6 +1,6 @@
 Title: Itacaré
 Date: 2009-12-28 11:01
-Author: admin
+Author: wille
 Category: diário, fotografia, viagens
 Tags: bahia, diário, fotografia, itacaré, praia, viagens
 Slug: itacare

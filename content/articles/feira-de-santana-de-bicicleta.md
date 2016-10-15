@@ -1,6 +1,6 @@
 Title: Feira de Santana de Bicicleta
 Date: 2012-09-20 23:53
-Author: admin
+Author: wille
 Category: ativismo, bicicleta
 Tags: bahia, bicicleta, dia mundial sem carro, diários de bicicleta, feira de santana, mobilidade urbana
 Slug: feira-de-santana-de-bicicleta

@@ -1,6 +1,6 @@
 Title: Dublin - Mobilidade Urbana
 Date: 2011-09-26 09:07
-Author: admin
+Author: wille
 Category: bicicleta, fotografia, viagens
 Tags: bicicleta, dublin, fotografia, irlanda, mobilidade urbana, transporte público, viagens
 Slug: dublin-mobilidade-urbana

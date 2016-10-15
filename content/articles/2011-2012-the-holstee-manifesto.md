@@ -1,6 +1,6 @@
 Title: 2011-2012 - The Holstee Manifesto
 Date: 2012-01-04 20:20
-Author: admin
+Author: wille
 Category: diário, estudos, vídeo
 Tags: diário, estudos, holstee manifesto, tempo, vida, vídeo
 Slug: 2011-2012-the-holstee-manifesto

@@ -1,6 +1,6 @@
 Title: Velejando
 Date: 2012-03-18 21:54
-Author: admin
+Author: wille
 Category: diário, fotografia, viagens
 Tags: bahia, diário, fotografia, veleiro, viagens
 Slug: velejando

@@ -1,6 +1,6 @@
 Title: Chegada a Buenos Aires
 Date: 2010-09-02 23:38
-Author: admin
+Author: wille
 Category: diário, fotografia, viagens
 Tags: argentina, buenos aires, diário, fotografia, viagens
 Slug: chegada-a-buenos-aires

@@ -1,6 +1,6 @@
 Title: Strawberry Fair 2013
 Date: 2013-08-04 23:06
-Author: admin
+Author: wille
 Category: bicicleta, diário, fotografia, viagens
 Tags: cambridge, diário, festival, fotografia, inglaterra, strawberry fair 2013, viagens
 Slug: strawberry-fair-2013

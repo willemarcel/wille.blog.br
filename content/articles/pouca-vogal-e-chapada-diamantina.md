@@ -1,6 +1,6 @@
 Title: Pouca Vogal e Chapada Diamantina
 Date: 2011-03-20 23:25
-Author: admin
+Author: wille
 Category: diário, fotografia, música, viagens
 Tags: chapada diamantina, diário, fotografia, lençóis, montanha, pouca vogal, viagens
 Slug: pouca-vogal-e-chapada-diamantina

@@ -1,6 +1,6 @@
 Title: OpenStreetMap na revista Tema
 Date: 2012-01-06 01:14
-Author: admin
+Author: wille
 Category: mídia, software.livre
 Tags: matéria, openstreetmap
 Slug: openstreetmap-na-revista-tema

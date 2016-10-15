@@ -1,6 +1,6 @@
 Title: Site do Curta-Se 10
 Date: 2010-05-02 23:57
-Author: admin
+Author: wille
 Category: diário
 Tags: curta-se, desenvolvimento web, festival, trabalho
 Slug: site-do-curta-se-10

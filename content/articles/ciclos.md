@@ -1,6 +1,6 @@
 Title: Ciclos
 Date: 2010-02-04 00:18
-Author: admin
+Author: wille
 Category: diário
 Tags: diário, tempo
 Slug: ciclos

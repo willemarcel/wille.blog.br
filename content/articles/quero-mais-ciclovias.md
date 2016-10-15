@@ -1,6 +1,6 @@
 Title: Quero mais ciclovias!
 Date: 2012-06-10 00:49
-Author: admin
+Author: wille
 Category: ativismo, bicicleta
 Tags: ativismo, bahia, bicicleta, campanha, feira de santana
 Slug: quero-mais-ciclovias

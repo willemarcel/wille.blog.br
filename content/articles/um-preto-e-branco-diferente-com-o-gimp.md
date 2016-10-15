@@ -1,6 +1,6 @@
 Title: Um preto e branco diferente com o GIMP
 Date: 2010-11-30 21:15
-Author: admin
+Author: wille
 Category: fotografia, software.livre, tutoriais
 Tags: c2g, fotografia, gimp, software livre, tutorial
 Slug: um-preto-e-branco-diferente-com-o-gimp

@@ -1,6 +1,6 @@
 Title: FISL 11 e Porto Alegre
 Date: 2010-07-26 23:12
-Author: admin
+Author: wille
 Category: diário, eventos, software.livre, viagens
 Tags: eventos, fisl, fisl11, porto alegre, software livre
 Slug: fisl-11-e-porto-alegre

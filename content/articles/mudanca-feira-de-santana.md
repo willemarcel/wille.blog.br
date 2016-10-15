@@ -1,6 +1,6 @@
 Title: Mudança: Feira de Santana
 Date: 2012-04-15 13:08
-Author: admin
+Author: wille
 Category: bicicleta, diário
 Tags: bahia, bicicleta, diário, feira de santana, mudanças, transporte público
 Slug: mudanca-feira-de-santana

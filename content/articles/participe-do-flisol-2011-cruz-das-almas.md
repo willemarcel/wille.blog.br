@@ -1,6 +1,6 @@
 Title: Participe do Flisol 2011 - Cruz das Almas
 Date: 2011-03-28 11:35
-Author: admin
+Author: wille
 Category: eventos, software.livre
 Tags: bahia, cruz das almas, eventos, flisol, software livre
 Slug: participe-do-flisol-2011-cruz-das-almas

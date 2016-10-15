@@ -1,6 +1,6 @@
 Title: Violão
 Date: 2010-07-07 20:30
-Author: admin
+Author: wille
 Category: diário, fotografia, música
 Tags: diário, música, violão
 Slug: violao

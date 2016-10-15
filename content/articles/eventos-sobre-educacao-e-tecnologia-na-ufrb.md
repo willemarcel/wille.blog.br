@@ -1,6 +1,6 @@
 Title: Eventos sobre educação e tecnologia na UFRB
 Date: 2010-05-18 20:40
-Author: admin
+Author: wille
 Category: eventos, software.livre
 Tags: educação, eventos, rpg, software livre, ufrb
 Slug: eventos-sobre-educacao-e-tecnologia-na-ufrb

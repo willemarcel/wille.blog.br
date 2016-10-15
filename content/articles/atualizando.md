@@ -1,6 +1,6 @@
 Title: Atualizando...
 Date: 2011-07-13 21:23
-Author: admin
+Author: wille
 Category: diário, estudos, software.livre
 Tags: estudos, fisl, gnulinux, mapas, openstreetmap, software livre
 Slug: atualizando

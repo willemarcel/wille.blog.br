@@ -1,6 +1,6 @@
 Title: Fórum da culturadigital.br, hackitectura e São Paulo
 Date: 2009-12-06 20:47
-Author: admin
+Author: wille
 Category: ativismo, cibercultura, eventos, fotografia, viagens
 Tags: cartografia, culturadigital.br, eventos, fotografia, hackitectura, são paulo, viagens
 Slug: forum-da-culturadigital-br-e-sao-paulo

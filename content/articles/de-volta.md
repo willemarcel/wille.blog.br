@@ -1,6 +1,6 @@
 Title: De volta...
 Date: 2013-04-20 23:51
-Author: admin
+Author: wille
 Category: diário, software.livre
 Tags: diário, fotografia, software livre
 Slug: de-volta

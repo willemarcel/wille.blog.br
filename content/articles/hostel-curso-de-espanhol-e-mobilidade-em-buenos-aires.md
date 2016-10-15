@@ -1,6 +1,6 @@
 Title: Hostel, curso de espanhol e mobilidade em Buenos Aires
 Date: 2010-09-03 19:52
-Author: admin
+Author: wille
 Category: fotografia, viagens
 Tags: argentina, buenos aires, curso de espanhol, fotografia, hostel, mobilidade, viagens
 Slug: hostel-curso-de-espanhol-e-mobilidade-em-buenos-aires

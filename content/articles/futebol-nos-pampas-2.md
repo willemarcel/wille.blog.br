@@ -1,6 +1,6 @@
 Title: Futebol nos Pampas
 Date: 2010-10-21 22:31
-Author: admin
+Author: wille
 Category: diário, fotografia, viagens
 Tags: argentina, diário, estádios, fotografia, futebol, la bombonera, uruguai, viagens
 Slug: futebol-nos-pampas-2

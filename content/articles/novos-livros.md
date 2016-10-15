@@ -1,6 +1,6 @@
 Title: Novos livros
 Date: 2010-02-07 17:12
-Author: admin
+Author: wille
 Category: diário, leituras, música
 Tags: enghaw, livros, viagens
 Slug: novos-livros

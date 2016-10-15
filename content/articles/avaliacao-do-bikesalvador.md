@@ -1,6 +1,6 @@
 Title: Avaliação do BikeSalvador
 Date: 2013-10-31 23:03
-Author: admin
+Author: wille
 Category: bicicleta
 Tags: bahia, bicicleta, BikeSalvador, diários de bicicleta, openstreetmap, salvador
 Slug: avaliacao-do-bikesalvador

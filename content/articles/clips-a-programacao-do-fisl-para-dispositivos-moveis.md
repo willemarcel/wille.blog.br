@@ -1,6 +1,6 @@
 Title: Clips: a programação do FISL para dispositivos móveis
 Date: 2012-07-24 21:11
-Author: admin
+Author: wille
 Category: eventos, software.livre, tech
 Tags: django, eventos, fisl, fisl13, jquery mobile, programação, software livre
 Slug: clips-a-programacao-do-fisl-para-dispositivos-moveis

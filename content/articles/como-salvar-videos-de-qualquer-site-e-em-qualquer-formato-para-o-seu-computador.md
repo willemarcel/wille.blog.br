@@ -1,6 +1,6 @@
 Title: Como copiar vídeos de qualquer site e em qualquer formato para o seu computador
 Date: 2011-12-21 20:07
-Author: admin
+Author: wille
 Category: hacking, software.livre, tech, tutoriais, vídeo
 Tags: firefox, gnulinux, tutorial, vídeo
 Slug: como-salvar-videos-de-qualquer-site-e-em-qualquer-formato-para-o-seu-computador

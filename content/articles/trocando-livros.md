@@ -1,6 +1,6 @@
 Title: Trocando Livros
 Date: 2010-02-08 19:45
-Author: admin
+Author: wille
 Category: leituras
 Tags: literatura, livros, trocando livros
 Slug: trocando-livros

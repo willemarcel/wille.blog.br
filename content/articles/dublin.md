@@ -1,6 +1,6 @@
 Title: Dublin
 Date: 2011-09-24 00:38
-Author: admin
+Author: wille
 Category: fotografia, viagens
 Tags: dublin, fotografia, irlanda, viagens
 Slug: dublin
