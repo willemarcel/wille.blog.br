@@ -1,5 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>wille.blog.br</title><link href="http://wille.blog.br/" rel="alternate"></link><link href="http://wille.blog.br/feeds/all.atom.xml" rel="self"></link><id>http://wille.blog.br/</id><updated>2013-11-06T23:38:00-02:00</updated><entry><title>Criando um mapa com dados importados do OpenStreetMap</title><link href="http://wille.blog.br/2013/11/criando-um-mapa-com-dados-importados-do-openstreetmap" rel="alternate"></link><updated>2013-11-06T23:38:00-02:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2013-11-06:2013/11/criando-um-mapa-com-dados-importados-do-openstreetmap</id><summary type="html">&lt;p&gt;Eu mapeei todas as estações de compartilhamento de bicicletas do
+<feed xmlns="http://www.w3.org/2005/Atom"><title>wille.blog.br</title><link href="http://wille.blog.br/" rel="alternate"></link><link href="http://wille.blog.br/feeds/all.atom.xml" rel="self"></link><id>http://wille.blog.br/</id><updated>2016-10-14T21:39:00-03:00</updated><entry><title>OpenStreetMap: referências iniciais</title><link href="http://wille.blog.br/2016/10/osm-referencias-iniciais" rel="alternate"></link><updated>2016-10-14T21:39:00-03:00</updated><author><name>wille</name></author><id>tag:wille.blog.br,2016-10-14:2016/10/osm-referencias-iniciais</id><summary type="html">&lt;p&gt;Decidi reunir algumas informações, softwares, casos de uso e alguns links que são importantes ao se divulgar o OpenStreetMap.&lt;/p&gt;
+&lt;h4&gt;Apresentação de Slides de Introdução ao OSM&lt;/h4&gt;
+&lt;p&gt;&lt;a href="http://wille.blog.br/osm-slides/"&gt;http://wille.blog.br/osm-slides/&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;Documentação&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://wiki.osm.org"&gt;Wiki&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://wiki.openstreetmap.org/wiki/Map_Features"&gt;Tags&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Direitos Autorais&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.openstreetmap.org/copyright"&gt;Informações básicas&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://opendatacommons.org/licenses/odbl/summary/"&gt;Licença ODBL&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://wiki.openstreetmap.org/wiki/Legal_FAQ"&gt;FAQ&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Casos de Uso&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.mapbox.com/showcase/"&gt;Clientes da Mapbox&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.nps.gov/npmap/blog/introducing-park-tiles.html"&gt;National Park Service (EUA)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.jaraguadosul.sc.gov.br/downloads.php?id=16098"&gt;Prefeitura de Jaraguá do Sul (SC)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Prefeitura de Pergamino (Argentina) - &lt;a href="https://www.openstreetmap.org/user/MunicipalidadDePergamino"&gt;Usuário do OSM&lt;/a&gt; / &lt;a href="http://ide.pergamino.gob.ar/sig/"&gt;Infraestrutura de Dados Espaciais&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://maps.clemetparks.com/desktop/map"&gt;Cleveland Metropark (EUA)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://ride.trimet.org/"&gt;Portland Trimet (EUA)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.mapbox.com/blog/nyc-and-openstreetmap-cooperating-through-open-data/"&gt;Nova Iorque (EUA)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Dados&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://planet.openstreetmap.org/"&gt;Planet&lt;/a&gt; (Todo o mundo / formato .osm / diffs semanais)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://mapzen.com/data/metro-extracts/"&gt;Metro Extracts&lt;/a&gt;  (apenas algumas capitais / vários formatos)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://osmlab.github.io/osm-qa-tiles/"&gt;OSM QA Tiles&lt;/a&gt; (por países / MBTiles)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://download.geofabrik.de/"&gt;GeoFabrik&lt;/a&gt; (por países / vários formatos / diffs diários)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://wiki.openstreetmap.org/wiki/API_v0.6"&gt;API v0.6&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://overpass-turbo.eu/"&gt;Overpass Turbo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Softwares&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/openstreetmap/id"&gt;Editor iD&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://josm.openstreetmap.de/"&gt;Editor JOSM&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/openstreetmap/osm2pgsql"&gt;osm2pgsql&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://wiki.openstreetmap.org/wiki/Osmosis"&gt;Osmosis&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/osmlab/osmlint"&gt;OSM Lint&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Updates&lt;/h4&gt;
+&lt;p&gt;Como manter um banco de dados local sincronizado com o servidor global do OSM.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sempre sincronizado&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;O Osmosis  pode manter o banco sincronizado a cada minuto com as novas alterações e também permite selecionar a área de interesse e os elementos que se deseja importar.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sincronização esporádica&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Pode-se usar também o Osmosis. É possível calcular as alterações entre dois arquivos &lt;code&gt;.osm&lt;/code&gt; e atualizar o banco.&lt;/p&gt;
+&lt;h4&gt;Quality Assurance&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://zverik.osm.rambler.ru/whodidit/"&gt;Who Did It?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;OSMCHA - &lt;a href="https://github.com/willemarcel/osmcha-django"&gt;Código&lt;/a&gt; / &lt;a href="http://osmcha.mapbox.com/"&gt;Servidor&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://nrenner.github.io/achavi/"&gt;ACHAVI&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;&lt;a href="http://maption.com.br/"&gt;Maption&lt;/a&gt; - Consultoria e desenvolvimento GIS utilizando softwares livres e OpenStreetMap&lt;/h3&gt;</summary><category term="openstreetmap"></category><category term="osm"></category><category term="foss4g"></category></entry><entry><title>Retomando o Blog</title><link href="http://wille.blog.br/2016/07/retomando-o-blog" rel="alternate"></link><updated>2016-07-12T08:35:00-03:00</updated><author><name>Wille Marcel</name></author><id>tag:wille.blog.br,2016-07-12:2016/07/retomando-o-blog</id><summary type="html">&lt;p&gt;Passei quase três anos sem postar aqui no blog, mas agora decidi retomar o hábito de escrever por aqui. Também modifiquei o layout e converti o blog de Wordpress para &lt;a href="http://getpelican.com/"&gt;Pelican&lt;/a&gt;. Pretendo escrever alguns posts também em inglês. Começa aqui uma nova fase do blog!&lt;/p&gt;</summary><category term="diário"></category></entry><entry><title>Criando um mapa com dados importados do OpenStreetMap</title><link href="http://wille.blog.br/2013/11/criando-um-mapa-com-dados-importados-do-openstreetmap" rel="alternate"></link><updated>2013-11-06T23:38:00-02:00</updated><author><name>wille</name></author><id>tag:wille.blog.br,2013-11-06:2013/11/criando-um-mapa-com-dados-importados-do-openstreetmap</id><summary type="html">&lt;p&gt;Eu mapeei todas as estações de compartilhamento de bicicletas do
 BikeSalvador e queria fazer um mapa que mostrasse essas estações. Quando
 havia apenas cinco estações, após mapear no OSM, eu criei um arquivo
 GeoJSON usando o &lt;a href="http://geojson.io"&gt;geojson.io&lt;/a&gt;. Porém agora já são 19
@@ -46,7 +103,7 @@ uma página web. O mapa gerado pelo geojson.io é esse abaixo:&lt;/p&gt;
 
 &lt;p&gt;Quem quiser criar um mapa ainda melhor, recomendo ler esse &lt;a href="http://lyzidiamond.com/posts/osgeo-august-meeting/"&gt;tutorial de
 como adicionar uma camada GeoJSON ao
-Leaflet&lt;/a&gt;.&lt;/p&gt;</summary><category term="geojson"></category><category term="mapas"></category><category term="openstreetmap"></category><category term="tutoriais"></category></entry><entry><title>Avaliação do BikeSalvador</title><link href="http://wille.blog.br/2013/10/avaliacao-do-bikesalvador" rel="alternate"></link><updated>2013-10-31T23:03:00-02:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2013-10-31:2013/10/avaliacao-do-bikesalvador</id><summary type="html">&lt;p&gt;&lt;img alt="Uma das bicicletas do
+Leaflet&lt;/a&gt;.&lt;/p&gt;</summary><category term="geojson"></category><category term="mapas"></category><category term="openstreetmap"></category><category term="tutoriais"></category></entry><entry><title>Avaliação do BikeSalvador</title><link href="http://wille.blog.br/2013/10/avaliacao-do-bikesalvador" rel="alternate"></link><updated>2013-10-31T23:03:00-02:00</updated><author><name>wille</name></author><id>tag:wille.blog.br,2013-10-31:2013/10/avaliacao-do-bikesalvador</id><summary type="html">&lt;p&gt;&lt;img alt="Uma das bicicletas do
 BikeSalvador" src="http://images.wille.blog.br/bikesalvador.jpg" /&gt;&lt;/p&gt;
 &lt;p&gt;Esse fim de semana usei pela primeira vez o sistema de bicicletas
 compartilhadas de Salvador, o &lt;a href="http://bikesalvador.com/"&gt;BikeSalvador&lt;/a&gt;.
@@ -83,7 +140,7 @@ na Bahia era um sonho improvável pra mim...&lt;/p&gt;
 &lt;p&gt;Abaixo o mapa do OpenStreetMap com a localização das estações.&lt;/p&gt;
 &lt;p&gt;
 &lt;script src="https://gist.github.com/willemarcel/37a8be9409baa07cf31e.js"&gt;&lt;/script&gt;
-&lt;/p&gt;</summary><category term="bahia"></category><category term="bicicleta"></category><category term="BikeSalvador"></category><category term="diários de bicicleta"></category><category term="openstreetmap"></category><category term="salvador"></category></entry><entry><title>Criando um aplicativo móvel HTML5 em menos de 24 horas</title><link href="http://wille.blog.br/2013/10/fazendo-um-aplicativo-movel-html5-em-menos-de-24-horas" rel="alternate"></link><updated>2013-10-22T23:32:00-02:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2013-10-22:2013/10/fazendo-um-aplicativo-movel-html5-em-menos-de-24-horas</id><summary type="html">&lt;p&gt;&lt;img alt="Screenshot do Fui pra
+&lt;/p&gt;</summary><category term="bahia"></category><category term="bicicleta"></category><category term="BikeSalvador"></category><category term="diários de bicicleta"></category><category term="openstreetmap"></category><category term="salvador"></category></entry><entry><title>Criando um aplicativo móvel HTML5 em menos de 24 horas</title><link href="http://wille.blog.br/2013/10/fazendo-um-aplicativo-movel-html5-em-menos-de-24-horas" rel="alternate"></link><updated>2013-10-22T23:32:00-02:00</updated><author><name>wille</name></author><id>tag:wille.blog.br,2013-10-22:2013/10/fazendo-um-aplicativo-movel-html5-em-menos-de-24-horas</id><summary type="html">&lt;p&gt;&lt;img alt="Screenshot do Fui pra
 Final!" src="http://images.wille.blog.br/fuiprafinal.png" /&gt;&lt;/p&gt;
 &lt;p&gt;Tudo começou quando meu amigo e colega de trabalho &lt;a href="http://twitter.com/cesarvelame"&gt;César
 Velame&lt;/a&gt; me propôs fazer um aplicativo
@@ -115,7 +172,7 @@ nativos para Android e outras plataformas através do
 e prática de aprender novas ferramentas. O fato de estar
 disponibilizando algo para as pessoas nos estimula a programar mais e
 com melhor qualidade. O código fonte do aplicativo está disponível no
-&lt;a href="https://github.com/willemarcel/fuiprafinal"&gt;GitHub&lt;/a&gt;.&lt;/p&gt;</summary><category term="jquery mobile"></category><category term="programação"></category><category term="web"></category></entry><entry><title>Ciclovias e cultura de uso da bicicleta</title><link href="http://wille.blog.br/2013/08/ciclovias-e-cultura-de-uso-da-bicicleta" rel="alternate"></link><updated>2013-08-30T23:04:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2013-08-30:2013/08/ciclovias-e-cultura-de-uso-da-bicicleta</id><summary type="html">&lt;p&gt;&lt;img alt="Casal da melhor idade pedalando em
+&lt;a href="https://github.com/willemarcel/fuiprafinal"&gt;GitHub&lt;/a&gt;.&lt;/p&gt;</summary><category term="jquery mobile"></category><category term="programação"></category><category term="web"></category></entry><entry><title>Ciclovias e cultura de uso da bicicleta</title><link href="http://wille.blog.br/2013/08/ciclovias-e-cultura-de-uso-da-bicicleta" rel="alternate"></link><updated>2013-08-30T23:04:00-03:00</updated><author><name>wille</name></author><id>tag:wille.blog.br,2013-08-30:2013/08/ciclovias-e-cultura-de-uso-da-bicicleta</id><summary type="html">&lt;p&gt;&lt;img alt="Casal da melhor idade pedalando em
 Londres" src="http://images.wille.blog.br/img_1456.jpg" /&gt;&lt;/p&gt;
 &lt;p&gt;Muita gente coloca a existência de ciclovias como um fator determinante
 para que as pessoas usem a bicicleta como meio de transporte em uma
@@ -163,7 +220,7 @@ várias empresas que alugam bicicletas para turistas.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Estação do
 Bicing" src="http://images.wille.blog.br/img_1840.jpg" /&gt;&lt;/p&gt;
 &lt;p&gt;O que eu gostei do Bicing foi o design das bicicletas, elas parecem ser
-bem mais leves e confortáveis do que as bicicletas de Londres...&lt;/p&gt;</summary><category term="Barcelona"></category><category term="bicicleta"></category><category term="diários de bicicleta"></category><category term="fotografia"></category><category term="Londres"></category><category term="viagens"></category></entry><entry><title>Strawberry Fair 2013</title><link href="http://wille.blog.br/2013/08/strawberry-fair-2013" rel="alternate"></link><updated>2013-08-04T23:06:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2013-08-04:2013/08/strawberry-fair-2013</id><summary type="html">&lt;p&gt;&lt;img alt="Parada ciclística da Strawberry Fair
+bem mais leves e confortáveis do que as bicicletas de Londres...&lt;/p&gt;</summary><category term="Barcelona"></category><category term="bicicleta"></category><category term="diários de bicicleta"></category><category term="fotografia"></category><category term="Londres"></category><category term="viagens"></category></entry><entry><title>Strawberry Fair 2013</title><link href="http://wille.blog.br/2013/08/strawberry-fair-2013" rel="alternate"></link><updated>2013-08-04T23:06:00-03:00</updated><author><name>wille</name></author><id>tag:wille.blog.br,2013-08-04:2013/08/strawberry-fair-2013</id><summary type="html">&lt;p&gt;&lt;img alt="Parada ciclística da Strawberry Fair
 2013" src="http://images.wille.blog.br/img_1558.jpg" /&gt;&lt;/p&gt;
 &lt;p&gt;Passei um fim de semana em Cambridge e tive a sorte de estar acontecendo
 a Strawberry Fair, um festival de arte organizado pelos próprios
@@ -183,13 +240,13 @@ Fair" src="http://images.wille.blog.br/img_1571.jpg" /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Uma das fantasias mais
 excêntricas" src="http://images.wille.blog.br/img_1537.jpg" /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Um dos shows do
-festival" src="http://images.wille.blog.br/img_1573.jpg" /&gt;&lt;/p&gt;</summary><category term="cambridge"></category><category term="diário"></category><category term="festival"></category><category term="fotografia"></category><category term="inglaterra"></category><category term="strawberry fair 2013"></category><category term="viagens"></category></entry><entry><title>Novo trabalho</title><link href="http://wille.blog.br/2013/07/novo-trabalho" rel="alternate"></link><updated>2013-07-30T22:01:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2013-07-30:2013/07/novo-trabalho</id><summary type="html">&lt;p&gt;Hoje comecei a trabalhar na &lt;a href="http://ufrb.edu.br/ascom"&gt;Assessoria de Comunicação da
+festival" src="http://images.wille.blog.br/img_1573.jpg" /&gt;&lt;/p&gt;</summary><category term="cambridge"></category><category term="diário"></category><category term="festival"></category><category term="fotografia"></category><category term="inglaterra"></category><category term="strawberry fair 2013"></category><category term="viagens"></category></entry><entry><title>Novo trabalho</title><link href="http://wille.blog.br/2013/07/novo-trabalho" rel="alternate"></link><updated>2013-07-30T22:01:00-03:00</updated><author><name>wille</name></author><id>tag:wille.blog.br,2013-07-30:2013/07/novo-trabalho</id><summary type="html">&lt;p&gt;Hoje comecei a trabalhar na &lt;a href="http://ufrb.edu.br/ascom"&gt;Assessoria de Comunicação da
 UFRB&lt;/a&gt;. Vou ser responsável pelo
 desenvolvimento e administração dos sites da universidade. Com isso,
 passo a trabalhar no campus de Cruz das Almas. As principais tecnologias
 utilizadas nos sites da UFRB são Joomla e Wordpress, porém pretendo
 passar a utilizar Django em alguns sites e sistemas e testar também
-outros frameworks. Acredito que vou aprender bastante nessa nova função!&lt;/p&gt;</summary><category term="diário"></category><category term="trabalho"></category></entry><entry><title>De volta...</title><link href="http://wille.blog.br/2013/04/de-volta" rel="alternate"></link><updated>2013-04-20T23:51:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2013-04-20:2013/04/de-volta</id><summary type="html">&lt;p&gt;No início do ano, prometi a mim mesmo que postaria pelo menos duas vezes
+outros frameworks. Acredito que vou aprender bastante nessa nova função!&lt;/p&gt;</summary><category term="diário"></category><category term="trabalho"></category></entry><entry><title>De volta...</title><link href="http://wille.blog.br/2013/04/de-volta" rel="alternate"></link><updated>2013-04-20T23:51:00-03:00</updated><author><name>wille</name></author><id>tag:wille.blog.br,2013-04-20:2013/04/de-volta</id><summary type="html">&lt;p&gt;No início do ano, prometi a mim mesmo que postaria pelo menos duas vezes
 por mês. Não tô conseguindo cumprir, mas vou tentar melhorar. Por
 enquanto, algumas anotações de coisas que fiz esse ano.&lt;/p&gt;
 &lt;p&gt;Nos primeiros dias de janeiro foi lançada a &lt;a href="http://www.asduerj.org.br/images/advir/pdf_revista/Advir29online.pdf"&gt;Edição #29 da
@@ -209,7 +266,7 @@ javascript para mapas interativos. Em breve vou publicar uns projetos
 utilizando essa biblioteca...&lt;/p&gt;
 &lt;p&gt;Volta e meia um pôr-do-sol me surpreende em Feira de Santana...&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Pôr-do-Sol em Abril em Feira de
-Santana" src="http://images.wille.blog.br/por-de-feira.jpg" /&gt;&lt;/p&gt;</summary><category term="diário"></category><category term="fotografia"></category><category term="software livre"></category></entry><entry><title>Morro de São Paulo</title><link href="http://wille.blog.br/2013/01/morro-de-sao-paulo" rel="alternate"></link><updated>2013-01-06T12:48:00-02:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2013-01-06:2013/01/morro-de-sao-paulo</id><summary type="html">&lt;p&gt;&lt;img alt="Vista para o
+Santana" src="http://images.wille.blog.br/por-de-feira.jpg" /&gt;&lt;/p&gt;</summary><category term="diário"></category><category term="fotografia"></category><category term="software livre"></category></entry><entry><title>Morro de São Paulo</title><link href="http://wille.blog.br/2013/01/morro-de-sao-paulo" rel="alternate"></link><updated>2013-01-06T12:48:00-02:00</updated><author><name>wille</name></author><id>tag:wille.blog.br,2013-01-06:2013/01/morro-de-sao-paulo</id><summary type="html">&lt;p&gt;&lt;img alt="Vista para o
 atracadouro" src="http://images.wille.blog.br/atracadouro.jpg" /&gt;&lt;/p&gt;
 &lt;p&gt;Tive alguns dias de férias em dezembro e aproveitei para viajar pela
 Bahia. O primeiro destino foi Morro de São Paulo. Pra quem não conhece,
@@ -237,7 +294,7 @@ dos mirantes.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Pôr do Sol na Toca do
 Morcego" src="http://images.wille.blog.br/img_0858.jpg" /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Pôr do Sol em Morro de São
-Paulo" src="http://images.wille.blog.br/img_0869.jpg" /&gt;&lt;/p&gt;</summary><category term="bahia"></category><category term="diário"></category><category term="fotografia"></category><category term="mergulho"></category><category term="morro de são paulo"></category><category term="viagens"></category></entry><entry><title>BsAs - sonido y ruido</title><link href="http://wille.blog.br/2012/11/bsas-sonido-y-ruido" rel="alternate"></link><updated>2012-11-29T00:33:00-02:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2012-11-29:2012/11/bsas-sonido-y-ruido</id><summary type="html">&lt;iframe src="http://blip.tv/play/iIQxg4e%2BEgA.html?p=1" frameborder="0" width="650" height="365"&gt;&lt;/iframe&gt;
+Paulo" src="http://images.wille.blog.br/img_0869.jpg" /&gt;&lt;/p&gt;</summary><category term="bahia"></category><category term="diário"></category><category term="fotografia"></category><category term="mergulho"></category><category term="morro de são paulo"></category><category term="viagens"></category></entry><entry><title>BsAs - sonido y ruido</title><link href="http://wille.blog.br/2012/11/bsas-sonido-y-ruido" rel="alternate"></link><updated>2012-11-29T00:33:00-02:00</updated><author><name>wille</name></author><id>tag:wille.blog.br,2012-11-29:2012/11/bsas-sonido-y-ruido</id><summary type="html">&lt;iframe src="http://blip.tv/play/iIQxg4e%2BEgA.html?p=1" frameborder="0" width="650" height="365"&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;object style="display: none;" width="320" height="240" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"&gt;&lt;param name="src" value="http://a.blip.tv/api.swf#iIQxg4e+EgA"&gt;&lt;/param&gt;&lt;embed style="display: none;" width="320" height="240" type="application/x-shockwave-flash" src="http://a.blip.tv/api.swf#iIQxg4e+EgA"&gt;&lt;/embed&gt;&lt;/object&gt;&lt;/p&gt;
 &lt;p&gt;Editei um vídeo com as imagens que filmei em junho em Buenos Aires. O
@@ -248,7 +305,7 @@ de se ver por lá.&lt;/p&gt;
 42MB)&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;[video webm="http://blip.tv/file/get/Wille-BsAsSonidoYRuido734.webm"
 poster="http://a.images.blip.tv/Wille-BsAsSonidoYRuido734-968.jpg"
-width="650" height="365"]&lt;/p&gt;</summary><category term="argentina"></category><category term="buenos aires"></category><category term="diário"></category><category term="viagens"></category><category term="vídeo"></category></entry><entry><title>Feira de Santana de Bicicleta</title><link href="http://wille.blog.br/2012/09/feira-de-santana-de-bicicleta" rel="alternate"></link><updated>2012-09-20T23:53:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2012-09-20:2012/09/feira-de-santana-de-bicicleta</id><summary type="html">&lt;p&gt;Estou morando em Feira de Santana desde março de 2012 e aqui a bicicleta
+width="650" height="365"]&lt;/p&gt;</summary><category term="argentina"></category><category term="buenos aires"></category><category term="diário"></category><category term="viagens"></category><category term="vídeo"></category></entry><entry><title>Feira de Santana de Bicicleta</title><link href="http://wille.blog.br/2012/09/feira-de-santana-de-bicicleta" rel="alternate"></link><updated>2012-09-20T23:53:00-03:00</updated><author><name>wille</name></author><id>tag:wille.blog.br,2012-09-20:2012/09/feira-de-santana-de-bicicleta</id><summary type="html">&lt;p&gt;Estou morando em Feira de Santana desde março de 2012 e aqui a bicicleta
 é meu principal meio de transporte. Inspirado nos relatos do blog
 &lt;a href="http://tracaoanimal.wordpress.com/"&gt;Tração Animal&lt;/a&gt; e na semana do &lt;a href="http://vadebike.org/dia-mundial-sem-carro/"&gt;Dia
 Mundial sem Carro&lt;/a&gt;, resolvi
@@ -327,7 +384,7 @@ parte das vezes, não vejo nenhum motivo que justifique a contramão, é
 simplesmente preguiça de atravessar a avenida ou de pedalar alguns
 metros a mais…&lt;/p&gt;
 &lt;p&gt;Pedala em Feira de Santana? Deixe seu comentário! Gostaria muito de
-conhecer mais gente e organizar uma bicicletada aqui.&lt;/p&gt;</summary><category term="bahia"></category><category term="bicicleta"></category><category term="dia mundial sem carro"></category><category term="diários de bicicleta"></category><category term="feira de santana"></category><category term="mobilidade urbana"></category></entry><entry><title>BikeUba - a cidade das bicicletas</title><link href="http://wille.blog.br/2012/09/bikeuba-a-cidade-das-bicicletas" rel="alternate"></link><updated>2012-09-17T13:33:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2012-09-17:2012/09/bikeuba-a-cidade-das-bicicletas</id><summary type="html">&lt;iframe src="http://blip.tv/play/iIQxg4PXZgA.html?p=1" frameborder="0" width="650" height="365"&gt;&lt;/iframe&gt;
+conhecer mais gente e organizar uma bicicletada aqui.&lt;/p&gt;</summary><category term="bahia"></category><category term="bicicleta"></category><category term="dia mundial sem carro"></category><category term="diários de bicicleta"></category><category term="feira de santana"></category><category term="mobilidade urbana"></category></entry><entry><title>BikeUba - a cidade das bicicletas</title><link href="http://wille.blog.br/2012/09/bikeuba-a-cidade-das-bicicletas" rel="alternate"></link><updated>2012-09-17T13:33:00-03:00</updated><author><name>wille</name></author><id>tag:wille.blog.br,2012-09-17:2012/09/bikeuba-a-cidade-das-bicicletas</id><summary type="html">&lt;iframe src="http://blip.tv/play/iIQxg4PXZgA.html?p=1" frameborder="0" width="650" height="365"&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;object style="display: none;" width="320" height="240" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"&gt;&lt;param name="src" value="http://a.blip.tv/api.swf#iIQxg4PXZgA"&gt;&lt;/param&gt;&lt;embed style="display: none;" width="320" height="240" type="application/x-shockwave-flash" src="http://a.blip.tv/api.swf#iIQxg4PXZgA"&gt;&lt;/embed&gt;&lt;/object&gt;&lt;/p&gt;
 &lt;p&gt;Estive em Ubatuba em maio para participar do Encontrão da Rede
@@ -350,7 +407,7 @@ bem! Escreverei mais sobre isso em outro post...&lt;/p&gt;
 &lt;p&gt;[video
 webm="http://blip.tv/file/get/Wille-BikeUbaACidadeDasBicicletas533.webm"
 poster="http://a.images.blip.tv/Wille-53352491.png" width="650"
-height="365"]&lt;/p&gt;</summary><category term="bicicleta"></category><category term="kdenlive"></category><category term="ubatuba"></category><category term="viagens"></category><category term="vídeo"></category></entry><entry><title>Como colaborar com o OpenStreetMap</title><link href="http://wille.blog.br/2012/09/como-colaborar-com-o-openstreetmap" rel="alternate"></link><updated>2012-09-13T18:23:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2012-09-13:2012/09/como-colaborar-com-o-openstreetmap</id><summary type="html">&lt;p&gt;&lt;a href="http://images.wille.blog.br/osm-tutorial-pt_br.jpg"&gt;&lt;img alt="Tutorial OSM em 5 minutos. Clique para carregar em um tamanho
+height="365"]&lt;/p&gt;</summary><category term="bicicleta"></category><category term="kdenlive"></category><category term="ubatuba"></category><category term="viagens"></category><category term="vídeo"></category></entry><entry><title>Como colaborar com o OpenStreetMap</title><link href="http://wille.blog.br/2012/09/como-colaborar-com-o-openstreetmap" rel="alternate"></link><updated>2012-09-13T18:23:00-03:00</updated><author><name>wille</name></author><id>tag:wille.blog.br,2012-09-13:2012/09/como-colaborar-com-o-openstreetmap</id><summary type="html">&lt;p&gt;&lt;a href="http://images.wille.blog.br/osm-tutorial-pt_br.jpg"&gt;&lt;img alt="Tutorial OSM em 5 minutos. Clique para carregar em um tamanho
 maior." src="http://images.wille.blog.br/osm-tutorial-pt_br-650px.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Clique para carregar em um tamanho maior.&lt;/p&gt;
 &lt;p&gt;Sempre senti falta de um tutorial que mostrasse de forma rápida e
@@ -358,7 +415,7 @@ simples como começar a colaborar com o OpenStreetMap. Assim, resolvi
 fazer esse tutorial.&lt;/p&gt;
 &lt;p&gt;Coloquei o arquivo fonte SVG num repositório GIT, caso alguém queira
 fazer alguma modificação ou traduzir para outros idiomas:
-&lt;a href="https://gitorious.org/osmtutorial"&gt;https://gitorious.org/osmtutorial&lt;/a&gt;.&lt;/p&gt;</summary><category term="gráfico"></category><category term="inkscape"></category><category term="openstreetmap"></category><category term="osm"></category><category term="software livre"></category><category term="svg"></category><category term="tutoriais"></category></entry><entry><title>Montevideo</title><link href="http://wille.blog.br/2012/08/montevideo" rel="alternate"></link><updated>2012-08-17T15:57:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2012-08-17:2012/08/montevideo</id><summary type="html">&lt;p&gt;&lt;img alt="País del
+&lt;a href="https://gitorious.org/osmtutorial"&gt;https://gitorious.org/osmtutorial&lt;/a&gt;.&lt;/p&gt;</summary><category term="gráfico"></category><category term="inkscape"></category><category term="openstreetmap"></category><category term="osm"></category><category term="software livre"></category><category term="svg"></category><category term="tutoriais"></category></entry><entry><title>Montevideo</title><link href="http://wille.blog.br/2012/08/montevideo" rel="alternate"></link><updated>2012-08-17T15:57:00-03:00</updated><author><name>wille</name></author><id>tag:wille.blog.br,2012-08-17:2012/08/montevideo</id><summary type="html">&lt;p&gt;&lt;img alt="País del
 Fútbol" src="http://images.wille.blog.br/img_0239.jpg" /&gt;&lt;/p&gt;
 &lt;p&gt;En un país de tres millones de personas locas por fútbol, una placa
 especial.&lt;/p&gt;
@@ -371,7 +428,7 @@ lluvia" src="http://images.wille.blog.br/moca-no-celular.jpg" /&gt;&lt;/p&gt;
 &lt;p&gt;Descubrí que Montevideo es una ciudad que gira a una velocidad más baja
 que a la que estamos acostumbrados. Hice esta fotografía en el centro de
 Montevideo, mientras almorzaba en un restaurante donde los platos eran
-servidos lentamente.&lt;/p&gt;</summary><category term="banksy"></category><category term="diário"></category><category term="español"></category><category term="fotografia"></category><category term="futebol"></category><category term="grafite"></category><category term="montevideo"></category><category term="uruguai"></category></entry><entry><title>Clips: a programação do FISL para dispositivos móveis</title><link href="http://wille.blog.br/2012/07/clips-a-programacao-do-fisl-para-dispositivos-moveis" rel="alternate"></link><updated>2012-07-24T21:11:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2012-07-24:2012/07/clips-a-programacao-do-fisl-para-dispositivos-moveis</id><summary type="html">&lt;p&gt;&lt;a href="http://clips.tk"&gt;&lt;img alt="" src="http://file3.status.net/i/identica/wille-20120724T212322-rry4j89.png" title="QR Code para o site do Clips" /&gt;&lt;/a&gt;Todo
+servidos lentamente.&lt;/p&gt;</summary><category term="banksy"></category><category term="diário"></category><category term="español"></category><category term="fotografia"></category><category term="futebol"></category><category term="grafite"></category><category term="montevideo"></category><category term="uruguai"></category></entry><entry><title>Clips: a programação do FISL para dispositivos móveis</title><link href="http://wille.blog.br/2012/07/clips-a-programacao-do-fisl-para-dispositivos-moveis" rel="alternate"></link><updated>2012-07-24T21:11:00-03:00</updated><author><name>wille</name></author><id>tag:wille.blog.br,2012-07-24:2012/07/clips-a-programacao-do-fisl-para-dispositivos-moveis</id><summary type="html">&lt;p&gt;&lt;a href="http://clips.tk"&gt;&lt;img alt="" src="http://file3.status.net/i/identica/wille-20120724T212322-rry4j89.png" title="QR Code para o site do Clips" /&gt;&lt;/a&gt;Todo
 ano acontece em Porto Alegre o o &lt;a href="http://fisl.org.br"&gt;FISL&lt;/a&gt; (Fórum
 Internacional de Software Livre), maior evento de Software Livre da
 América Latina. Esse ano não vou participar, mas já estive lá em
@@ -400,7 +457,7 @@ também em outros eventos.&lt;/p&gt;
 &lt;p&gt;Acesse o Clips por &lt;a href="http://clips.tk"&gt;http://clips.tk&lt;/a&gt; ou utilize o QR Code acima.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;PS:&lt;/strong&gt; Agradeço a
 &lt;a href="http://softwarelivre.org/profile/valessiobrito"&gt;Valessio&lt;/a&gt; pelas
-valiosas dicas e a todos que ajudaram a testar o Clips!&lt;/p&gt;</summary><category term="django"></category><category term="eventos"></category><category term="fisl"></category><category term="fisl13"></category><category term="jquery mobile"></category><category term="programação"></category><category term="software livre"></category></entry><entry><title>"La dulzura puede cambiar el mundo"</title><link href="http://wille.blog.br/2012/07/la-dulzura-puede-cambiar-el-mundo" rel="alternate"></link><updated>2012-07-02T23:49:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2012-07-02:2012/07/la-dulzura-puede-cambiar-el-mundo</id><summary type="html">&lt;p&gt;&lt;img alt="La dulzura puede cambiar el
+valiosas dicas e a todos que ajudaram a testar o Clips!&lt;/p&gt;</summary><category term="django"></category><category term="eventos"></category><category term="fisl"></category><category term="fisl13"></category><category term="jquery mobile"></category><category term="programação"></category><category term="software livre"></category></entry><entry><title>"La dulzura puede cambiar el mundo"</title><link href="http://wille.blog.br/2012/07/la-dulzura-puede-cambiar-el-mundo" rel="alternate"></link><updated>2012-07-02T23:49:00-03:00</updated><author><name>wille</name></author><id>tag:wille.blog.br,2012-07-02:2012/07/la-dulzura-puede-cambiar-el-mundo</id><summary type="html">&lt;p&gt;&lt;img alt="La dulzura puede cambiar el
 mundo" src="http://images.wille.blog.br/dulzura.jpg" /&gt;&lt;/p&gt;
 &lt;p&gt;"La dulzura puede cambiar el mundo". Leí esta frase en un café de
 Montevideo y me sorprendí con la belleza e inocencia de las palabras. En
@@ -409,7 +466,7 @@ división del campeonato Uruguayo de fútbol. El juego era transmitido con
 apenas una cámara, la cual giraba para un lado y para otro del campo en
 busca de la pelota. ¿En qué otro lugar del mundo todavía se puede leer
 palabras como esas en un paquete de azúcar mientras se mira un partido
-de fútbol transmitido de manera casi amateur?&lt;/p&gt;</summary><category term="café"></category><category term="diário"></category><category term="español"></category><category term="fotografia"></category><category term="futebol"></category><category term="montevideo"></category><category term="uruguai"></category></entry><entry><title>Quero mais ciclovias!</title><link href="http://wille.blog.br/2012/06/quero-mais-ciclovias" rel="alternate"></link><updated>2012-06-10T00:49:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2012-06-10:2012/06/quero-mais-ciclovias</id><summary type="html">&lt;p&gt;&lt;a href="http://www.queromaisciclovias.com.br"&gt;&lt;img alt="banner Quero Mais
+de fútbol transmitido de manera casi amateur?&lt;/p&gt;</summary><category term="café"></category><category term="diário"></category><category term="español"></category><category term="fotografia"></category><category term="futebol"></category><category term="montevideo"></category><category term="uruguai"></category></entry><entry><title>Quero mais ciclovias!</title><link href="http://wille.blog.br/2012/06/quero-mais-ciclovias" rel="alternate"></link><updated>2012-06-10T00:49:00-03:00</updated><author><name>wille</name></author><id>tag:wille.blog.br,2012-06-10:2012/06/quero-mais-ciclovias</id><summary type="html">&lt;p&gt;&lt;a href="http://www.queromaisciclovias.com.br"&gt;&lt;img alt="banner Quero Mais
 Ciclovias" src="http://images.wille.blog.br/topo.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Foi lançada recentemente uma campanha por mais ciclovias no estado da
 Bahia. A campanha está coletando assinaturas que serão encaminhadas ao
@@ -424,7 +481,7 @@ tem apenas 3,5 km.&lt;/p&gt;
 cidade em que a bicicleta é meio de transporte principal de grande parte
 da população. Dizem que é a cidade brasileira com maior número de
 bicicletas per capita. Gravei algumas imagens e em breve vou editar um
-mini documentário sobre Ubatuba.&lt;/p&gt;</summary><category term="ativismo"></category><category term="bahia"></category><category term="bicicleta"></category><category term="campanha"></category><category term="feira de santana"></category></entry><entry><title>Mudança: Feira de Santana</title><link href="http://wille.blog.br/2012/04/mudanca-feira-de-santana" rel="alternate"></link><updated>2012-04-15T13:08:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2012-04-15:2012/04/mudanca-feira-de-santana</id><summary type="html">&lt;p&gt;&lt;img alt="Vista da janela do meu
+mini documentário sobre Ubatuba.&lt;/p&gt;</summary><category term="ativismo"></category><category term="bahia"></category><category term="bicicleta"></category><category term="campanha"></category><category term="feira de santana"></category></entry><entry><title>Mudança: Feira de Santana</title><link href="http://wille.blog.br/2012/04/mudanca-feira-de-santana" rel="alternate"></link><updated>2012-04-15T13:08:00-03:00</updated><author><name>wille</name></author><id>tag:wille.blog.br,2012-04-15:2012/04/mudanca-feira-de-santana</id><summary type="html">&lt;p&gt;&lt;img alt="Vista da janela do meu
 quarto" src="http://images.wille.blog.br/por-do-sol-feira.jpg" /&gt;&lt;/p&gt;
 &lt;p&gt;Faz um mês que mudei de casa e de cidade. Depois de três anos e meio em
 Cachoeira, resolvi experimentar Feira de Santana. O motivo para a
@@ -444,7 +501,7 @@ Tenho tido dificuldade em localizar os pontos de ônibus, pois poucos
 estão sinalizados com placas. Outra coisa que dificulta é que os ônibus
 não tem aquela plaquinha na lateral indicando o roteiro. Felizmente, não
 dependo deles. Posso ir para a rodoviária pegar o ônibus para ir
-trabalhar em Cachoeira andando mesmo.&lt;/p&gt;</summary><category term="bahia"></category><category term="bicicleta"></category><category term="diário"></category><category term="feira de santana"></category><category term="mudanças"></category><category term="transporte público"></category></entry><entry><title>Mapas Livres e Humanitarismo</title><link href="http://wille.blog.br/2012/04/mapas-livres-e-humanitarismo" rel="alternate"></link><updated>2012-04-02T15:38:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2012-04-02:2012/04/mapas-livres-e-humanitarismo</id><summary type="html">&lt;p&gt;&lt;img alt="Cartaz do evento Mapas Livres e
+trabalhar em Cachoeira andando mesmo.&lt;/p&gt;</summary><category term="bahia"></category><category term="bicicleta"></category><category term="diário"></category><category term="feira de santana"></category><category term="mudanças"></category><category term="transporte público"></category></entry><entry><title>Mapas Livres e Humanitarismo</title><link href="http://wille.blog.br/2012/04/mapas-livres-e-humanitarismo" rel="alternate"></link><updated>2012-04-02T15:38:00-03:00</updated><author><name>wille</name></author><id>tag:wille.blog.br,2012-04-02:2012/04/mapas-livres-e-humanitarismo</id><summary type="html">&lt;p&gt;&lt;img alt="Cartaz do evento Mapas Livres e
 Humanitarismo" src="http://images.wille.blog.br/palestra-hot.jpg" /&gt;&lt;/p&gt;
 &lt;p&gt;Estou organizando um evento no dia 10 de abril na UFRB, em Cachoeira-BA.
 Contaremos com uma palestra de Séverin Menard, integrante francês do
@@ -454,7 +511,7 @@ e aproveitaremos para fazer o lançamento do site do projeto
 Recôncavo).&lt;/p&gt;
 &lt;p&gt;Séverin vem atuando no Haiti desde o terremoto acontecido no início de
 2010, realizando trabalhos de mapeamento do país e de capacitação da
-população local para produção e uso de mapas.&lt;/p&gt;</summary><category term="eventos"></category><category term="openstreetmap"></category><category term="ufrb"></category></entry><entry><title>Velejando</title><link href="http://wille.blog.br/2012/03/velejando" rel="alternate"></link><updated>2012-03-18T21:54:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2012-03-18:2012/03/velejando</id><summary type="html">&lt;p&gt;&lt;img alt="imag0934" src="http://images.wille.blog.br/imag0934.jpg" /&gt;&lt;/p&gt;
+população local para produção e uso de mapas.&lt;/p&gt;</summary><category term="eventos"></category><category term="openstreetmap"></category><category term="ufrb"></category></entry><entry><title>Velejando</title><link href="http://wille.blog.br/2012/03/velejando" rel="alternate"></link><updated>2012-03-18T21:54:00-03:00</updated><author><name>wille</name></author><id>tag:wille.blog.br,2012-03-18:2012/03/velejando</id><summary type="html">&lt;p&gt;&lt;img alt="imag0934" src="http://images.wille.blog.br/imag0934.jpg" /&gt;&lt;/p&gt;
 &lt;p&gt;Acho que já escrevi aqui sobre minha paixão por barcos, em especial
 veleiros... Já li vários livros sobre aventuras de velejadores e o sonho
 de velejar acabou entrando na minha cabeça. Ontem, a convite de meu
@@ -466,7 +523,7 @@ ajudei no trabalho de ajustar os cabos, subir e descer as velas e até
 assumi o leme por alguns minutos!&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Navegando na Baía de Todos os
 Santos" src="http://images.wille.blog.br/imag0918.jpg" /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt="imag0922" src="http://images.wille.blog.br/imag0922.jpg" /&gt;&lt;/p&gt;</summary><category term="bahia"></category><category term="diário"></category><category term="fotografia"></category><category term="veleiro"></category><category term="viagens"></category></entry><entry><title>Ajude o Kdenlive, editor de vídeo livre!</title><link href="http://wille.blog.br/2012/03/ajude-o-kdenlive-editor-de-video-livre" rel="alternate"></link><updated>2012-03-15T21:43:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2012-03-15:2012/03/ajude-o-kdenlive-editor-de-video-livre</id><summary type="html">&lt;p&gt;&lt;a href="http://www.indiegogo.com/kdenlive-re"&gt;&lt;img alt="Interface do
+&lt;p&gt;&lt;img alt="imag0922" src="http://images.wille.blog.br/imag0922.jpg" /&gt;&lt;/p&gt;</summary><category term="bahia"></category><category term="diário"></category><category term="fotografia"></category><category term="veleiro"></category><category term="viagens"></category></entry><entry><title>Ajude o Kdenlive, editor de vídeo livre!</title><link href="http://wille.blog.br/2012/03/ajude-o-kdenlive-editor-de-video-livre" rel="alternate"></link><updated>2012-03-15T21:43:00-03:00</updated><author><name>wille</name></author><id>tag:wille.blog.br,2012-03-15:2012/03/ajude-o-kdenlive-editor-de-video-livre</id><summary type="html">&lt;p&gt;&lt;a href="http://www.indiegogo.com/kdenlive-re"&gt;&lt;img alt="Interface do
 Kdenlive" src="http://kdenlive.org/sites/default/files/images/kdenlive-layout-colorcorrection.preview.png" title="Kdenlive" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Como vocês sabem, sentimos falta de um software livre para edição de
 vídeo que atenda que seja fácil, ágil e atenda todas as necessidades de
@@ -486,7 +543,7 @@ crescimento do Kdenlive.&lt;/p&gt;
 &lt;a href="http://www.indiegogo.com/kdenlive-re"&gt;http://www.indiegogo.com/&lt;wbr&gt;kdenlive-re&lt;/wbr&gt;&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Colaborem!&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;PS. O valor mínimo é US\$ 5. Quem tiver alguma dificuldade em fazer a
-doação, me avise que posso fazer a intermediação.&lt;/em&gt;&lt;/p&gt;</summary><category term="campanha"></category><category term="crowdfunding"></category><category term="financiamento colaborativo"></category><category term="kdenlive"></category><category term="software livre"></category><category term="vídeo"></category></entry><entry><title>Lençóis - Mapa, Trilhas e Cachoeiras</title><link href="http://wille.blog.br/2012/03/lencois-mapa-trilhas-e-cachoeiras" rel="alternate"></link><updated>2012-03-02T23:46:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2012-03-02:2012/03/lencois-mapa-trilhas-e-cachoeiras</id><summary type="html">&lt;p&gt;Esse ano passei o carnaval em Lençóis, principal cidade da Chapada
+doação, me avise que posso fazer a intermediação.&lt;/em&gt;&lt;/p&gt;</summary><category term="campanha"></category><category term="crowdfunding"></category><category term="financiamento colaborativo"></category><category term="kdenlive"></category><category term="software livre"></category><category term="vídeo"></category></entry><entry><title>Lençóis - Mapa, Trilhas e Cachoeiras</title><link href="http://wille.blog.br/2012/03/lencois-mapa-trilhas-e-cachoeiras" rel="alternate"></link><updated>2012-03-02T23:46:00-03:00</updated><author><name>wille</name></author><id>tag:wille.blog.br,2012-03-02:2012/03/lencois-mapa-trilhas-e-cachoeiras</id><summary type="html">&lt;p&gt;Esse ano passei o carnaval em Lençóis, principal cidade da Chapada
 Diamantina. Já havia &lt;a href="http://wille.blog.br/2011/03/pouca-vogal-e-chapada-diamantina/" title="Pouca Vogal e Chapada Diamantina"&gt;ido lá no ano
 passado&lt;/a&gt;,
 mas como passei apenas dois dias, resolvi voltar para conhecer um pouco
@@ -524,7 +581,7 @@ Primavera" src="http://images.wille.blog.br/cachoeira-da-primavera.jpg" /&gt;&lt
 gostei. Também fui no Ribeirão do Meio, mas como cheguei lá praticamente
 no anoitecer, não tirei foto nem tomei banho. Outro local muito
 interessante é o Salão de Areias, um lugar onde se pode ver o momento em
-que as rochas se desmancham e viram areia.&lt;/p&gt;</summary><category term="bahia"></category><category term="chapada diamantina"></category><category term="fotografia"></category><category term="lençóis"></category><category term="mapa"></category><category term="openstreetmap"></category><category term="trilha"></category><category term="viagens"></category></entry><entry><title>VaiVem - Sistema de empréstimos</title><link href="http://wille.blog.br/2012/02/vaivem-sistema-de-emprestimos" rel="alternate"></link><updated>2012-02-14T23:12:00-02:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2012-02-14:2012/02/vaivem-sistema-de-emprestimos</id><summary type="html">&lt;p&gt;&lt;img alt="screenshot de uma das telas do
+que as rochas se desmancham e viram areia.&lt;/p&gt;</summary><category term="bahia"></category><category term="chapada diamantina"></category><category term="fotografia"></category><category term="lençóis"></category><category term="mapa"></category><category term="openstreetmap"></category><category term="trilha"></category><category term="viagens"></category></entry><entry><title>VaiVem - Sistema de empréstimos</title><link href="http://wille.blog.br/2012/02/vaivem-sistema-de-emprestimos" rel="alternate"></link><updated>2012-02-14T23:12:00-02:00</updated><author><name>wille</name></author><id>tag:wille.blog.br,2012-02-14:2012/02/vaivem-sistema-de-emprestimos</id><summary type="html">&lt;p&gt;&lt;img alt="screenshot de uma das telas do
 vaivem" src="http://images.wille.blog.br/vaivem.jpg" /&gt;&lt;/p&gt;
 &lt;p&gt;Já faz um tempo que comecei a desenvolver o VaiVem um pequeno sistema de
 controle de empréstimos pra uso na universidade em que trabalho. Esse
@@ -541,7 +598,7 @@ complexo.&lt;/p&gt;
 &lt;li&gt;Software Livre (Licença Affero GPLv3).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;O código está disponível no GitHub:
-&lt;a href="https://github.com/willemarcel/vaivem"&gt;https://github.com/willemarcel/vaivem&lt;/a&gt;&lt;/p&gt;</summary><category term="django"></category><category term="programação"></category><category term="python"></category><category term="sistema de empréstimo"></category><category term="software livre"></category><category term="vaivem"></category></entry><entry><title>OpenStreetMap na revista Tema</title><link href="http://wille.blog.br/2012/01/openstreetmap-na-revista-tema" rel="alternate"></link><updated>2012-01-06T01:14:00-02:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2012-01-06:2012/01/openstreetmap-na-revista-tema</id><summary type="html">&lt;p&gt;&lt;a href="http://images.wille.blog.br/osm-revista-tema.jpg"&gt;&lt;img alt="Matéria sobre OpenStreetMap na Revista
+&lt;a href="https://github.com/willemarcel/vaivem"&gt;https://github.com/willemarcel/vaivem&lt;/a&gt;&lt;/p&gt;</summary><category term="django"></category><category term="programação"></category><category term="python"></category><category term="sistema de empréstimo"></category><category term="software livre"></category><category term="vaivem"></category></entry><entry><title>OpenStreetMap na revista Tema</title><link href="http://wille.blog.br/2012/01/openstreetmap-na-revista-tema" rel="alternate"></link><updated>2012-01-06T01:14:00-02:00</updated><author><name>wille</name></author><id>tag:wille.blog.br,2012-01-06:2012/01/openstreetmap-na-revista-tema</id><summary type="html">&lt;p&gt;&lt;a href="http://images.wille.blog.br/osm-revista-tema.jpg"&gt;&lt;img alt="Matéria sobre OpenStreetMap na Revista
 Tema" src="http://images.wille.blog.br/osm-revista-tema-low550.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Em outubro, após a &lt;a href="http://wille.blog.br/2011/10/latinoware-2011/" title="Latinoware 2011"&gt;palestra na
 Latinoware&lt;/a&gt;,
@@ -554,7 +611,7 @@ matéria&lt;/a&gt;
 ou acesse a edição completa da
 &lt;a href="http://tema.serpro.gov.br/pub/serpro/"&gt;revista&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;A revista Tema é uma publicação do Serpro, a empresa de TI do governo
-federal.&lt;/p&gt;</summary><category term="matéria"></category><category term="openstreetmap"></category></entry><entry><title>2011-2012 - The Holstee Manifesto</title><link href="http://wille.blog.br/2012/01/2011-2012-the-holstee-manifesto" rel="alternate"></link><updated>2012-01-04T20:20:00-02:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2012-01-04:2012/01/2011-2012-the-holstee-manifesto</id><summary type="html">&lt;p&gt;Ano passado fiz um &lt;a href="http://wille.blog.br/2011/01/2010-2011-destinos/" title="2010-2011, destinos"&gt;post com metas para o ano de
+federal.&lt;/p&gt;</summary><category term="matéria"></category><category term="openstreetmap"></category></entry><entry><title>2011-2012 - The Holstee Manifesto</title><link href="http://wille.blog.br/2012/01/2011-2012-the-holstee-manifesto" rel="alternate"></link><updated>2012-01-04T20:20:00-02:00</updated><author><name>wille</name></author><id>tag:wille.blog.br,2012-01-04:2012/01/2011-2012-the-holstee-manifesto</id><summary type="html">&lt;p&gt;Ano passado fiz um &lt;a href="http://wille.blog.br/2011/01/2010-2011-destinos/" title="2010-2011, destinos"&gt;post com metas para o ano de
 2011&lt;/a&gt;.
 Acabei de reler aquelas metas e creio que consegui cumprir quase tudo,
 exceto a principal meta: a de estudar bastante.&lt;/p&gt;
@@ -569,7 +626,7 @@ que querer não só para um ano, mas para toda a vida:&lt;/p&gt;
 &lt;iframe src="http://www.youtube.com/embed/QDmt_t6umoY" frameborder="0" width="560" height="315"&gt;&lt;/iframe&gt;
 
 &lt;p&gt;Quem quiser ver com legendas em português, acesse no &lt;a href="http://www.universalsubtitles.org/en/videos/SK804PhibQfV/pt/190924/"&gt;Universal
-Subtitles&lt;/a&gt;.&lt;/p&gt;</summary><category term="diário"></category><category term="estudos"></category><category term="holstee manifesto"></category><category term="tempo"></category><category term="vida"></category><category term="vídeo"></category></entry><entry><title>Como copiar vídeos de qualquer site e em qualquer formato para o seu computador</title><link href="http://wille.blog.br/2011/12/como-salvar-videos-de-qualquer-site-e-em-qualquer-formato-para-o-seu-computador" rel="alternate"></link><updated>2011-12-21T20:07:00-02:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2011-12-21:2011/12/como-salvar-videos-de-qualquer-site-e-em-qualquer-formato-para-o-seu-computador</id><summary type="html">&lt;p&gt;Há muito tempo, postei &lt;a href="http://wille.blog.br/2008/05/a-forma-mais-facil-de-baixar-videos-do-you-tube/" title="a forma mais fácil de baixar vídeos do You Tube"&gt;aqui no
+Subtitles&lt;/a&gt;.&lt;/p&gt;</summary><category term="diário"></category><category term="estudos"></category><category term="holstee manifesto"></category><category term="tempo"></category><category term="vida"></category><category term="vídeo"></category></entry><entry><title>Como copiar vídeos de qualquer site e em qualquer formato para o seu computador</title><link href="http://wille.blog.br/2011/12/como-salvar-videos-de-qualquer-site-e-em-qualquer-formato-para-o-seu-computador" rel="alternate"></link><updated>2011-12-21T20:07:00-02:00</updated><author><name>wille</name></author><id>tag:wille.blog.br,2011-12-21:2011/12/como-salvar-videos-de-qualquer-site-e-em-qualquer-formato-para-o-seu-computador</id><summary type="html">&lt;p&gt;Há muito tempo, postei &lt;a href="http://wille.blog.br/2008/05/a-forma-mais-facil-de-baixar-videos-do-you-tube/" title="a forma mais fácil de baixar vídeos do You Tube"&gt;aqui no
 blog&lt;/a&gt;
 uma forma bem fácil de copiar vídeos do youtube no GNU/Linux. Bastava
 esperar o vídeo carregar no navegador e ir lá no /tmp/ e copiar o
@@ -610,7 +667,7 @@ caso de sites que usem Flash, é só observar qual o link que aponta para
 &lt;strong&gt;/tmp/Flashxxxx&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;UPDATE 2:&lt;/strong&gt; Com o Flash 11, essa dica não funciona mais. A solução que
 encontrei foi usar um plugin no Firefox chamado &lt;a href="http://www.flashvideodownloader.org"&gt;Flash Video
-Downloader&lt;/a&gt;.&lt;/p&gt;</summary><category term="firefox"></category><category term="gnulinux"></category><category term="tutorial"></category><category term="vídeo"></category></entry><entry><title>Cavan e o Fleadh Cheoil</title><link href="http://wille.blog.br/2011/11/cavan-e-o-fleadh-cheoil" rel="alternate"></link><updated>2011-11-07T22:47:00-02:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2011-11-07:2011/11/cavan-e-o-fleadh-cheoil</id><summary type="html">&lt;p&gt;&lt;img alt="Menina tocando
+Downloader&lt;/a&gt;.&lt;/p&gt;</summary><category term="firefox"></category><category term="gnulinux"></category><category term="tutorial"></category><category term="vídeo"></category></entry><entry><title>Cavan e o Fleadh Cheoil</title><link href="http://wille.blog.br/2011/11/cavan-e-o-fleadh-cheoil" rel="alternate"></link><updated>2011-11-07T22:47:00-02:00</updated><author><name>wille</name></author><id>tag:wille.blog.br,2011-11-07:2011/11/cavan-e-o-fleadh-cheoil</id><summary type="html">&lt;p&gt;&lt;img alt="Menina tocando
 acordeon" src="http://images.wille.blog.br/dscn0245_1.jpg" /&gt;&lt;/p&gt;
 &lt;p&gt;O que mais gostei na cultura irlandesa foi a música, principalmente a
 música tradicional e as canções folk tocadas pelos artistas de rua. A
@@ -639,7 +696,7 @@ tenho me dedicado muito...&lt;/p&gt;
 &lt;p&gt;[singlepic id=35 w=333 h=248 float=right] [singlepic id=37 w=333 h=248
 float=left]&lt;/p&gt;
 &lt;p&gt;[singlepic id=36 w=333 h=248 float=left]   [singlepic id=33 w=333 h=248
-float=left]&lt;/p&gt;</summary><category term="cavan"></category><category term="fotografia"></category><category term="irlanda"></category><category term="música"></category><category term="viagens"></category></entry><entry><title>Latinoware 2011</title><link href="http://wille.blog.br/2011/10/latinoware-2011" rel="alternate"></link><updated>2011-10-24T21:31:00-02:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2011-10-24:2011/10/latinoware-2011</id><summary type="html">&lt;p&gt;Na semana passada, participei pela primeira vez da
+float=left]&lt;/p&gt;</summary><category term="cavan"></category><category term="fotografia"></category><category term="irlanda"></category><category term="música"></category><category term="viagens"></category></entry><entry><title>Latinoware 2011</title><link href="http://wille.blog.br/2011/10/latinoware-2011" rel="alternate"></link><updated>2011-10-24T21:31:00-02:00</updated><author><name>wille</name></author><id>tag:wille.blog.br,2011-10-24:2011/10/latinoware-2011</id><summary type="html">&lt;p&gt;Na semana passada, participei pela primeira vez da
 &lt;a href="http://latinoware.org/"&gt;Latinoware&lt;/a&gt; (Conferência Latino-Americana de
 Software Livre), creio que o segundo maior evento de Software Livre do
 Brasil. Gostei muito da Latinoware, por vários motivos... Apesar de não
@@ -662,7 +719,7 @@ Também cedemos uma entrevista para a assessora de comunicação do
 &lt;a href="http://www.serpro.gov.br/"&gt;Serpro&lt;/a&gt; que deve render uma matéria em breve
 na &lt;a href="http://tema.serpro.gov.br/pub/serpro/"&gt;revista da empresa&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;A apresentação de slides está disponível em:
-&lt;a href="http://bayfiles.com/file/193B/cnTS31/mapeamento_OSM-1.2.pdf"&gt;http://bayfiles.com/file/193B/cnTS31/mapeamento_OSM-1.2.pdf&lt;/a&gt;&lt;/p&gt;</summary><category term="eventos"></category><category term="latinoware"></category><category term="latinoware2011"></category><category term="openstreetmap"></category><category term="software livre"></category></entry><entry><title>Literatura e direitos autorais</title><link href="http://wille.blog.br/2011/10/literatura-e-direitos-autorais" rel="alternate"></link><updated>2011-10-12T02:08:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2011-10-12:2011/10/literatura-e-direitos-autorais</id><summary type="html">&lt;p&gt;&lt;img alt="Da esq. para dir. Raquel Cozer, Miguel Sanches e Fernando
+&lt;a href="http://bayfiles.com/file/193B/cnTS31/mapeamento_OSM-1.2.pdf"&gt;http://bayfiles.com/file/193B/cnTS31/mapeamento_OSM-1.2.pdf&lt;/a&gt;&lt;/p&gt;</summary><category term="eventos"></category><category term="latinoware"></category><category term="latinoware2011"></category><category term="openstreetmap"></category><category term="software livre"></category></entry><entry><title>Literatura e direitos autorais</title><link href="http://wille.blog.br/2011/10/literatura-e-direitos-autorais" rel="alternate"></link><updated>2011-10-12T02:08:00-03:00</updated><author><name>wille</name></author><id>tag:wille.blog.br,2011-10-12:2011/10/literatura-e-direitos-autorais</id><summary type="html">&lt;p&gt;&lt;img alt="Da esq. para dir. Raquel Cozer, Miguel Sanches e Fernando
 Morais" src="http://images.wille.blog.br/flica-1.jpg" title="Mesa de abertura da Flica 2011" /&gt;&lt;/p&gt;
 &lt;p&gt;Há algumas semanas li um &lt;a href="http://leogermani.com.br/2011/08/31/do-que-vive-o-musico-afinal/"&gt;post no blog do Leo
 Germani&lt;/a&gt;
@@ -713,7 +770,7 @@ estabilizadas e permitir que as pessoas paguem a quantia que desejarem.&lt;/p&gt
 &lt;p&gt;Apesar da visão ainda conservadora dos convidados em relação aos
 direitos autorais, foi interessante conhecer alguns detalhes do mercado
 literário, bem como uma infração de direitos autorais que geralmente não
-é mostrada: a praticada pelas próprias editoras.&lt;/p&gt;</summary><category term="cultura livre"></category><category term="direitos autorais"></category><category term="eventos"></category><category term="flica"></category><category term="literatura"></category></entry><entry><title>Dublin - Mobilidade Urbana</title><link href="http://wille.blog.br/2011/09/dublin-mobilidade-urbana" rel="alternate"></link><updated>2011-09-26T09:07:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2011-09-26:2011/09/dublin-mobilidade-urbana</id><summary type="html">&lt;p&gt;&lt;img alt="Bicicletário no centro da
+é mostrada: a praticada pelas próprias editoras.&lt;/p&gt;</summary><category term="cultura livre"></category><category term="direitos autorais"></category><category term="eventos"></category><category term="flica"></category><category term="literatura"></category></entry><entry><title>Dublin - Mobilidade Urbana</title><link href="http://wille.blog.br/2011/09/dublin-mobilidade-urbana" rel="alternate"></link><updated>2011-09-26T09:07:00-03:00</updated><author><name>wille</name></author><id>tag:wille.blog.br,2011-09-26:2011/09/dublin-mobilidade-urbana</id><summary type="html">&lt;p&gt;&lt;img alt="Bicicletário no centro da
 cidade" src="http://images.wille.blog.br/imag0178.jpg" /&gt;&lt;/p&gt;
 &lt;p&gt;A mobilidade urbana em Dublin tem mais pontos positivos que negativos.
 Um ponto negativo é o custo alto do transporte público. O ônibus, o VLT
@@ -770,7 +827,7 @@ necessária! Não cheguei a ver nenhum congestionamento lá...&lt;/p&gt;
 &lt;p&gt;Usei ônibus e o VLT apenas uma vez em Dublin e peguei o trem três vezes
 para ir em bairros mais afastados. Como a escola, o hostel e a maioria
 dos locais que visitei eram no centro da cidade, pude fazer tudo
-caminhando mesmo ou com a bicicleta que comprei lá.&lt;/p&gt;</summary><category term="bicicleta"></category><category term="dublin"></category><category term="fotografia"></category><category term="irlanda"></category><category term="mobilidade urbana"></category><category term="transporte público"></category><category term="viagens"></category></entry><entry><title>Dublin</title><link href="http://wille.blog.br/2011/09/dublin" rel="alternate"></link><updated>2011-09-24T00:38:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2011-09-24:2011/09/dublin</id><summary type="html">&lt;p&gt;&lt;img alt="River
+caminhando mesmo ou com a bicicleta que comprei lá.&lt;/p&gt;</summary><category term="bicicleta"></category><category term="dublin"></category><category term="fotografia"></category><category term="irlanda"></category><category term="mobilidade urbana"></category><category term="transporte público"></category><category term="viagens"></category></entry><entry><title>Dublin</title><link href="http://wille.blog.br/2011/09/dublin" rel="alternate"></link><updated>2011-09-24T00:38:00-03:00</updated><author><name>wille</name></author><id>tag:wille.blog.br,2011-09-24:2011/09/dublin</id><summary type="html">&lt;p&gt;&lt;img alt="River
 Liffey" src="http://images.wille.blog.br/dscn0096.jpg" /&gt;&lt;/p&gt;
 &lt;p&gt;Cheguei em Dublin na tarde do dia 03 de agosto. Como é bem comum por lá,
 estava nublado... Fiquei com muito medo de ser barrado pela imigração,
@@ -835,7 +892,7 @@ nada, você pode ir lá só pra apreciar a música.&lt;/p&gt;
 Liffey (um rio limpo!) dividindo a cidade em norte e sul... Nos próximos
 posts, contarei um pouco mais sobre Dublin e a cultura irlandesa.&lt;/p&gt;
 &lt;p&gt;[singlepic id=22 w=333 h=250 float=right] [singlepic id=21 w=333 h=250
-float=left]&lt;/p&gt;</summary><category term="dublin"></category><category term="fotografia"></category><category term="irlanda"></category><category term="viagens"></category></entry><entry><title>Istambul</title><link href="http://wille.blog.br/2011/09/istambul" rel="alternate"></link><updated>2011-09-08T23:21:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2011-09-08:2011/09/istambul</id><summary type="html">&lt;p&gt;&lt;img alt="dscn0296" src="http://images.wille.blog.br/dscn0296.jpg" /&gt;&lt;/p&gt;
+float=left]&lt;/p&gt;</summary><category term="dublin"></category><category term="fotografia"></category><category term="irlanda"></category><category term="viagens"></category></entry><entry><title>Istambul</title><link href="http://wille.blog.br/2011/09/istambul" rel="alternate"></link><updated>2011-09-08T23:21:00-03:00</updated><author><name>wille</name></author><id>tag:wille.blog.br,2011-09-08:2011/09/istambul</id><summary type="html">&lt;p&gt;&lt;img alt="dscn0296" src="http://images.wille.blog.br/dscn0296.jpg" /&gt;&lt;/p&gt;
 &lt;p&gt;Embarquei para Istambul às 23h do dia 01/08 em São Paulo. Como comprei a
 passagem para Dublin por uma empresa aérea da Turquia, era necessário
 fazer uma conexão lá em Istambul. O voo foi muito tranquilo, acho que
@@ -927,7 +984,7 @@ aeroporto.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Algumas fotos...&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;[nggallery id=2]&lt;/p&gt;
 &lt;p&gt;As fotos são quase todas da viagem de volta, pois a câmera que eu levei
-não funciona bem com pouca iluminação.&lt;/p&gt;</summary><category term="fotografia"></category><category term="istambul"></category><category term="turquia"></category><category term="viagens"></category></entry><entry><title>Gnome 3</title><link href="http://wille.blog.br/2011/07/gnome-3" rel="alternate"></link><updated>2011-07-13T21:58:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2011-07-13:2011/07/gnome-3</id><summary type="html">&lt;p&gt;Troquei o &lt;a href="http://kde.org"&gt;KDE&lt;/a&gt;, que eu usava no meus computadores há
+não funciona bem com pouca iluminação.&lt;/p&gt;</summary><category term="fotografia"></category><category term="istambul"></category><category term="turquia"></category><category term="viagens"></category></entry><entry><title>Gnome 3</title><link href="http://wille.blog.br/2011/07/gnome-3" rel="alternate"></link><updated>2011-07-13T21:58:00-03:00</updated><author><name>wille</name></author><id>tag:wille.blog.br,2011-07-13:2011/07/gnome-3</id><summary type="html">&lt;p&gt;Troquei o &lt;a href="http://kde.org"&gt;KDE&lt;/a&gt;, que eu usava no meus computadores há
 cerca de 4 anos pelo &lt;a href="http://www.gnome3.org/index.html.pt_BR"&gt;GNOME 3&lt;/a&gt;.
 Inicialmente eu só queria testar a nova versão do Gnome, que parecia
 bastante atraente, mas em pouco tempo, me fez abandonar o KDE.&lt;/p&gt;
@@ -951,7 +1008,7 @@ identi.ca e, quando utilizava KDE, a todo momento eu clicava no ícone
 dele na bandeja quando tinha algo novo ou mesmo sem ter novos posts. Com
 o Gnome, é comum eu passar bastante tempo sem nem lembrar do identi.ca e
 do twitter. A ausência da barra de tarefas também diminui a distração.&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="desktop"></category><category term="dicas de software"></category><category term="gnome"></category><category term="gnome3"></category><category term="software livre"></category></entry><entry><title>Atualizando...</title><link href="http://wille.blog.br/2011/07/atualizando" rel="alternate"></link><updated>2011-07-13T21:23:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2011-07-13:2011/07/atualizando</id><summary type="html">&lt;p&gt;Mais uma vez, deixei o blog bastante tempo abandonado... para compensar,
+&lt;/ul&gt;</summary><category term="desktop"></category><category term="dicas de software"></category><category term="gnome"></category><category term="gnome3"></category><category term="software livre"></category></entry><entry><title>Atualizando...</title><link href="http://wille.blog.br/2011/07/atualizando" rel="alternate"></link><updated>2011-07-13T21:23:00-03:00</updated><author><name>wille</name></author><id>tag:wille.blog.br,2011-07-13:2011/07/atualizando</id><summary type="html">&lt;p&gt;Mais uma vez, deixei o blog bastante tempo abandonado... para compensar,
 vou tentar resumir alguns acontecimentos desse período.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;FISL&lt;/strong&gt;&lt;br /&gt;
 Esse ano não fui ao &lt;a href="http://softwarelivre.org/fisl12"&gt;FISL&lt;/a&gt;... apesar
@@ -1007,7 +1064,7 @@ e na volta e como o tempo de espera é bem longo, acho que vou conseguir
 dar uma volta pela cidade. Eu deveria ter me atentado dessa
 possibilidade e escolhido vôos com um intervalo ainda maior em
 Istambul.... Comecei a estudar um pouco da língua turca, só pra dizer
-bom dia, obrigado, etc e tal...&lt;/p&gt;</summary><category term="estudos"></category><category term="fisl"></category><category term="gnulinux"></category><category term="mapas"></category><category term="openstreetmap"></category><category term="software livre"></category></entry><entry><title>Como foi o Flisol 2011 em Cruz das Almas...</title><link href="http://wille.blog.br/2011/04/como-foi-o-flisol-2011-em-cruz-das-almas" rel="alternate"></link><updated>2011-04-10T23:54:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2011-04-10:2011/04/como-foi-o-flisol-2011-em-cruz-das-almas</id><summary type="html">&lt;p&gt;&lt;img alt="" src="http://images.wille.blog.br/palestra-multitoques.jpg" title="Luiz Paulo Colombiano e Everton apresentando palestra sobre Interfaces Multitoques" /&gt;&lt;/p&gt;
+bom dia, obrigado, etc e tal...&lt;/p&gt;</summary><category term="estudos"></category><category term="fisl"></category><category term="gnulinux"></category><category term="mapas"></category><category term="openstreetmap"></category><category term="software livre"></category></entry><entry><title>Como foi o Flisol 2011 em Cruz das Almas...</title><link href="http://wille.blog.br/2011/04/como-foi-o-flisol-2011-em-cruz-das-almas" rel="alternate"></link><updated>2011-04-10T23:54:00-03:00</updated><author><name>wille</name></author><id>tag:wille.blog.br,2011-04-10:2011/04/como-foi-o-flisol-2011-em-cruz-das-almas</id><summary type="html">&lt;p&gt;&lt;img alt="" src="http://images.wille.blog.br/palestra-multitoques.jpg" title="Luiz Paulo Colombiano e Everton apresentando palestra sobre Interfaces Multitoques" /&gt;&lt;/p&gt;
 &lt;p&gt;No sábado, realizamos o &lt;a href="http://ufrb.edu.br/flisol"&gt;Flisol em Cruz das
 Almas/BA&lt;/a&gt;. O evento foi organizado por mim e
 por meu colega de trabalho e amigo &lt;a href="http://www.cesarvelame.com"&gt;César
@@ -1035,7 +1092,7 @@ e Tecnológicas.&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://www.ufrb.edu.br/flisol/galeria-de-fotos/"&gt;Mais fotos do Flisol Cruz das
 Almas&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://flisol.info/FLISOL2011/Fotos"&gt;Fotos do Flisol 2011 em toda a América
-Latina&lt;/a&gt;&lt;/p&gt;</summary><category term="bahia"></category><category term="cruz das almas"></category><category term="eventos"></category><category term="flisol"></category><category term="flisol2011"></category><category term="software livre"></category></entry><entry><title>Participe do Flisol 2011 - Cruz das Almas</title><link href="http://wille.blog.br/2011/03/participe-do-flisol-2011-cruz-das-almas" rel="alternate"></link><updated>2011-03-28T11:35:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2011-03-28:2011/03/participe-do-flisol-2011-cruz-das-almas</id><summary type="html">&lt;p&gt;&lt;img alt="" src="http://www.ufrb.edu.br/agencia/images/stories/cartaz-flisol.jpg" title="Cartaz Flisol 2011 Cruz das Almas" /&gt;&lt;/p&gt;
+Latina&lt;/a&gt;&lt;/p&gt;</summary><category term="bahia"></category><category term="cruz das almas"></category><category term="eventos"></category><category term="flisol"></category><category term="flisol2011"></category><category term="software livre"></category></entry><entry><title>Participe do Flisol 2011 - Cruz das Almas</title><link href="http://wille.blog.br/2011/03/participe-do-flisol-2011-cruz-das-almas" rel="alternate"></link><updated>2011-03-28T11:35:00-03:00</updated><author><name>wille</name></author><id>tag:wille.blog.br,2011-03-28:2011/03/participe-do-flisol-2011-cruz-das-almas</id><summary type="html">&lt;p&gt;&lt;img alt="" src="http://www.ufrb.edu.br/agencia/images/stories/cartaz-flisol.jpg" title="Cartaz Flisol 2011 Cruz das Almas" /&gt;&lt;/p&gt;
 &lt;p&gt;Estou na organização do &lt;strong&gt;Flisol 2011&lt;/strong&gt;, em Cruz das Almas/BA. O evento
 será realizado dia 09 de Abril a partir das 09h, no Pavilhão de Aulas 1
 do Campus da UFRB. Na programação, teremos algumas palestras, oficinas,
@@ -1061,7 +1118,7 @@ Latina. Confira se haverá Flisol na sua cidade no &lt;a href="http://flisol.net
 oficial&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Baixe o &lt;a href="http://images.wille.blog.br/cartaz-flisol2.pdf"&gt;cartaz em
 PDF&lt;/a&gt;,
-imprima e ajude a divulgar o evento.&lt;/p&gt;</summary><category term="bahia"></category><category term="cruz das almas"></category><category term="eventos"></category><category term="flisol"></category><category term="software livre"></category></entry><entry><title>Pouca Vogal e Chapada Diamantina</title><link href="http://wille.blog.br/2011/03/pouca-vogal-e-chapada-diamantina" rel="alternate"></link><updated>2011-03-20T23:25:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2011-03-20:2011/03/pouca-vogal-e-chapada-diamantina</id><summary type="html">&lt;p&gt;Sempre escrevo posts e acabo demorando muito de postar, tanto que às
+imprima e ajude a divulgar o evento.&lt;/p&gt;</summary><category term="bahia"></category><category term="cruz das almas"></category><category term="eventos"></category><category term="flisol"></category><category term="software livre"></category></entry><entry><title>Pouca Vogal e Chapada Diamantina</title><link href="http://wille.blog.br/2011/03/pouca-vogal-e-chapada-diamantina" rel="alternate"></link><updated>2011-03-20T23:25:00-03:00</updated><author><name>wille</name></author><id>tag:wille.blog.br,2011-03-20:2011/03/pouca-vogal-e-chapada-diamantina</id><summary type="html">&lt;p&gt;Sempre escrevo posts e acabo demorando muito de postar, tanto que às
 vezes as notícias ficam velhas... No final de janeiro fui no show do
 &lt;a href="http://www.poucavogal.com.br"&gt;Pouca Vogal&lt;/a&gt;, em Irecê-BA, e fui pela
 primeira vez na Chapada Diamantina.&lt;/p&gt;
@@ -1089,7 +1146,7 @@ Brumado.&lt;/p&gt;
 pra conhecer muitos locais. Tenho que voltar lá outra vez e, de
 preferência, com uma bicicleta pra fazer umas trilhas.&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://images.wille.blog.br/kdk_1447.jpg"&gt;&lt;img alt="" src="http://images.wille.blog.br/kdk_1447.jpg" title="No morro do Pai Inácio" /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://images.wille.blog.br/kdk_1450.jpg"&gt;&lt;img alt="" src="http://images.wille.blog.br/kdk_1450.jpg" title="BR-242 vista do alto do Morro" /&gt;&lt;/a&gt;&lt;/p&gt;</summary><category term="chapada diamantina"></category><category term="diário"></category><category term="fotografia"></category><category term="lençóis"></category><category term="montanha"></category><category term="pouca vogal"></category><category term="viagens"></category></entry><entry><title>Aprendizagens</title><link href="http://wille.blog.br/2011/02/aprendizagens" rel="alternate"></link><updated>2011-02-19T10:18:00-02:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2011-02-19:2011/02/aprendizagens</id><summary type="html">&lt;p&gt;Como falei no &lt;a href="http://wille.blog.br/2011/01/2010-2011-destinos/"&gt;primeiro post do
+&lt;p&gt;&lt;a href="http://images.wille.blog.br/kdk_1450.jpg"&gt;&lt;img alt="" src="http://images.wille.blog.br/kdk_1450.jpg" title="BR-242 vista do alto do Morro" /&gt;&lt;/a&gt;&lt;/p&gt;</summary><category term="chapada diamantina"></category><category term="diário"></category><category term="fotografia"></category><category term="lençóis"></category><category term="montanha"></category><category term="pouca vogal"></category><category term="viagens"></category></entry><entry><title>Aprendizagens</title><link href="http://wille.blog.br/2011/02/aprendizagens" rel="alternate"></link><updated>2011-02-19T10:18:00-02:00</updated><author><name>wille</name></author><id>tag:wille.blog.br,2011-02-19:2011/02/aprendizagens</id><summary type="html">&lt;p&gt;Como falei no &lt;a href="http://wille.blog.br/2011/01/2010-2011-destinos/"&gt;primeiro post do
 ano&lt;/a&gt;, minha principal
 meta para 2011 é estudar mais. No entanto, a princípio não pretendo
 fazer cursos "formais". Então resolvi começar uma série de posts
@@ -1119,7 +1176,7 @@ para escrever em Espanhol.&lt;/p&gt;
 &lt;p&gt;Estar inscrito num curso, mesmo que informal, é algo que me ajuda a ter
 mais disciplina. Outra coisa que já me ajudou bastante foi colocar na
 parede do quarto uma lista de tarefas a cumprir. Voltarei a escrever
-assim que tiver mais novidades em relação aos estudos.&lt;/p&gt;</summary><category term="estudos"></category><category term="p2pu"></category></entry><entry><title>Artigo publicado em ebook</title><link href="http://wille.blog.br/2011/01/artigo-publicado-em-ebook" rel="alternate"></link><updated>2011-01-25T23:37:00-02:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2011-01-25:2011/01/artigo-publicado-em-ebook</id><summary type="html">&lt;p&gt;Hoje descobri que um artigo que escrevi com &lt;a href="http://ufrb.edu.br/alenelins/"&gt;Alene
+assim que tiver mais novidades em relação aos estudos.&lt;/p&gt;</summary><category term="estudos"></category><category term="p2pu"></category></entry><entry><title>Artigo publicado em ebook</title><link href="http://wille.blog.br/2011/01/artigo-publicado-em-ebook" rel="alternate"></link><updated>2011-01-25T23:37:00-02:00</updated><author><name>wille</name></author><id>tag:wille.blog.br,2011-01-25:2011/01/artigo-publicado-em-ebook</id><summary type="html">&lt;p&gt;Hoje descobri que um artigo que escrevi com &lt;a href="http://ufrb.edu.br/alenelins/"&gt;Alene
 Lins&lt;/a&gt; e &lt;a href="http://sulesampaio.blogspot.com/"&gt;Sule
 Sampaio&lt;/a&gt; foi publicado no ebook
 "&lt;a href="http://lantec.fae.unicamp.br/lantec/publicacoes/amaral,pretto-hackers.pdf"&gt;Ética, Hacker e a
@@ -1136,7 +1193,7 @@ seminário&lt;/a&gt;.
 O ebook está disponível para &lt;a href="http://lantec.fae.unicamp.br/lantec/publicacoes/amaral,pretto-hackers.pdf"&gt;download
 gratuito&lt;/a&gt;
 e, infelizmente, acho que esqueceram de colocar uma licença &lt;a href="http://creativecommons.org.br"&gt;Creative
-Commons&lt;/a&gt; nele...&lt;/p&gt;</summary><category term="cultura digital"></category><category term="ebook"></category><category term="estudos"></category><category term="software livre"></category></entry><entry><title>2010-2011, destinos</title><link href="http://wille.blog.br/2011/01/2010-2011-destinos" rel="alternate"></link><updated>2011-01-05T22:59:00-02:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2011-01-05:2011/01/2010-2011-destinos</id><summary type="html">&lt;p&gt;Inspirado num &lt;a href="http://vimeo.com/17792958"&gt;vídeo que vi no vimeo&lt;/a&gt;,
+Commons&lt;/a&gt; nele...&lt;/p&gt;</summary><category term="cultura digital"></category><category term="ebook"></category><category term="estudos"></category><category term="software livre"></category></entry><entry><title>2010-2011, destinos</title><link href="http://wille.blog.br/2011/01/2010-2011-destinos" rel="alternate"></link><updated>2011-01-05T22:59:00-02:00</updated><author><name>wille</name></author><id>tag:wille.blog.br,2011-01-05:2011/01/2010-2011-destinos</id><summary type="html">&lt;p&gt;Inspirado num &lt;a href="http://vimeo.com/17792958"&gt;vídeo que vi no vimeo&lt;/a&gt;,
 resolvi fazer um semelhante com as melhores fotos que fiz em 2010, assim
 teria um registro do que foi o ano pra mim. Consegui organizar as fotos
 e montá-las no vídeo em ordem cronólogica. Nem todos os acontecimentos
@@ -1169,7 +1226,7 @@ almejo...&lt;/p&gt;
 &lt;li&gt;continuar praticando esportes com regularidade (desde final de
     outubro estou nadando toda semana, além do futebol que jogo quase
     todas as quartas).&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="2010"></category><category term="2011"></category><category term="diário"></category><category term="fotografia"></category><category term="meus vídeos"></category><category term="planos"></category><category term="vídeo"></category></entry><entry><title>Um preto e branco diferente com o GIMP</title><link href="http://wille.blog.br/2010/11/um-preto-e-branco-diferente-com-o-gimp" rel="alternate"></link><updated>2010-11-30T21:15:00-02:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2010-11-30:2010/11/um-preto-e-branco-diferente-com-o-gimp</id><summary type="html">&lt;p&gt;O
+&lt;/ul&gt;</summary><category term="2010"></category><category term="2011"></category><category term="diário"></category><category term="fotografia"></category><category term="meus vídeos"></category><category term="planos"></category><category term="vídeo"></category></entry><entry><title>Um preto e branco diferente com o GIMP</title><link href="http://wille.blog.br/2010/11/um-preto-e-branco-diferente-com-o-gimp" rel="alternate"></link><updated>2010-11-30T21:15:00-02:00</updated><author><name>wille</name></author><id>tag:wille.blog.br,2010-11-30:2010/11/um-preto-e-branco-diferente-com-o-gimp</id><summary type="html">&lt;p&gt;O
 &lt;a href="http://www.ogimp.com.br/" title="Gimp é um software livre para edição de imagens"&gt;Gimp&lt;/a&gt;
 conta com uma biblioteca de processamento de imagens chamada GEGL, o
 qual possui um efeito de Preto e Branco bem interessante. Vou mostrar
@@ -1185,7 +1242,7 @@ máquina, então demora alguns segundos para ser aplicado na imagem.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;O resultado:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt="" src="http://images.wille.blog.br/tutorial-c2g-final.jpg" title="tutorial-c2g-final" /&gt;&lt;/p&gt;
 &lt;p&gt;Compare com o preto e branco tradicional do Gimp:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" src="http://images.wille.blog.br/tutorial-pbnormal.jpg" title="tutorial-pbnormal" /&gt;&lt;/p&gt;</summary><category term="c2g"></category><category term="fotografia"></category><category term="gimp"></category><category term="software livre"></category><category term="tutorial"></category></entry><entry><title>Encontro Mineiro de Software Livre - 2010</title><link href="http://wille.blog.br/2010/10/encontro-mineiro-de-software-livre-2010" rel="alternate"></link><updated>2010-10-24T12:35:00-02:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2010-10-24:2010/10/encontro-mineiro-de-software-livre-2010</id><summary type="html">&lt;p&gt;&lt;img alt="" src="http://images.wille.blog.br/emsl10-cracha.jpg" title="Crachá do EMSL" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://images.wille.blog.br/tutorial-pbnormal.jpg" title="tutorial-pbnormal" /&gt;&lt;/p&gt;</summary><category term="c2g"></category><category term="fotografia"></category><category term="gimp"></category><category term="software livre"></category><category term="tutorial"></category></entry><entry><title>Encontro Mineiro de Software Livre - 2010</title><link href="http://wille.blog.br/2010/10/encontro-mineiro-de-software-livre-2010" rel="alternate"></link><updated>2010-10-24T12:35:00-02:00</updated><author><name>wille</name></author><id>tag:wille.blog.br,2010-10-24:2010/10/encontro-mineiro-de-software-livre-2010</id><summary type="html">&lt;p&gt;&lt;img alt="" src="http://images.wille.blog.br/emsl10-cracha.jpg" title="Crachá do EMSL" /&gt;&lt;/p&gt;
 &lt;p&gt;Semana passada participei pela primeira vez do &lt;a href="http://emsl.softwarelivre.org"&gt;Encontro Mineiro de
 Software Livre&lt;/a&gt;, realizado na
 Universidade Federal de Uberlândia. Apresentei um mini-curso de Inkscape
@@ -1220,7 +1277,7 @@ softwares livres para edição de vídeo". Faça o download dos &lt;a href="http
 PDF
 (585kb)&lt;/a&gt;
 ou em &lt;a href="http://images.wille.blog.br/slide-analise-video.odp"&gt;ODP
-(928kb)&lt;/a&gt;.&lt;/p&gt;</summary><category term="edição de vídeo"></category><category term="emsl"></category><category term="eventos"></category><category term="minas gerais"></category><category term="slide"></category><category term="software livre"></category><category term="uberlândia"></category></entry><entry><title>Futebol nos Pampas</title><link href="http://wille.blog.br/2010/10/futebol-nos-pampas-2" rel="alternate"></link><updated>2010-10-21T22:31:00-02:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2010-10-21:2010/10/futebol-nos-pampas-2</id><summary type="html">&lt;div class="mceTemp mceIEcenter" style="text-align: justify;"&gt;
+(928kb)&lt;/a&gt;.&lt;/p&gt;</summary><category term="edição de vídeo"></category><category term="emsl"></category><category term="eventos"></category><category term="minas gerais"></category><category term="slide"></category><category term="software livre"></category><category term="uberlândia"></category></entry><entry><title>Futebol nos Pampas</title><link href="http://wille.blog.br/2010/10/futebol-nos-pampas-2" rel="alternate"></link><updated>2010-10-21T22:31:00-02:00</updated><author><name>wille</name></author><id>tag:wille.blog.br,2010-10-21:2010/10/futebol-nos-pampas-2</id><summary type="html">&lt;div class="mceTemp mceIEcenter" style="text-align: justify;"&gt;
 
 ![](http://images.wille.blog.br/kdk_0975.jpg "futebol na rua")
 :   Meninos jogando bola na Ciudad Vieja, Montevideo
@@ -1286,7 +1343,7 @@ estava fechado.&lt;/p&gt;
 Apertura começou exatamente no dia em que fui embora de lá...&lt;/p&gt;
 &lt;p&gt;[caption id="attachment_650" align="aligncenter" width="600"
 caption="Estádio
-Centenário"]&lt;img alt="" src="http://images.wille.blog.br/kdk_0992.jpg" title="Estádio Centenário" /&gt;[/caption]&lt;/p&gt;</summary><category term="argentina"></category><category term="diário"></category><category term="estádios"></category><category term="fotografia"></category><category term="futebol"></category><category term="la bombonera"></category><category term="uruguai"></category><category term="viagens"></category></entry><entry><title>Hostel, curso de espanhol e mobilidade em Buenos Aires</title><link href="http://wille.blog.br/2010/09/hostel-curso-de-espanhol-e-mobilidade-em-buenos-aires" rel="alternate"></link><updated>2010-09-03T19:52:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2010-09-03:2010/09/hostel-curso-de-espanhol-e-mobilidade-em-buenos-aires</id><summary type="html">&lt;p&gt;[caption id="attachment_627" align="alignnone" width="600"
+Centenário"]&lt;img alt="" src="http://images.wille.blog.br/kdk_0992.jpg" title="Estádio Centenário" /&gt;[/caption]&lt;/p&gt;</summary><category term="argentina"></category><category term="diário"></category><category term="estádios"></category><category term="fotografia"></category><category term="futebol"></category><category term="la bombonera"></category><category term="uruguai"></category><category term="viagens"></category></entry><entry><title>Hostel, curso de espanhol e mobilidade em Buenos Aires</title><link href="http://wille.blog.br/2010/09/hostel-curso-de-espanhol-e-mobilidade-em-buenos-aires" rel="alternate"></link><updated>2010-09-03T19:52:00-03:00</updated><author><name>wille</name></author><id>tag:wille.blog.br,2010-09-03:2010/09/hostel-curso-de-espanhol-e-mobilidade-em-buenos-aires</id><summary type="html">&lt;p&gt;[caption id="attachment_627" align="alignnone" width="600"
 caption="Terraço do
 Hostel"]&lt;img alt="" src="http://images.wille.blog.br/kdk_0867.jpg" title="terraço do hostel" /&gt;[/caption]&lt;/p&gt;
 &lt;p&gt;Fiquei hospedado no &lt;a href="http://www.portaldelsurba.com.ar"&gt;Hostel Portal del
@@ -1325,7 +1382,7 @@ metrô e estações, o que ajuda bastante na locomoção por lá.&lt;/p&gt;
 é bem mais amigável com os pedestres que aqui no Brasil. Nos bairros
 mais centrais, as ruas têm muitas faixas de pedestre e semáforos. Os
 carros costumam parar quando o sinal ainda está amarelo e ,quase sempre,
-a travessia é bem segura.&lt;/p&gt;</summary><category term="argentina"></category><category term="buenos aires"></category><category term="curso de espanhol"></category><category term="fotografia"></category><category term="hostel"></category><category term="mobilidade"></category><category term="viagens"></category></entry><entry><title>Chegada a Buenos Aires</title><link href="http://wille.blog.br/2010/09/chegada-a-buenos-aires" rel="alternate"></link><updated>2010-09-02T23:38:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2010-09-02:2010/09/chegada-a-buenos-aires</id><summary type="html">&lt;p&gt;&lt;a href="http://wille.blog.br/2010/07/fisl-11-e-porto-alegre/"&gt;Após o FISL&lt;/a&gt;,
+a travessia é bem segura.&lt;/p&gt;</summary><category term="argentina"></category><category term="buenos aires"></category><category term="curso de espanhol"></category><category term="fotografia"></category><category term="hostel"></category><category term="mobilidade"></category><category term="viagens"></category></entry><entry><title>Chegada a Buenos Aires</title><link href="http://wille.blog.br/2010/09/chegada-a-buenos-aires" rel="alternate"></link><updated>2010-09-02T23:38:00-03:00</updated><author><name>wille</name></author><id>tag:wille.blog.br,2010-09-02:2010/09/chegada-a-buenos-aires</id><summary type="html">&lt;p&gt;&lt;a href="http://wille.blog.br/2010/07/fisl-11-e-porto-alegre/"&gt;Após o FISL&lt;/a&gt;,
 peguei um ônibus em Porto Alegre no final da tarde do dia 24 de julho e
 parti para Buenos Aires. A viagem demorou mais ou menos 20 horas, porém
 ficamos parados cerca de 2h na aduana logo que entramos na Argentina.&lt;/p&gt;
@@ -1354,7 +1411,7 @@ um spaghetti com molho quatro queijos! A entrada dessa vez foi mais
 saborosa: um pastelzinho de carne e uma mini fatia de pizza! O spaghetti
 me agradou tanto que voltei a comer no "Cabildo" outras quatro ou cinco
 vezes.&lt;/p&gt;
-&lt;p&gt;[gallery link="file" columns="2" size="medium" orderby="ID"]&lt;/p&gt;</summary><category term="argentina"></category><category term="buenos aires"></category><category term="diário"></category><category term="fotografia"></category><category term="viagens"></category></entry><entry><title>FISL 11 e Porto Alegre</title><link href="http://wille.blog.br/2010/07/fisl-11-e-porto-alegre" rel="alternate"></link><updated>2010-07-26T23:12:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2010-07-26:2010/07/fisl-11-e-porto-alegre</id><summary type="html">&lt;p&gt;De 20 a 24 de julho, participei da 11ª edição do Fórum Internacional de
+&lt;p&gt;[gallery link="file" columns="2" size="medium" orderby="ID"]&lt;/p&gt;</summary><category term="argentina"></category><category term="buenos aires"></category><category term="diário"></category><category term="fotografia"></category><category term="viagens"></category></entry><entry><title>FISL 11 e Porto Alegre</title><link href="http://wille.blog.br/2010/07/fisl-11-e-porto-alegre" rel="alternate"></link><updated>2010-07-26T23:12:00-03:00</updated><author><name>wille</name></author><id>tag:wille.blog.br,2010-07-26:2010/07/fisl-11-e-porto-alegre</id><summary type="html">&lt;p&gt;De 20 a 24 de julho, participei da 11ª edição do Fórum Internacional de
 Software Livre. O &lt;a href="http://www.fisl.org.br"&gt;FISL&lt;/a&gt; esse ano me agradou
 mais do que a edição anterior. Percebi uma diversidade maior de temas na
 programação e acho que consegui escolher melhor as palestras do que no
@@ -1402,7 +1459,7 @@ ano passado. O ruim foi que nos dois primeiros dias choveu bastante e o
 sol praticamente não apareceu. Como fiquei hospedado no centro da cidade
 caminhei bastante por lá e aproveitei para conhecer o mercado público
 (mas esqueci de fazer fotos). Quando eu retornar da Argentina e Uruguai,
-pretendo passar pelo menos um dia andando por PoA.&lt;/p&gt;</summary><category term="eventos"></category><category term="fisl"></category><category term="fisl11"></category><category term="porto alegre"></category><category term="software livre"></category></entry><entry><title>Pyroom</title><link href="http://wille.blog.br/2010/07/pyroom" rel="alternate"></link><updated>2010-07-17T21:31:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2010-07-17:2010/07/pyroom</id><summary type="html">&lt;p&gt;&lt;img alt="Tela software
+pretendo passar pelo menos um dia andando por PoA.&lt;/p&gt;</summary><category term="eventos"></category><category term="fisl"></category><category term="fisl11"></category><category term="porto alegre"></category><category term="software livre"></category></entry><entry><title>Pyroom</title><link href="http://wille.blog.br/2010/07/pyroom" rel="alternate"></link><updated>2010-07-17T21:31:00-03:00</updated><author><name>wille</name></author><id>tag:wille.blog.br,2010-07-17:2010/07/pyroom</id><summary type="html">&lt;p&gt;&lt;img alt="Tela software
 Pyroom" src="http://images.wille.blog.br/tela-pyroom.png" title="tela-pyroom" /&gt;&lt;/p&gt;
 &lt;p&gt;Hoje instalei o Pyroom, o objetivo dele é retirar os elementos da tela
 que nos distraem enquanto escrevemos. Aquele menuzinho (presente na
@@ -1416,7 +1473,7 @@ Messenger, não vai alternar as janelas tanto quanto se estivesse num
 editor de texto comum e nem se preocupar com a formatação. Claro que não
 é garantia de concentração, no entanto pode ajudar.&lt;/p&gt;
 &lt;p&gt;Por enquanto, funciona apenas em GNU/Linux.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Site:&lt;/strong&gt; &lt;a href="http://pyroom.org"&gt;http://pyroom.org&lt;/a&gt;&lt;/p&gt;</summary><category term="dicas de software"></category><category term="escrita"></category><category term="pyroom"></category><category term="software livre"></category></entry><entry><title>Viagem pelos pampas - Preparativos</title><link href="http://wille.blog.br/2010/07/viagem-pelos-pampas-preparativos" rel="alternate"></link><updated>2010-07-17T20:49:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2010-07-17:2010/07/viagem-pelos-pampas-preparativos</id><summary type="html">&lt;p&gt;Nesta terça-feira embarco para uma viagem pelos pampas. Visito pela
+&lt;p&gt;&lt;strong&gt;Site:&lt;/strong&gt; &lt;a href="http://pyroom.org"&gt;http://pyroom.org&lt;/a&gt;&lt;/p&gt;</summary><category term="dicas de software"></category><category term="escrita"></category><category term="pyroom"></category><category term="software livre"></category></entry><entry><title>Viagem pelos pampas - Preparativos</title><link href="http://wille.blog.br/2010/07/viagem-pelos-pampas-preparativos" rel="alternate"></link><updated>2010-07-17T20:49:00-03:00</updated><author><name>wille</name></author><id>tag:wille.blog.br,2010-07-17:2010/07/viagem-pelos-pampas-preparativos</id><summary type="html">&lt;p&gt;Nesta terça-feira embarco para uma viagem pelos pampas. Visito pela
 segunda vez o inverno Porto Alegrense e participo do &lt;a href="http://fisl.org.br/11/"&gt;FISL
 11&lt;/a&gt; (Fórum Internacional de Software Livre).
 Depois parto de ônibus para Buenos Aires, onde pretendo ficar por 12
@@ -1427,9 +1484,9 @@ Se der tempo, passo por mais algumas cidades do Uruguai ou do Rio Grande
 do Sul. Em Porto Alegre, pego um vôo para Uberlândia, onde visitarei uma
 grande amiga. Dia 16 de agosto retorno para a rotina.&lt;/p&gt;
 &lt;p&gt;Durante a viagem pretendo relatar as experiências aqui no blog e
-reanimar esse espaço que anda tão abandonado...&lt;/p&gt;</summary><category term="diário"></category><category term="viagens"></category></entry><entry><title>Violão</title><link href="http://wille.blog.br/2010/07/violao" rel="alternate"></link><updated>2010-07-07T20:30:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2010-07-07:2010/07/violao</id><summary type="html">&lt;p&gt;&lt;img alt="eu e o
+reanimar esse espaço que anda tão abandonado...&lt;/p&gt;</summary><category term="diário"></category><category term="viagens"></category></entry><entry><title>Violão</title><link href="http://wille.blog.br/2010/07/violao" rel="alternate"></link><updated>2010-07-07T20:30:00-03:00</updated><author><name>wille</name></author><id>tag:wille.blog.br,2010-07-07:2010/07/violao</id><summary type="html">&lt;p&gt;&lt;img alt="eu e o
 violão" src="http://images.wille.blog.br/violao-pb-wille.jpg" title="eu e o violão" /&gt;&lt;/p&gt;
-&lt;p&gt;Comprei um violão!&lt;/p&gt;</summary><category term="diário"></category><category term="música"></category><category term="violão"></category></entry><entry><title>Eventos sobre educação e tecnologia na UFRB</title><link href="http://wille.blog.br/2010/05/eventos-sobre-educacao-e-tecnologia-na-ufrb" rel="alternate"></link><updated>2010-05-18T20:40:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2010-05-18:2010/05/eventos-sobre-educacao-e-tecnologia-na-ufrb</id><summary type="html">&lt;p&gt;Este mês serão realizados dois eventos relacionados a educação e
+&lt;p&gt;Comprei um violão!&lt;/p&gt;</summary><category term="diário"></category><category term="música"></category><category term="violão"></category></entry><entry><title>Eventos sobre educação e tecnologia na UFRB</title><link href="http://wille.blog.br/2010/05/eventos-sobre-educacao-e-tecnologia-na-ufrb" rel="alternate"></link><updated>2010-05-18T20:40:00-03:00</updated><author><name>wille</name></author><id>tag:wille.blog.br,2010-05-18:2010/05/eventos-sobre-educacao-e-tecnologia-na-ufrb</id><summary type="html">&lt;p&gt;Este mês serão realizados dois eventos relacionados a educação e
 tecnologia no campus da
 &lt;a href="http://www.ufrb.edu.br" title="Universidade Federal do Recôncavo da Bahia"&gt;UFRB&lt;/a&gt;
 em Cachoeira. Na próxima sexta-feira (18/05), acontecerá o I Encontro de
@@ -1448,7 +1505,7 @@ e articula a formação de professores com o uso de novas tecnologias, em
 especial com Softwares Livres. Este evento tem a organização do
 &lt;a href="http://www.ufrb.edu.br/plug/"&gt;Plug!&lt;/a&gt;, projeto de extensão do qual eu
 participo. Veja a
-&lt;a href="http://www.ufrb.edu.br/plug/software-livre-educacao-e-formacao-a-experiencia-do-projeto-irece-faced-ufba/"&gt;programação&lt;/a&gt;.&lt;/p&gt;</summary><category term="educação"></category><category term="eventos"></category><category term="rpg"></category><category term="software livre"></category><category term="ufrb"></category></entry><entry><title>Civic Hacking, Dados Públicos e P2PU</title><link href="http://wille.blog.br/2010/05/civic-hacking-dados-publicos-e-p2pu" rel="alternate"></link><updated>2010-05-17T00:36:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2010-05-17:2010/05/civic-hacking-dados-publicos-e-p2pu</id><summary type="html">&lt;p&gt;Em março e abril foi realizado o curso de &lt;a href="http://p2pu.org/civic-hacking-mar-2010"&gt;Civic
+&lt;a href="http://www.ufrb.edu.br/plug/software-livre-educacao-e-formacao-a-experiencia-do-projeto-irece-faced-ufba/"&gt;programação&lt;/a&gt;.&lt;/p&gt;</summary><category term="educação"></category><category term="eventos"></category><category term="rpg"></category><category term="software livre"></category><category term="ufrb"></category></entry><entry><title>Civic Hacking, Dados Públicos e P2PU</title><link href="http://wille.blog.br/2010/05/civic-hacking-dados-publicos-e-p2pu" rel="alternate"></link><updated>2010-05-17T00:36:00-03:00</updated><author><name>wille</name></author><id>tag:wille.blog.br,2010-05-17:2010/05/civic-hacking-dados-publicos-e-p2pu</id><summary type="html">&lt;p&gt;Em março e abril foi realizado o curso de &lt;a href="http://p2pu.org/civic-hacking-mar-2010"&gt;Civic
 Hacking&lt;/a&gt; na Peer 2 Peer
 University. A &lt;a href="http://p2pu.org/"&gt;P2PU&lt;/a&gt; é uma iniciativa que incentiva a
 criação de grupos de estudos online e funciona assim: alguém propõe
@@ -1489,7 +1546,7 @@ frequência, provas e notas.&lt;/p&gt;
 &lt;p&gt;Quem se interessou por Civic Hacking, pode acessar a &lt;a href="http://p2pu.org/civic-hacking-mar-2010"&gt;página do curso na
 P2PU&lt;/a&gt; e também os arquivos da
 &lt;a href="http://groups.google.com/group/civichacking/"&gt;lista de discussão&lt;/a&gt;. Em
-breve, novas turmas devem ser abertas na P2PU.&lt;/p&gt;</summary><category term="ciberativismo"></category><category term="civic hacking"></category><category term="dados públicos"></category><category term="p2pu"></category></entry><entry><title>Site do Curta-Se 10</title><link href="http://wille.blog.br/2010/05/site-do-curta-se-10" rel="alternate"></link><updated>2010-05-02T23:57:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2010-05-02:2010/05/site-do-curta-se-10</id><summary type="html">&lt;p&gt;Desde o início de março estou trabalhando no site do &lt;a href="http://curtase.org.br/"&gt;Curta-Se
+breve, novas turmas devem ser abertas na P2PU.&lt;/p&gt;</summary><category term="ciberativismo"></category><category term="civic hacking"></category><category term="dados públicos"></category><category term="p2pu"></category></entry><entry><title>Site do Curta-Se 10</title><link href="http://wille.blog.br/2010/05/site-do-curta-se-10" rel="alternate"></link><updated>2010-05-02T23:57:00-03:00</updated><author><name>wille</name></author><id>tag:wille.blog.br,2010-05-02:2010/05/site-do-curta-se-10</id><summary type="html">&lt;p&gt;Desde o início de março estou trabalhando no site do &lt;a href="http://curtase.org.br/"&gt;Curta-Se
 10&lt;/a&gt; - Festival Iberoamericano de Cinema de
 Sergipe. Sou responsável pelo desenvolvimento e administração do site. A
 parte gráfica fica por conta de Luiz Garcia Jr. Utilizamos o CMS
@@ -1497,14 +1554,14 @@ parte gráfica fica por conta de Luiz Garcia Jr. Utilizamos o CMS
 especial em comemoração aos 10 anos do Curta-Se.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="" src="http://images.wille.blog.br/tela-curta-se.png" /&gt;&lt;/p&gt;
 &lt;p&gt;O festival será realizado em setembro e as inscrições de curtas e longas
-se encerram no dia 07 de maio.&lt;/p&gt;</summary><category term="curta-se"></category><category term="desenvolvimento web"></category><category term="festival"></category><category term="trabalho"></category></entry><entry><title>Configurando Xerox Phaser 3428 no GNU/Linux</title><link href="http://wille.blog.br/2010/03/configurando-xerox-phaser-3428-no-gnulinux" rel="alternate"></link><updated>2010-03-24T10:54:00-03:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2010-03-24:2010/03/configurando-xerox-phaser-3428-no-gnulinux</id><summary type="html">&lt;p&gt;Essa semana tive problemas para configurar a impressora de rede Xerox
+se encerram no dia 07 de maio.&lt;/p&gt;</summary><category term="curta-se"></category><category term="desenvolvimento web"></category><category term="festival"></category><category term="trabalho"></category></entry><entry><title>Configurando Xerox Phaser 3428 no GNU/Linux</title><link href="http://wille.blog.br/2010/03/configurando-xerox-phaser-3428-no-gnulinux" rel="alternate"></link><updated>2010-03-24T10:54:00-03:00</updated><author><name>wille</name></author><id>tag:wille.blog.br,2010-03-24:2010/03/configurando-xerox-phaser-3428-no-gnulinux</id><summary type="html">&lt;p&gt;Essa semana tive problemas para configurar a impressora de rede Xerox
 Phaser 3428 na minha máquina do trabalho. A impressora era reconhecida,
 mas não aceitava os trabalhos enviados. Pesquisei um pouco e encontrei a
 solução: adicione a impressora normalmente, porém escolha o driver Xerox
 Phaser 3450, ao invés do 3420 ou 3425, como mostrado na imagem abaixo.
 Testado no Ubuntu 9.10.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="Configuração da Xerox Phaser
-3428" src="http://images.wille.blog.br/phaser-3428-3450.png" title="phaser-3428-3450" /&gt;&lt;/p&gt;</summary><category term="gnulinux"></category><category term="impressora"></category><category term="tutorial"></category></entry><entry><title>Trocando Livros</title><link href="http://wille.blog.br/2010/02/trocando-livros" rel="alternate"></link><updated>2010-02-08T19:45:00-02:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2010-02-08:2010/02/trocando-livros</id><summary type="html">&lt;p&gt;&lt;em&gt;"O&lt;/em&gt; &lt;em&gt;&lt;a href="http://www.trocandolivros.com.br"&gt;Trocando Livros&lt;/a&gt; é um site que
+3428" src="http://images.wille.blog.br/phaser-3428-3450.png" title="phaser-3428-3450" /&gt;&lt;/p&gt;</summary><category term="gnulinux"></category><category term="impressora"></category><category term="tutorial"></category></entry><entry><title>Trocando Livros</title><link href="http://wille.blog.br/2010/02/trocando-livros" rel="alternate"></link><updated>2010-02-08T19:45:00-02:00</updated><author><name>wille</name></author><id>tag:wille.blog.br,2010-02-08:2010/02/trocando-livros</id><summary type="html">&lt;p&gt;&lt;em&gt;"O&lt;/em&gt; &lt;em&gt;&lt;a href="http://www.trocandolivros.com.br"&gt;Trocando Livros&lt;/a&gt; é um site que
 tem como objetivo facilitar a troca de livros entre pessoas de todo o
 Brasil.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Com certeza sua estante possui diversos livros que já foram lidos ou
@@ -1543,7 +1600,7 @@ ORLANDO ARAÚJO PINHO E LIVIO SANSONE  &lt;/li&gt;
 Vladimir Nabokov  &lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.trocandolivros.com.br/livros/70274-a-utopia"&gt;A Utopia&lt;/a&gt; -
 Thomas Morus&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="literatura"></category><category term="livros"></category><category term="trocando livros"></category></entry><entry><title>Novos livros</title><link href="http://wille.blog.br/2010/02/novos-livros" rel="alternate"></link><updated>2010-02-07T17:12:00-02:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2010-02-07:2010/02/novos-livros</id><summary type="html">&lt;p&gt;&lt;a href="http://images.wille.blog.br/kdk_0392.jpg"&gt;&lt;img alt="" src="http://images.wille.blog.br/kdk_0392.jpg" title="Pra ser sincero - Livro de humberto Gessinger" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/ul&gt;</summary><category term="literatura"></category><category term="livros"></category><category term="trocando livros"></category></entry><entry><title>Novos livros</title><link href="http://wille.blog.br/2010/02/novos-livros" rel="alternate"></link><updated>2010-02-07T17:12:00-02:00</updated><author><name>wille</name></author><id>tag:wille.blog.br,2010-02-07:2010/02/novos-livros</id><summary type="html">&lt;p&gt;&lt;a href="http://images.wille.blog.br/kdk_0392.jpg"&gt;&lt;img alt="" src="http://images.wille.blog.br/kdk_0392.jpg" title="Pra ser sincero - Livro de humberto Gessinger" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;“Pra ser sincero”, de Humberto Gessinger, um dos artistas que eu mais
 admiro. É um livro sobre a trajetória deste com os &lt;a href="http://www.engenheirosdohawaii.com.br"&gt;Engenheiros do
 Hawaii&lt;/a&gt; e agora com o &lt;a href="http://www.poucavogal.com.br"&gt;Pouca
@@ -1567,7 +1624,7 @@ livro do &lt;a href="http://amyrklink.com.br/"&gt;Amyr Klink&lt;/a&gt;que eu ain
 tema deste é a volta ao mundo realizada por Klink, navegando em
 solitário num veleiro abaixo da convergência antártica.&lt;/p&gt;
 &lt;p&gt;Tenho me interessado por livros sobre viajantes aventureiros. O próximo
-que quero ler é o diário da viagem de Che Guevara pela América do Sul.&lt;/p&gt;</summary><category term="enghaw"></category><category term="livros"></category><category term="viagens"></category></entry><entry><title>Ciclos</title><link href="http://wille.blog.br/2010/02/ciclos" rel="alternate"></link><updated>2010-02-04T00:18:00-02:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2010-02-04:2010/02/ciclos</id><summary type="html">&lt;p&gt;Datas pra mim não fazem muito sentido. Não valorizo muito aniversários e
+que quero ler é o diário da viagem de Che Guevara pela América do Sul.&lt;/p&gt;</summary><category term="enghaw"></category><category term="livros"></category><category term="viagens"></category></entry><entry><title>Ciclos</title><link href="http://wille.blog.br/2010/02/ciclos" rel="alternate"></link><updated>2010-02-04T00:18:00-02:00</updated><author><name>wille</name></author><id>tag:wille.blog.br,2010-02-04:2010/02/ciclos</id><summary type="html">&lt;p&gt;Datas pra mim não fazem muito sentido. Não valorizo muito aniversários e
 viradas de ano. Às vezes, nosso calendário interno tá bem diferente do
 calendário do mundo. Esse início de ano foi assim. Mudou o ano, mas eu
 não tinha nada de novo para me propor, apenas alguns planos já meio
@@ -1581,14 +1638,14 @@ repetindo, mas sempre avançando no tempo.&lt;/p&gt;
 cuidado e de descuido, de gostar muito de uma coisa e depois de outra.
 Gosto de deixar o cabelo crescer bastante e depois cortar bem baixo. De
 deixar a barba crescer e depois tirá-la por completo Assim vou
-alternando entre os vários eus...&lt;/p&gt;</summary><category term="diário"></category><category term="tempo"></category></entry><entry><title>Itacaré</title><link href="http://wille.blog.br/2009/12/itacare" rel="alternate"></link><updated>2009-12-28T11:01:00-02:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2009-12-28:2009/12/itacare</id><summary type="html">&lt;p&gt;Dois dias em Itacaré recarregando as energias com praia, água de coco,
+alternando entre os vários eus...&lt;/p&gt;</summary><category term="diário"></category><category term="tempo"></category></entry><entry><title>Itacaré</title><link href="http://wille.blog.br/2009/12/itacare" rel="alternate"></link><updated>2009-12-28T11:01:00-02:00</updated><author><name>wille</name></author><id>tag:wille.blog.br,2009-12-28:2009/12/itacare</id><summary type="html">&lt;p&gt;Dois dias em Itacaré recarregando as energias com praia, água de coco,
 cochilos na rede e música.&lt;/p&gt;
 &lt;p&gt;Apesar de um pouco longa, a viagem de ônibus foi um das mais relax que
 eu já fiz. O segredo? Um cartão de memória de 4 GB no celular com muita
 música (inclusive o disco novo do &lt;a href="http://www.poucavogal.com.br"&gt;Pouca
 Vogal&lt;/a&gt;), um livro e nenhuma preocupação
 com horários, trabalho, estudos e qualquer outro compromisso.&lt;/p&gt;
-&lt;p&gt;[gallery link="file" size="medium" columns="2"]&lt;/p&gt;</summary><category term="bahia"></category><category term="diário"></category><category term="fotografia"></category><category term="itacaré"></category><category term="praia"></category><category term="viagens"></category></entry><entry><title>Fórum da culturadigital.br, hackitectura e São Paulo</title><link href="http://wille.blog.br/2009/12/forum-da-culturadigital-br-e-sao-paulo" rel="alternate"></link><updated>2009-12-06T20:47:00-02:00</updated><author><name>admin</name></author><id>tag:wille.blog.br,2009-12-06:2009/12/forum-da-culturadigital-br-e-sao-paulo</id><summary type="html">&lt;p&gt;Em meados de novembro estive em São Paulo para participar do &lt;a href="http://www.culturadigital.br"&gt;Fórum da
+&lt;p&gt;[gallery link="file" size="medium" columns="2"]&lt;/p&gt;</summary><category term="bahia"></category><category term="diário"></category><category term="fotografia"></category><category term="itacaré"></category><category term="praia"></category><category term="viagens"></category></entry><entry><title>Fórum da culturadigital.br, hackitectura e São Paulo</title><link href="http://wille.blog.br/2009/12/forum-da-culturadigital-br-e-sao-paulo" rel="alternate"></link><updated>2009-12-06T20:47:00-02:00</updated><author><name>wille</name></author><id>tag:wille.blog.br,2009-12-06:2009/12/forum-da-culturadigital-br-e-sao-paulo</id><summary type="html">&lt;p&gt;Em meados de novembro estive em São Paulo para participar do &lt;a href="http://www.culturadigital.br"&gt;Fórum da
 Cultura Digital Brasileira&lt;/a&gt;, um evento com
 o objetivo de discutir as políticas públicas de cultura digital do
 Ministério da Cultura. Gostei bastante do resultado do evento: boas
