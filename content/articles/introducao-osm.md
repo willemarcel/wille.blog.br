@@ -19,6 +19,8 @@ Decidi reunir algumas informações, softwares, casos de uso e alguns links que 
 
 * [Wiki](http://wiki.osm.org)
 * [Tags](https://wiki.openstreetmap.org/wiki/Map_Features)
+* [Learn OSM](learnosm.org/pt/)
+* [Vídeos no YouTube](https://www.youtube.com/playlist?list=PLZKc4w3SDJnevIx0cFztdJxcs-yL8x6Yj)
 
 
 #### Direitos Autorais
