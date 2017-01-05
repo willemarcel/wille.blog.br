@@ -9,7 +9,7 @@ Status: published
 ![Eu e Amanda em 2007](http://images.wille.blog.br/wille_amanda_2007.jpg)
 
 * Em 2007, eu morava em Aracaju, estudava Rádio e TV e estava começando minha carreira com alguns pequenos trabalhos.
-* Terminei a faculdade em 2008, passei num concurso público e me mudei para a Bahia, onde morei em duas cidades.
+* Terminei a faculdade em 2008, passei num concurso público e voltei para a Bahia, onde morei em duas cidades.
 * Vi Amanda, minha irmã, que nasceu em outubro de 2006, crescer e brinquei bastante com ela!
 * [Viajei bastante](http://wille.blog.br/tag/viagens), conheci 9 países, aprendi a falar inglês e espanhol.
 * Comecei a estudar programação em 2008. Dois anos depois, conheci o [OpenStreetMap](http://osm.org/). Mudei de profissão e me tornei um desenvolvedor com foco em aplicações geoespaciais.
