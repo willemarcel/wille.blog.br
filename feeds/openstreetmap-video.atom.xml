@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>wille.blog.br</title><link href="http://wille.blog.br/" rel="alternate"></link><link href="http://wille.blog.br/feeds/openstreetmap-video.atom.xml" rel="self"></link><id>http://wille.blog.br/</id><updated>2018-05-07T07:24:00-03:00</updated><entry><title>Webinar sobre OpenStreetMap no MundoGeo</title><link href="http://wille.blog.br/2018/05/webinar-openstreetmap-mundogeo" rel="alternate"></link><published>2018-05-07T07:24:00-03:00</published><updated>2018-05-07T07:24:00-03:00</updated><author><name>wille</name></author><id>tag:wille.blog.br,2018-05-07:2018/05/webinar-openstreetmap-mundogeo</id><summary type="html">&lt;p&gt;Na última semana, participei do webinar sobre "Como utilizar o OpenStreetMap em
+prefeituras e empresas", promovido pelo &lt;a href="http://mundogeo.com/"&gt;MundoGeo&lt;/a&gt;. Falei
+um pouco sobre meu trabalho desenvolvendo o OSMCha e também sobre as vantagens que
+o &lt;a href="https://osm.org/"&gt;OpenStreetMap&lt;/a&gt; proporciona a pequenas prefeituras. Além disso,
+respondi a algumas questões do público.&lt;/p&gt;
+&lt;p&gt;Assista o vídeo:&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/NLWrkPvfuXI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;</summary><category term="openstreetmap"></category><category term="gis"></category><category term="webinar"></category><category term="video"></category></entry></feed>
